@@ -1,0 +1,20 @@
+<!-- Header -->
+<header class="header">
+  <div class="header__logo">
+    <!-- SVG логотип {{company.name}} -->
+    <span class="header__logo-text">{{company.name}}</span>
+  </div>
+  <nav class="header__nav">
+    <a href="{{#if isHomepage}}#{{else}}../index.html{{/if}}" class="nav__link{{#if isHomepage}} nav__link--active{{/if}}">Homepage</a>
+    <a href="{{#if isHomepage}}pages/about.html{{else}}about.html{{/if}}" class="nav__link{{#if isAbout}} nav__link--active{{/if}}">About us</a>
+    <a href="{{#if isHomepage}}pages/services.html{{else}}services.html{{/if}}" class="nav__link{{#if isServices}} nav__link--active{{/if}}">Services</a>
+    <a href="{{#if isHomepage}}pages/quality.html{{else}}quality.html{{/if}}" class="nav__link{{#if isQuality}} nav__link--active{{/if}}">Quality</a>
+    <a href="{{#if isHomepage}}pages/contact.html{{else}}contact.html{{/if}}" class="nav__link{{#if isContact}} nav__link--active{{/if}}">Contact us</a>
+    <span class="nav__lang">English</span>
+    <!-- SVG EN icon -->
+  </nav>
+  <button class="header__cta">
+    <span>Contact us</span>
+    <!-- SVG стрелка -->
+  </button>
+</header> 

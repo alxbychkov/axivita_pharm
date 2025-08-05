@@ -6,13 +6,13 @@ A multi-page website for Axivita Pharm, a pharmaceutical company based in Vienna
 
 ```
 axivita_pharm/
-├── index.html              # Homepage
-├── pages/                  # Internal pages
-│   ├── about.html         # About Us page
-│   ├── services.html      # Services page
-│   ├── quality.html       # Quality page
-│   └── contact.html       # Contact Us page
-├── styles/                # CSS files
+├── index.html            # Homepage
+├── pages/                # Internal pages
+│   ├── about.html        # About Us page
+│   ├── services.html     # Services page
+│   ├── quality.html      # Quality page
+│   └── contact.html      # Contact Us page
+├── styles/               # CSS files
 │   ├── main.css          # Common styles and variables
 │   ├── home.css          # Homepage specific styles
 │   ├── about.css         # About page specific styles
@@ -44,12 +44,25 @@ axivita_pharm/
 - CSS3 (with CSS Variables)
 - Responsive Web Design
 - Figma Design Integration
+- Vite (Build Tool)
+- Handlebars (Templating)
+- ESLint (Code Quality)
 
 ## Getting Started
 
+### Development
 1. Clone the repository
-2. Open `index.html` in your web browser
-3. Navigate through the pages using the header navigation
+2. Install dependencies: `npm install`
+3. Start development server: `npm run dev`
+4. Open http://localhost:3000 in your browser
+
+### Production Build
+1. Build the project: `npm run build`
+2. Preview the build: `npm run preview`
+3. Deploy the `dist/` folder to your server
+
+### Code Quality
+- Run linting: `npm run lint`
 
 ## Design Source
 
