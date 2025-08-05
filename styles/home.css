@@ -1,0 +1,210 @@
+/* Homepage Specific Styles */
+
+/* About Section */
+.about {
+  padding: 80px;
+  background: var(--color-section-bg);
+}
+
+.about__subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 24px;
+}
+
+.about__desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-dark);
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.about__btn {
+  background: var(--color-primary);
+  color: var(--color-btn-text);
+  border: none;
+  border-radius: 14px;
+  padding: 18px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.about__btn:hover {
+  background: #4ea99a;
+}
+
+/* Services Section */
+.services {
+  padding: 80px;
+  background: var(--color-bg);
+}
+
+.services__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  background: var(--color-section-bg);
+  border-radius: 20px;
+}
+
+.service__title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin: 0;
+}
+
+.service__desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-dark);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.services__btn {
+  background: var(--color-primary);
+  color: var(--color-btn-text);
+  border: none;
+  border-radius: 14px;
+  padding: 18px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.services__btn:hover {
+  background: #4ea99a;
+}
+
+/* Quality Section */
+.quality {
+  padding: 80px;
+  background: var(--color-section-bg);
+}
+
+.quality__desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-dark);
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.quality__badges {
+  display: flex;
+  gap: 20px;
+}
+
+.quality__badge {
+  background: var(--color-primary);
+  color: var(--color-btn-text);
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Divisions Section */
+.divisions {
+  padding: 80px;
+  background: var(--color-bg);
+}
+
+.divisions__list {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.division {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  background: var(--color-section-bg);
+  border-radius: 20px;
+}
+
+.division__title {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin: 0;
+}
+
+.division__desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-dark);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.division__btn {
+  background: var(--color-primary);
+  color: var(--color-btn-text);
+  border: none;
+  border-radius: 14px;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.2s;
+}
+
+.division__btn:hover {
+  background: #4ea99a;
+}
+
+/* Countries Section */
+.countries {
+  padding: 80px;
+  background: var(--color-section-bg);
+}
+
+.countries__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.country {
+  background: var(--color-primary);
+  color: var(--color-btn-text);
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Homepage Responsive */
+@media (max-width: 900px) {
+  .about, .services, .quality, .divisions, .countries {
+    padding: 60px 20px;
+  }
+  
+  .divisions__list {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .countries__list {
+    justify-content: center;
+  }
+} 

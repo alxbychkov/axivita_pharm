@@ -1,0 +1,192 @@
+/* Quality Page Specific Styles */
+
+/* Quality Hero */
+.quality-hero {
+  padding: 120px 80px 80px 80px;
+  background: var(--color-bg);
+}
+
+/* Quality Intro */
+.quality-intro {
+  padding: 60px 80px;
+  background: var(--color-section-bg);
+}
+
+.quality-intro__title {
+  font-size: 38px;
+  font-weight: 600;
+  color: var(--color-dark);
+  line-height: 1.1;
+  margin-bottom: 32px;
+  max-width: 1085px;
+}
+
+.quality-intro__desc {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--color-dark);
+  line-height: 1.4;
+  max-width: 800px;
+}
+
+/* Quality Principles */
+.quality-principles {
+  padding: 80px;
+  background: var(--color-bg);
+}
+
+.quality-principles__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+}
+
+.quality-principle {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px;
+  background: var(--color-section-bg);
+  border-radius: 20px;
+}
+
+.quality-principle__icon {
+  width: 120px;
+  height: 120px;
+  background: var(--color-primary);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.quality-principle__title {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin: 0;
+}
+
+.quality-principle__desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-dark);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Quality Certificates */
+.quality-certificates {
+  padding: 80px;
+  background: var(--color-section-bg);
+  text-align: center;
+}
+
+.quality-certificates__title {
+  font-size: 42px;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quality-certificates__list {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.certificate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.certificate__icon {
+  width: 368px;
+  height: 315px;
+  background: var(--color-primary);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificate__text {
+  font-size: 43px;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.quality-certificates__btn {
+  background: var(--color-primary);
+  color: var(--color-btn-text);
+  border: none;
+  border-radius: 14px;
+  padding: 18px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.quality-certificates__btn:hover {
+  background: #4ea99a;
+}
+
+/* Quality Page Responsive */
+@media (max-width: 900px) {
+  .quality-hero, .quality-intro, .quality-principles, .quality-certificates {
+    padding: 60px 20px;
+  }
+  
+  .quality-intro__title {
+    font-size: 28px;
+  }
+  
+  .quality-intro__desc {
+    font-size: 20px;
+  }
+  
+  .quality-principles__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .quality-principle {
+    padding: 24px;
+  }
+  
+  .quality-principle__icon {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .quality-principle__title {
+    font-size: 24px;
+  }
+  
+  .quality-certificates__title {
+    font-size: 32px;
+  }
+  
+  .quality-certificates__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .certificate__icon {
+    width: 280px;
+    height: 240px;
+  }
+  
+  .certificate__text {
+    font-size: 32px;
+  }
+} 

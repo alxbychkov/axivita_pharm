@@ -1,0 +1,218 @@
+/* About Page Specific Styles */
+
+/* About Hero */
+.about-hero {
+  padding: 120px 80px 80px 80px;
+  background: var(--color-bg);
+}
+
+.about-hero__subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--color-dark);
+  line-height: 1.4;
+  max-width: 600px;
+  margin-top: 24px;
+}
+
+/* About Intro */
+.about-intro {
+  padding: 80px;
+  background: var(--color-section-bg);
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.about-intro__logo {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.about-intro__text {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-dark);
+  line-height: 1.6;
+}
+
+/* About Mission */
+.about-mission {
+  padding: 80px;
+  background: var(--color-bg);
+}
+
+.about-mission__desc {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-dark);
+  line-height: 1.5;
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+.about-mission__btn {
+  background: var(--color-primary);
+  color: var(--color-btn-text);
+  border: none;
+  border-radius: 14px;
+  padding: 18px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.about-mission__btn:hover {
+  background: #4ea99a;
+}
+
+/* About Principles */
+.about-principles {
+  padding: 80px;
+  background: var(--color-section-bg);
+}
+
+.about-principles__desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-dark);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* About Values */
+.about-values {
+  padding: 80px;
+  background: var(--color-bg);
+}
+
+.about-values__desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-dark);
+  line-height: 1.6;
+  margin-bottom: 60px;
+  max-width: 800px;
+}
+
+.about-values__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.value-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  background: var(--color-section-bg);
+  border-radius: 20px;
+}
+
+.value-block__title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin: 0;
+}
+
+.value-block__desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-dark);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.about-values__btn {
+  background: var(--color-primary);
+  color: var(--color-btn-text);
+  border: none;
+  border-radius: 14px;
+  padding: 18px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.about-values__btn:hover {
+  background: #4ea99a;
+}
+
+/* About Advantages */
+.about-advantages {
+  padding: 80px;
+  background: var(--color-section-bg);
+}
+
+.about-advantages__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.advantage-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  background: var(--color-bg);
+  border-radius: 20px;
+}
+
+.advantage-block__title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin: 0;
+}
+
+.advantage-block__desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-dark);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* About Map */
+.about-map {
+  padding: 80px;
+  background: var(--color-bg);
+}
+
+/* About Divisions */
+.about-divisions {
+  background: var(--color-section-bg);
+  padding: 60px 80px;
+}
+
+/* About Page Responsive */
+@media (max-width: 900px) {
+  .about-hero, .about-intro, .about-mission, .about-principles, 
+  .about-values, .about-advantages, .about-map, .about-divisions {
+    padding: 60px 20px;
+  }
+  
+  .about-intro {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .about-values__list,
+  .about-advantages__list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .value-block,
+  .advantage-block {
+    padding: 24px;
+  }
+} 
