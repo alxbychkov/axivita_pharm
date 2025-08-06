@@ -1,7 +1,7 @@
 <!-- Header -->
 <header class="header">
   <div class="header__logo">
-    <!-- SVG логотип {{company.name}} -->
+    <img src="./images/axivita_logo.svg" alt="logo">
     <span class="header__logo-text">{{company.name}}</span>
   </div>
   <nav class="header__nav">
@@ -10,7 +10,21 @@
     <a href="{{#if isHomepage}}pages/services.html{{else}}services.html{{/if}}" class="nav__link{{#if isServices}} nav__link--active{{/if}}">Services</a>
     <a href="{{#if isHomepage}}pages/quality.html{{else}}quality.html{{/if}}" class="nav__link{{#if isQuality}} nav__link--active{{/if}}">Quality</a>
     <a href="{{#if isHomepage}}pages/contact.html{{else}}contact.html{{/if}}" class="nav__link{{#if isContact}} nav__link--active{{/if}}">Contact us</a>
-    <span class="nav__lang">English</span>
+    <div class="nav__lang-select" tabindex="0">
+      <img class="nav__lang-flag" src="./images/icons/en.png" alt="English flag">
+      <span class="nav__lang-label">English</span>
+      <span class="nav__lang-arrow">&#9662;</span>
+      <div class="nav__lang-dropdown">
+        <div class="nav__lang-option" data-lang="en">
+          <img src="./images/icons/en.png" alt="English flag">
+          <span>English</span>
+        </div>
+        <div class="nav__lang-option" data-lang="de">
+          <img src="./images/icons/de.png" alt="Deutsch flag">
+          <span>Deutsch</span>
+        </div>
+      </div>
+    </div>
     <!-- SVG EN icon -->
   </nav>
   <button class="header__cta">
