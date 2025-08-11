@@ -35,18 +35,17 @@ document.addEventListener('DOMContentLoaded', function () {
   // Option click
   options.forEach(option => {
     option.addEventListener('click', function (e) {
+      e.stopPropagation();
       const lang = option.getAttribute('data-lang');
-      if (lang === 'en') {
-        flag.src = './images/icons/en.png';
-        flag.alt = 'English flag';
-        label.textContent = 'English';
-      } else if (lang === 'de') {
-        flag.src = './images/icons/de.png';
-        flag.alt = 'Deutsch flag';
-        label.textContent = 'Deutsch';
-      }
+      const textContent = option.querySelector('span').textContent;
+      const src = option.querySelector('img').src;
+
+      flag.src = src;
+      flag.alt = lang;
+      label.textContent = textContent;
       langSelect.classList.remove('open');
-      // Здесь можно добавить смену языка сайта, если потребуется
+      langSelect.blur();
+
     });
   });
 });

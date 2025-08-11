@@ -88,3 +88,29 @@ The project uses a modular CSS approach with:
 ## License
 
 This project is proprietary to Axivita Pharm GmbH. 
+
+# Axivita Pharm – i18n build
+
+- Переводы: `axivita_pharm/locales/en.json`, `axivita_pharm/locales/de.json`
+- Рантайм i18n: `scripts/i18n.js` — подставляет тексты по `data-i18n`.
+- Определение языка: по префиксу пути. `/de/` → немецкий, иначе — английский.
+
+## Сборка
+
+1. Установить зависимости:
+   ```bash
+   npm install
+   ```
+2. Собрать проект:
+   ```bash
+   npm run build
+   ```
+
+Артефакты:
+- `dist/` — английская версия (en)
+- `dist/de/` — немецкая версия (de)
+
+## Использование
+
+- Откройте `dist/pages/quality.html` — увидите английский текст.
+- Откройте `dist/de/pages/quality.html` — увидите немецкий текст. 

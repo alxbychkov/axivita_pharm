@@ -1,0 +1,217 @@
+{
+  "header": {
+    "slogan": "Your reliable partner in the supply of rare, prescription, and hard-to-find medicines",
+    "logo": "Axivita Pharm "
+  },
+  "menu": {
+    "homepage": "Homepage",
+    "about": "About us",
+    "services": "Services",
+    "quality": "Quality",
+    "english": "English",
+    "deutsch": "Deutsch",
+    "contact_us": "Contact us"
+  },
+  "footer": {
+    "phone": "+43 664 148 06 20",
+    "address": "Axivita Pharm GmbH\nLeopold Ungar Platz 2\n1190 Vienna, Austria",
+    "email": "office@axivitapharm.com"
+  },
+  "homepage": {
+    "contact_us_button": "Contact us",
+    "contact_us_text": "Contact us to find out how we can help you with searching for and delivering the necessary medications — quickly, transparently, and with a quality guarantee.",
+    "contact_us_title": "Contact us",
+    "quality_title": "Quality without compromise",
+    "quality_text": "At Axivita Pharm, we adhere to strict standards at every stage of our operations — from partner selection to the delivery of medicines. We work exclusively with trusted suppliers and logistics operators to ensure the safety and compliance of the entire supply chain.\n\nAll company processes comply with Good Distribution Practice (GDP) requirements, and our warehouse facilities are licensed according to current European regulations.\n\nYou can find up-to-date licenses and supporting documentation here.",
+    "gdp": "GDP",
+    "wda": "WDA",
+    "services_title": "Services",
+    "services_1": "Access to both locally registered and hard-to-find or temporarily unavailable (unlicensed) medicines",
+    "services_2": "We ensure reliable and fast delivery, storage in certified warehouses with temperature and humidity control, as well as full documentation transparency at every stage.",
+    "services_3": "An established network of suppliers, quality control, and full support throughout every stage of logistics. We provide flexible and secure solutions for the import and export of pharmaceutical products.",
+    "services_4": "Comprehensive solutions for clinical trial supply — from sourcing and procurement of comparators to organizing GDP-compliant delivery.",
+    "services_1_title": "Supply of Licensed and Unlicensed Medicines",
+    "services_2_title": "Logistics, warehousing and distribution",
+    "services_3_title": "Supply of medicines for clinical trials",
+    "services_4_title": "Global wholesale distribution",
+    "learn_more": "Learn more",
+    "divisions_title": "Our divisions",
+    "about_us_title": "About us",
+    "about_us_text": "We help patients, healthcare providers, and organizations find essential solutions when standard pathways are unavailable.\n\nBy working with certified manufacturers, licensed suppliers, and specialized distributors worldwide, we ensure the delivery of pharmaceuticals strictly in accordance with current regulations and international standards.\n\nOur team consists of experts with deep knowledge of the pharmaceutical market, always ready to offer a tailored approach. We handle each request with care and strive to provide not just delivery — but trust and stability for everyone involved.\n\nGet in touch with us to discuss how we can help you receive the right medicines at the right time.",
+    "about_us_slogan": "Reliable support where it matters most",
+    "countries": ["Austria", "United States", "Brazil", "Germany", "Ireland", "Italy", "France", "Switzerland"],
+    "division_austria_title": "Austria",
+    "division_austria_text": "The company provides access to high-quality medicines for pharmacists, medical institutions, and wholesale companies throughout Austria.\n\nThanks to a broad international network of trusted suppliers, we deliver hard-to-access and life-saving medications in full compliance with Austrian legislation and Named Patient Use regulations.\n\nContact us to discuss your needs — we will find the optimal solution for your specific request.",
+    "division_world_title": "Worldwide wholesaler",
+    "division_world_text": "Axivita Pharm supplies licensed and unlicensed medicines across the globe.\nWe work with certified partners and comply with GDP and local regulations to ensure fast, safe, and legal delivery — wherever you are.\n\nGlobal reach. Guaranteed quality. Personalized support.",
+    "our_services": "Our services"
+  },
+  "about": {
+    "intro": "Your trusted partner in the supply of rare, prescription, and hard-to-access medicines.\n\nWe are an international pharmaceutical company specializing in the search, procurement, and delivery of unlicensed and scarce medicinal products.\nWe help patients and medical organizations gain access to essential medications, even if they are unavailable from local suppliers.",
+    "slogan": "We believe that everyone deserves the best life, and we do everything to make that possible.",
+    "about_us": "About us",
+    "advantages_title": "Our Advantages",
+    "advantages": [
+      {
+        "title": "Global Reach",
+        "text": "We work with trusted suppliers and logistics partners worldwide, enabling us to quickly source and deliver essential medications, regardless of the country."
+      },
+      {
+        "title": "Personalized Approach",
+        "text": "We tailor optimal procurement and logistics solutions based on the urgency and specifics of each order."
+      },
+      {
+        "title": "Speed and Accuracy",
+        "text": "Minimal delivery times, tracking at every stage, and precise adherence to deadlines."
+      },
+      {
+        "title": "Compliance with Standards",
+        "text": "Legal clarity and transparency. Strict compliance with international and local pharmaceutical regulations."
+      },
+      {
+        "title": "Quality and Safety",
+        "text": "Verification of medication authenticity, transport, and storage conditions."
+      },
+      {
+        "title": "Flexibility and Support",
+        "text": "Full transaction support and problem-solving at every stage."
+      }
+    ],
+    "divisions_title": "Our divisions",
+    "division_austria_title": "Austria",
+    "division_austria_text": "The company provides access to high-quality medicines for pharmacists, medical institutions, and wholesale companies throughout Austria.\n\nThanks to a broad international network of trusted suppliers, we deliver hard-to-access and life-saving medications in full compliance with Austrian legislation and Named Patient Use regulations.\n\nContact us to discuss your needs — we will find the optimal solution for your specific request.",
+    "division_world_title": "Worldwide wholesaler",
+    "division_world_text": "Axivita Pharm supplies licensed and unlicensed medicines across the globe.\nWe work with certified partners and comply with GDP and local regulations to ensure fast, safe, and legal delivery — wherever you are.\n\nGlobal reach. Guaranteed quality. Personalized support.",
+    "mission_title": "Mission",
+    "mission_text": "Making the unavailable accessible by connecting patients with life-saving medicines in the shortest possible time — through technology, care, and efficient logistics.",
+    "core_principles_title": "Core principles",
+    "core_principles": [
+      "Stability, quality, and promptness.",
+      "By working directly with verified manufacturers, license holders, and certified distributors worldwide, we ensure reliable pharmaceutical logistics. The Axivita Pharm team possesses deep expertise in international regulation, allowing us to effectively handle even the most complex challenges in medicine supply."
+    ],
+    "values_title": "Values",
+    "values_intro": "Our values reflect the company’s philosophy, shape our approach to partnerships, interactions with patients and society, and define the direction of our development.",
+    "values": [
+      {
+        "title": "Accessibility",
+        "text": "The company strives to make medications for complex and rare diseases available to every patient, regardless of their location or financial situation."
+      },
+      {
+        "title": "Partnership",
+        "text": "Openness to cooperation with the medical community, charitable foundations, and other interested parties."
+      },
+      {
+        "title": "Caring for People",
+        "text": "The company does more than supply medicines — it works to improve people’s quality of life by offering support, consultations, and a personalized approach to each case."
+      },
+      {
+        "title": "Innovation",
+        "text": "The company utilizes modern technologies in logistics, analytics, and supply chain management to ensure the fast and efficient delivery of life-saving medicines."
+      },
+      {
+        "title": "Responsibility",
+        "text": "The company understands that lives depend on its work, which is why it adheres to the highest standards of quality, safety, and ethics in the supply of medical products."
+      },
+      {
+        "title": "Reliability",
+        "text": "The company maintains open and honest communication with all clients and partners, guaranteeing fair business practices and accurate information about deliveries."
+      }
+    ]
+  },
+  "service": {
+    "title": "Services",
+    "access_to_medicines": "Access to Medicines from Anywhere in the World",
+    "sections": [
+      {
+        "title": "Supply of Licensed and Unlicensed Medicines",
+        "text": "We understand that every clinical case is unique and that access to specific medicines can be critically important. That’s why we offer flexible, personalized logistics solutions with a strong focus on safety, legality, and delivery efficiency.\n\nWhat we offer:\n\nSupply of licensed medicines directly from manufacturers and authorized distributors.\n\nSourcing and delivery of unlicensed medicines upon physician request (Named Patient Supply), in full compliance with international and local regulations.\n\nFull-cycle support — from inquiry and alternative selection to export and import, documentation, and shipment tracking.\n\nCooperation only with reliable partners who comply with GDP standards and hold valid WDA licenses.\n\nIndividual case management: each request is handled with attention to the needs of the specific patient or healthcare institution."
+      },
+      {
+        "title": "Supply of Medicines for Clinical Trials",
+        "text": "We offer comprehensive solutions for the provision of clinical trial medicines — from sourcing and procurement of comparators to organizing GDP-compliant delivery.\n\nWe partner with CROs, pharmaceutical companies, and contract manufacturers to ensure full compliance with the requirements of each project.\n\nWhat we offer:\n\nSupply of comparators and reference products with full documentation confirming legality and quality of origin.\n\nAbility to work with both international and local manufacturers, depending on study objectives.\n\nPersonalized batch planning: selection of specific quantities, batches, dosage forms, and expiry dates.\n\nCertification, labeling, and packaging in accordance with study protocols and sponsor requirements.\n\nReliable logistics and distribution per GDP standards, including temperature control, shipment tracking, and documentation flow.\n\nProject support by an experienced team, considering all aspects of clinical protocols and regulatory compliance."
+      },
+      {
+        "title": "Global Wholesale Trade",
+        "text": "We provide access to international medicines for patients and organizations around the world. Thanks to our flexible approach, broad partner network, and expert support, we deliver high-quality pharmaceutical solutions in line with local regulations in each country.\n\nOur team:\n\nWorks efficiently with a global network of trusted manufacturers and suppliers;\n\nSelects optimal options in terms of delivery time, conditions, and pricing;\n\nCoordinates the supply process from product search to final delivery."
+      },
+      {
+        "title": "Logistics, Warehousing, and Distribution",
+        "text": "We manage the full logistics cycle of pharmaceutical products — from receiving and storage to distribution to pharmacies, clinics, and hospitals.\n\nWe ensure reliable delivery of both licensed and unlicensed medicines, fully compliant with regulatory requirements and GDP standards.\n\nOur team oversees every step — from documentation handling to maintaining storage conditions and temperature compliance.\n\nWe understand the importance of time and quality, especially when dealing with medicines for specific patients or limited batches.\n\nWe provide:\n\nStorage in certified facilities with temperature and humidity control systems;\n\nPreparation of all necessary documentation (including import licenses, quality and origin certificates, etc.);\n\nOrganization of logistics within Austria and internationally, with tracking and timeline control;\n\nA personalized approach: we work with both large suppliers and private pharmacy requests;\n\nTransparency and accountability at every stage — from the first inquiry to final delivery to the end user."
+      }
+    ],
+    "advantages_title": "Our Advantages",
+    "advantages": [
+      {
+        "title": "Global Reach",
+        "text": "We work with trusted suppliers and logistics partners worldwide, enabling us to quickly source and deliver essential medications, regardless of the country."
+      },
+      {
+        "title": "Personalized Approach",
+        "text": "We tailor optimal procurement and logistics solutions based on the urgency and specifics of each order."
+      },
+      {
+        "title": "Speed and Accuracy",
+        "text": "Minimal delivery times, tracking at every stage, and precise adherence to deadlines."
+      },
+      {
+        "title": "Compliance with Standards",
+        "text": "Legal clarity and transparency. Strict compliance with international and local pharmaceutical regulations."
+      },
+      {
+        "title": "Quality and Safety",
+        "text": "Verification of medication authenticity, transport, and storage conditions."
+      },
+      {
+        "title": "Flexibility and Support",
+        "text": "Full transaction support and problem-solving at every stage."
+      }
+    ],
+    "countries": ["Austria", "United States", "Brazil", "Germany", "Ireland", "Italy", "France", "Switzerland"]
+  },
+  "quality": {
+    "title": "Quality",
+    "slogan": "At Axivita Pharm, we believe that medicine supply is not just logistics — it's a responsibility for people’s health and lives.",
+    "slogan_text": "That’s why we strictly adhere to international quality standards at every stage: from sourcing and procurement to storage, transportation, and final delivery to the client.",
+    "certified_quality": "The Quality of Our Services is confirmed by certifications",
+    "certificates": ["GDP", "WDA"],
+    "sections": [
+      {
+        "title": "Compliance with International Standards",
+        "text": "We operate in full compliance with GDP (Good Distribution Practice) requirements and hold all necessary licenses for wholesale pharmaceutical distribution. This guarantees that every medicine goes through proper storage and delivery processes without compromising its effectiveness."
+      },
+      {
+        "title": "Transparency and Traceability",
+        "text": "All deliveries are accompanied by complete documentation and transparent control procedures. This ensures a high level of accountability and eliminates risks related to counterfeits, errors, or storage violations."
+      },
+      {
+        "title": "Working with Verified Partners",
+        "text": "We collaborate exclusively with certified manufacturers, distributors, and logistics providers. This allows us to maintain consistently high quality and minimize risks throughout the supply chain."
+      },
+      {
+        "title": "Patient Safety — Our Priority",
+        "text": "Every decision we make is focused on ensuring the highest level of safety and treatment effectiveness. We don’t just deliver medications — we create the conditions for quality treatment, even in the most complex and sensitive cases."
+      },
+      {
+        "title": "Flexibility and Risk Control",
+        "text": "AxiVita Pharm ensures active risk management at all levels of operation. We respond swiftly to regulatory changes, conduct internal audits, and continuously improve our standards to meet the industry's strictest requirements."
+      }
+    ],
+    "contact_us_button": "Contact us"
+  },
+  "contacts": {
+    "title": "Contact us",
+    "slogan": "Quickly, transparently, and with a quality guarantee",
+    "description": "Contact us to learn how we can help you find and deliver the medicines you need.",
+    "address": "Axivita Pharm GmbH\nLeopold Ungar Platz 2\n1190 Vienna, Austria",
+    "phone": "+43 664 148 06 20",
+    "email": "office@axivitapharm.com",
+    "form": {
+      "name": "Your name",
+      "email": "Your email",
+      "message": "Message",
+      "send": "Send"
+    },
+    "success_message": "Thank you for your request! We will contact you soon.",
+    "error_message": "An error occurred. Please try again later."
+  }
+}

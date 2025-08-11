@@ -1,34 +1,28 @@
 <!-- Header -->
 <header class="header">
   <div class="header__logo">
-    <img src="./images/axivita_logo.svg" alt="logo">
-    <span class="header__logo-text">{{company.name}}</span>
+    <img src="/images/axivita_logo.svg" alt="logo">
   </div>
   <nav class="header__nav">
-    <a href="{{#if isHomepage}}#{{else}}../index.html{{/if}}" class="nav__link{{#if isHomepage}} nav__link--active{{/if}}">Homepage</a>
-    <a href="{{#if isHomepage}}pages/about.html{{else}}about.html{{/if}}" class="nav__link{{#if isAbout}} nav__link--active{{/if}}">About us</a>
-    <a href="{{#if isHomepage}}pages/services.html{{else}}services.html{{/if}}" class="nav__link{{#if isServices}} nav__link--active{{/if}}">Services</a>
-    <a href="{{#if isHomepage}}pages/quality.html{{else}}quality.html{{/if}}" class="nav__link{{#if isQuality}} nav__link--active{{/if}}">Quality</a>
-    <a href="{{#if isHomepage}}pages/contact.html{{else}}contact.html{{/if}}" class="nav__link{{#if isContact}} nav__link--active{{/if}}">Contact us</a>
+    <a href="{{#if isHomepage}}#{{else}}../index.html{{/if}}" class="nav__link{{#if isHomepage}} nav__link--active{{/if}}">{{i18n.menu.homepage}}</a>
+    <a href="{{#if isHomepage}}pages/about.html{{else}}about.html{{/if}}" class="nav__link{{#if isAbout}} nav__link--active{{/if}}">{{i18n.menu.about}}</a>
+    <a href="{{#if isHomepage}}pages/services.html{{else}}services.html{{/if}}" class="nav__link{{#if isServices}} nav__link--active{{/if}}">{{i18n.menu.services}}</a>
+    <a href="{{#if isHomepage}}pages/quality.html{{else}}quality.html{{/if}}" class="nav__link{{#if isQuality}} nav__link--active{{/if}}">{{i18n.menu.quality}}</a>
+    <a href="{{#if isHomepage}}pages/contact.html{{else}}contact.html{{/if}}" class="nav__link{{#if isContact}} nav__link--active{{/if}}">{{i18n.menu.contact_us}}</a>
     <div class="nav__lang-select" tabindex="0">
-      <img class="nav__lang-flag" src="./images/icons/en.png" alt="English flag">
-      <span class="nav__lang-label">English</span>
+      <img class="nav__lang-flag" src="/images/icons/en.png" alt="EN">
+      <span class="nav__lang-label">{{i18n.menu.english}}</span>
       <span class="nav__lang-arrow">&#9662;</span>
       <div class="nav__lang-dropdown">
         <div class="nav__lang-option" data-lang="en">
-          <img src="./images/icons/en.png" alt="English flag">
-          <span>English</span>
+          <img src="/images/icons/en.png" alt="en">
+          <span>{{i18n.menu.english}}</span>
         </div>
         <div class="nav__lang-option" data-lang="de">
-          <img src="./images/icons/de.png" alt="Deutsch flag">
-          <span>Deutsch</span>
+          <img src="/images/icons/de.png" alt="de">
+          <span>{{i18n.menu.deutsch}}</span>
         </div>
       </div>
     </div>
-    <!-- SVG EN icon -->
   </nav>
-  <button class="header__cta">
-    <span>Contact us</span>
-    <!-- SVG стрелка -->
-  </button>
 </header> 
