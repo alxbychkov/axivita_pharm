@@ -1,7 +1,7 @@
 {
   "header": {
     "slogan": "Your reliable partner in the supply of rare, prescription, and hard-to-find medicines",
-    "logo": "Axivita Pharm "
+    "logo": "Axivita Pharm"
   },
   "menu": {
     "homepage": "Homepage",
@@ -22,7 +22,9 @@
     "contact_us_text": "Contact us to find out how we can help you with searching for and delivering the necessary medications — quickly, transparently, and with a quality guarantee.",
     "contact_us_title": "Contact us",
     "quality_title": "Quality without compromise",
-    "quality_text": "At Axivita Pharm, we adhere to strict standards at every stage of our operations — from partner selection to the delivery of medicines. We work exclusively with trusted suppliers and logistics operators to ensure the safety and compliance of the entire supply chain.\n\nAll company processes comply with Good Distribution Practice (GDP) requirements, and our warehouse facilities are licensed according to current European regulations.\n\nYou can find up-to-date licenses and supporting documentation here.",
+    "quality_text_1": "At Axivita Pharm, we adhere to strict standards at every stage of our operations — from partner selection to the delivery of medicines. We work exclusively with trusted suppliers and logistics operators to ensure the safety and compliance of the entire supply chain.",
+    "quality_text_2": "All company processes comply with Good Distribution Practice (GDP) requirements, and our warehouse facilities are licensed according to current European regulations.",
+    "quality_text_3": "You can find up-to-date licenses and supporting documentation here.",
     "gdp": "GDP",
     "wda": "WDA",
     "services_title": "Services",
@@ -37,13 +39,29 @@
     "learn_more": "Learn more",
     "divisions_title": "Our divisions",
     "about_us_title": "About us",
-    "about_us_text": "We help patients, healthcare providers, and organizations find essential solutions when standard pathways are unavailable.\n\nBy working with certified manufacturers, licensed suppliers, and specialized distributors worldwide, we ensure the delivery of pharmaceuticals strictly in accordance with current regulations and international standards.\n\nOur team consists of experts with deep knowledge of the pharmaceutical market, always ready to offer a tailored approach. We handle each request with care and strive to provide not just delivery — but trust and stability for everyone involved.\n\nGet in touch with us to discuss how we can help you receive the right medicines at the right time.",
+    "about_us_text_1": "We help patients, healthcare providers, and organizations find essential solutions when standard pathways are unavailable.",
+    "about_us_text_2": "By working with certified manufacturers, licensed suppliers, and specialized distributors worldwide, we ensure the delivery of pharmaceuticals strictly in accordance with current regulations and international standards.",
+    "about_us_text_3": "Our team consists of experts with deep knowledge of the pharmaceutical market, always ready to offer a tailored approach. We handle each request with care and strive to provide not just delivery — but trust and stability for everyone involved.",
+    "about_us_text_4": "Get in touch with us to discuss how we can help you receive the right medicines at the right time.",
     "about_us_slogan": "Reliable support where it matters most",
-    "countries": ["Austria", "United States", "Brazil", "Germany", "Ireland", "Italy", "France", "Switzerland"],
+    "countries": [
+      "Austria",
+      "United States",
+      "Brazil",
+      "Germany",
+      "Ireland",
+      "Italy",
+      "France",
+      "Switzerland"
+    ],
     "division_austria_title": "Austria",
-    "division_austria_text": "The company provides access to high-quality medicines for pharmacists, medical institutions, and wholesale companies throughout Austria.\n\nThanks to a broad international network of trusted suppliers, we deliver hard-to-access and life-saving medications in full compliance with Austrian legislation and Named Patient Use regulations.\n\nContact us to discuss your needs — we will find the optimal solution for your specific request.",
+    "division_austria_text_1": "The company provides access to high-quality medicines for pharmacists, medical institutions, and wholesale companies throughout Austria.",
+    "division_austria_text_2": "Thanks to a broad international network of trusted suppliers, we deliver hard-to-access and life-saving medications in full compliance with Austrian legislation and Named Patient Use regulations.",
+    "division_austria_text_3": "Contact us to discuss your needs — we will find the optimal solution for your specific request.",
     "division_world_title": "Worldwide wholesaler",
-    "division_world_text": "Axivita Pharm supplies licensed and unlicensed medicines across the globe.\nWe work with certified partners and comply with GDP and local regulations to ensure fast, safe, and legal delivery — wherever you are.\n\nGlobal reach. Guaranteed quality. Personalized support.",
+    "division_world_text_1": "Axivita Pharm supplies licensed and unlicensed medicines across the globe.",
+    "division_world_text_2": "We work with certified partners and comply with GDP and local regulations to ensure fast, safe, and legal delivery — wherever you are.",
+    "division_world_text_3": "Global reach. Guaranteed quality. Personalized support.",
     "our_services": "Our services"
   },
   "about": {
@@ -166,14 +184,26 @@
         "text": "Full transaction support and problem-solving at every stage."
       }
     ],
-    "countries": ["Austria", "United States", "Brazil", "Germany", "Ireland", "Italy", "France", "Switzerland"]
+    "countries": [
+      "Austria",
+      "United States",
+      "Brazil",
+      "Germany",
+      "Ireland",
+      "Italy",
+      "France",
+      "Switzerland"
+    ]
   },
   "quality": {
     "title": "Quality",
     "slogan": "At Axivita Pharm, we believe that medicine supply is not just logistics — it's a responsibility for people’s health and lives.",
     "slogan_text": "That’s why we strictly adhere to international quality standards at every stage: from sourcing and procurement to storage, transportation, and final delivery to the client.",
     "certified_quality": "The Quality of Our Services is confirmed by certifications",
-    "certificates": ["GDP", "WDA"],
+    "certificates": [
+      "GDP",
+      "WDA"
+    ],
     "sections": [
       {
         "title": "Compliance with International Standards",

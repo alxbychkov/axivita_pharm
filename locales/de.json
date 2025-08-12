@@ -1,7 +1,7 @@
 {
   "header": {
     "slogan": "Ihr verlässlicher Partner für die Versorgung mit seltenen, verschreibungspflichtigen und schwer beschaffbaren Arzneimitteln",
-    "logo": "Axivita Pharm "
+    "logo": "Axivita Pharm"
   },
   "menu": {
     "homepage": "Startseite",
@@ -22,7 +22,9 @@
     "contact_us_text": "Kontaktieren Sie uns, um zu erfahren, wie wir Sie bei der Suche nach und der Lieferung der benötigten Medikamente unterstützen können – schnell, transparent und mit Qualitätsgarantie.",
     "contact_us_title": "Kontakt",
     "quality_title": "Qualität ohne Kompromisse",
-    "quality_text": "Bei Axivita Pharm halten wir uns in jeder Phase unserer Tätigkeit an strenge Standards – von der Partnerauswahl bis zur Auslieferung der Arzneimittel. Wir arbeiten ausschließlich mit vertrauenswürdigen Lieferanten und Logistikpartnern zusammen, um die Sicherheit und Konformität der gesamten Lieferkette zu gewährleisten.\n\nSämtliche Unternehmensprozesse entsprechen den Anforderungen der Good Distribution Practice (GDP), unsere Lagereinrichtungen sind gemäß den geltenden europäischen Vorschriften lizenziert.\n\nAktuelle Lizenzen und Begleitdokumente finden Sie hier.",
+    "quality_text_1": "Bei Axivita Pharm halten wir uns in jeder Phase unserer Tätigkeit an strenge Standards – von der Partnerauswahl bis zur Auslieferung der Arzneimittel. Wir arbeiten ausschließlich mit vertrauenswürdigen Lieferanten und Logistikpartnern zusammen, um die Sicherheit und Konformität der gesamten Lieferkette zu gewährleisten.",
+    "quality_text_2": "Sämtliche Unternehmensprozesse entsprechen den Anforderungen der Good Distribution Practice (GDP), unsere Lagereinrichtungen sind gemäß den geltenden europäischen Vorschriften lizenziert.",
+    "quality_text_3": "Aktuelle Lizenzen und Begleitdokumente finden Sie hier.",
     "gdp": "GDP",
     "wda": "WDA",
     "services_title": "Leistungen",
@@ -37,13 +39,20 @@
     "learn_more": "Mehr erfahren",
     "divisions_title": "Unsere Geschäftsbereiche",
     "about_us_title": "Über uns",
-    "about_us_text": "Wir helfen Patientinnen und Patienten, Leistungserbringern im Gesundheitswesen und Organisationen, wenn Standardwege nicht verfügbar sind, die passenden Lösungen zu finden.\n\nDurch die Zusammenarbeit mit zertifizierten Herstellern, lizenzierten Lieferanten und spezialisierten Distributoren weltweit gewährleisten wir die Lieferung von Arzneimitteln in strikter Übereinstimmung mit den geltenden Vorschriften und internationalen Standards.\n\nUnser Team besteht aus Expertinnen und Experten mit tiefem Marktverständnis, die stets einen individuellen Ansatz bieten. Jede Anfrage wird sorgfältig bearbeitet – mit dem Ziel, nicht nur zu liefern, sondern Vertrauen und Stabilität zu schaffen.\n\nKontaktieren Sie uns, um zu besprechen, wie wir Ihnen helfen können, die richtigen Medikamente zur richtigen Zeit zu erhalten.",
+    "about_us_text_1": "Wir helfen Patientinnen und Patienten, Leistungserbringern im Gesundheitswesen und Organisationen, wenn Standardwege nicht verfügbar sind, die passenden Lösungen zu finden.",
+    "about_us_text_2": "Durch die Zusammenarbeit mit zertifizierten Herstellern, lizenzierten Lieferanten und spezialisierten Distributoren weltweit gewährleisten wir die Lieferung von Arzneimitteln in strikter Übereinstimmung mit den geltenden Vorschriften und internationalen Standards.",
+    "about_us_text_3": "Unser Team besteht aus Expertinnen und Experten mit tiefem Marktverständnis, die stets einen individuellen Ansatz bieten. Jede Anfrage wird sorgfältig bearbeitet – mit dem Ziel, nicht nur zu liefern, sondern Vertrauen und Stabilität zu schaffen.",
+    "about_us_text_4": "Kontaktieren Sie uns, um zu besprechen, wie wir Ihnen helfen können, die richtigen Medikamente zur richtigen Zeit zu erhalten.",
     "about_us_slogan": "Verlässliche Unterstützung dort, wo sie am wichtigsten ist",
     "countries": ["Österreich", "Vereinigte Staaten", "Brasilien", "Deutschland", "Irland", "Italien", "Frankreich", "Schweiz"],
     "division_austria_title": "Österreich",
-    "division_austria_text": "Das Unternehmen verschafft Apotheken, medizinischen Einrichtungen und Großhändlern in ganz Österreich Zugang zu hochwertigen Arzneimitteln.\n\nDank eines breiten internationalen Netzwerks vertrauenswürdiger Lieferanten liefern wir schwer zugängliche und lebenswichtige Medikamente in vollständiger Übereinstimmung mit der österreichischen Gesetzgebung und den Named‑Patient‑Regelungen.\n\nKontaktieren Sie uns, um Ihren Bedarf zu besprechen – wir finden die optimale Lösung für Ihre konkrete Anfrage.",
+    "division_austria_text_1": "Das Unternehmen verschafft Apotheken, medizinischen Einrichtungen und Großhändlern in ganz Österreich Zugang zu hochwertigen Arzneimitteln.",
+    "division_austria_text_2": "Dank eines breiten internationalen Netzwerks vertrauenswürdiger Lieferanten liefern wir schwer zugängliche und lebenswichtige Medikamente in vollständiger Übereinstimmung mit der österreichischen Gesetzgebung und den Named‑Patient‑Regelungen.",
+    "division_austria_text_3": "Kontaktieren Sie uns, um Ihren Bedarf zu besprechen – wir finden die optimale Lösung für Ihre konkrete Anfrage.",
     "division_world_title": "Weltweiter Großhändler",
-    "division_world_text": "Axivita Pharm liefert lizenzierte und unlizensierte Arzneimittel in die ganze Welt.\nWir arbeiten mit zertifizierten Partnern zusammen und erfüllen GDP sowie lokale Vorschriften, um eine schnelle, sichere und rechtskonforme Lieferung – überall – zu gewährleisten.\n\nWeltweite Reichweite. Garantierte Qualität. Persönliche Betreuung.",
+    "division_world_text_1": "Axivita Pharm liefert lizenzierte und unlizensierte Arzneimittel in die ganze Welt.",
+    "division_world_text_2": "Wir arbeiten mit zertifizierten Partnern zusammen und erfüllen GDP sowie lokale Vorschriften, um eine schnelle, sichere und rechtskonforme Lieferung – überall – zu gewährleisten.",
+    "division_world_text_3": "Weltweite Reichweite. Garantierte Qualität. Persönliche Betreuung.",
     "our_services": "Unsere Leistungen"
   },
   "about": {

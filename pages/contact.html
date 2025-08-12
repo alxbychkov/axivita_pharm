@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact us – Axivita Pharm</title>
-  <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/contact.css">
-</head>
+  {{> head}}
 <body>
   {{> header}}
 
   <!-- Hero Section -->
   <section class="hero contact-hero">
-    <div class="contact-hero__background">
-      <!-- Background image with gradient overlay -->
-    </div>
-    <h1 class="hero__slogan">Contact us</h1>
-    <div class="contact-hero__description">
-      <p>Свяжитесь с нами, чтобы узнать, как мы можем помочь вам<br>с поиском и доставкой необходимых препаратов.</p>
-    </div>
-    <div class="contact-hero__subtitle">
-      <h2>Быстро, прозрачно<br>и с гарантией качества</h2>
+    <div class="hero__bg"></div>
+    <div class="content">
+      <h1 class="hero__title">{{i18n.contacts.title}}</h1>
     </div>
   </section>
+
+  <div class="contact-hero__description">
+    <p>{{i18n.contacts.description}}</p>
+  </div>
+<div class="contact-hero__subtitle">
+  <h2>{{i18n.contacts.slogan}}</h2>
+</div>
 
   <!-- Contact Information Section -->
   <section class="contact-info">
@@ -36,22 +31,20 @@
             <div class="contact-info__icon">
               <!-- SVG иконка телефона -->
             </div>
-            <span class="contact-info__text">+43 664 148 06 20</span>
+            <span class="contact-info__text">{{i18n.contacts.phone}}</span>
           </div>
           <div class="contact-info__item">
             <div class="contact-info__icon">
               <!-- SVG иконка email -->
             </div>
-            <span class="contact-info__text">office@axivita-pharm.com</span>
+            <span class="contact-info__text">{{i18n.contacts.email}}</span>
           </div>
           <div class="contact-info__item">
             <div class="contact-info__icon">
               <!-- SVG иконка адреса -->
             </div>
             <div class="contact-info__address">
-              Axivita Pharm GmbH<br>
-              Leopold Ungar Platz 2<br>
-              1190 Vienna, Austria
+              {{i18n.contacts.address}}
             </div>
           </div>
         </div>
@@ -65,6 +58,5 @@
   </section>
 
   {{> footer}}
-  <script src="../scripts/lang-select.js"></script>
 </body>
 </html> 

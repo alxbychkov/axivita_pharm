@@ -3,13 +3,15 @@
 /* About Section */
 .about {
   padding: 80px;
-  background: var(--color-section-bg);
+  background: var(--color-bg);
+  box-shadow: 0px 4px 55px rgba(99, 190, 173, 0.8);
 }
 
 .about__subtitle {
   font-size: 24px;
   font-weight: 600;
-  color: var(--color-primary);
+  color: var(--color-dark);
+  margin-top: 95px;
   margin-bottom: 24px;
 }
 
@@ -17,83 +19,104 @@
   font-size: 18px;
   font-weight: 400;
   color: var(--color-dark);
-  line-height: 1.6;
-  margin-bottom: 40px;
-}
-
-.about__btn {
-  background: var(--color-primary);
-  color: var(--color-btn-text);
-  border: none;
-  border-radius: 14px;
-  padding: 18px 40px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.about__btn:hover {
-  background: #4ea99a;
+  line-height: 160%;
+  margin-bottom: 50px;
 }
 
 /* Services Section */
 .services {
   padding: 80px;
   background: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .services__list {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  margin-top: 80px;
   margin-bottom: 40px;
+}
+
+.service:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+  padding-left: 0;
+}
+
+.service:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+  padding-left: 0;
+}
+
+.service__logo {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service__logo img {
+  width: 100%;
+  max-width: 420px;
+  padding-right: 0;
+}
+
+.service:nth-child(4) {
+  grid-column: 3;
+  grid-row: 1;
+  padding-right: 0;
+}
+
+.service:nth-child(5) {
+  grid-column: 3;
+  grid-row: 2;
 }
 
 .service {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 32px;
-  background: var(--color-section-bg);
-  border-radius: 20px;
+  gap: 18px;
+  padding: 22px;
 }
 
 .service__title {
-  font-size: 24px;
+  font-size: 22px;
+  line-height: 130%;
   font-weight: 600;
   color: var(--color-dark);
   margin: 0;
 }
 
 .service__desc {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   color: var(--color-dark);
-  line-height: 1.6;
+  line-height: 147%;
   margin: 0;
-}
-
-.services__btn {
-  background: var(--color-primary);
-  color: var(--color-btn-text);
-  border: none;
-  border-radius: 14px;
-  padding: 18px 40px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.services__btn:hover {
-  background: #4ea99a;
+  letter-spacing: -0.2px;
 }
 
 /* Quality Section */
+.quality__bg {
+  position: relative;
+  padding: 400px 80px 0;
+  background: url(../images/quality_section.webp) no-repeat center center;
+}
+
 .quality {
   padding: 80px;
-  background: var(--color-section-bg);
+  background: var(--color-bg);
+}
+
+.quality__bg .content,
+.quality .content {
+  max-width: 760px;
+  padding: 0;
 }
 
 .quality__desc {
@@ -101,6 +124,7 @@
   font-weight: 400;
   color: var(--color-dark);
   line-height: 1.6;
+  margin-top: 60px;
   margin-bottom: 40px;
 }
 
@@ -110,40 +134,54 @@
 }
 
 .quality__badge {
-  background: var(--color-primary);
-  color: var(--color-btn-text);
-  padding: 12px 24px;
-  border-radius: 10px;
-  font-size: 16px;
   font-weight: 600;
+  font-size: 64px;
+  line-height: 120%;
+  color: var(--color-btn-text);
+  mix-blend-mode: normal;
+}
+
+.quality__badge:not(:last-child):after {
+  content: '•';
+  margin-left: 15px;
+  color: var(--color-btn-text);
+  font-size: 64px;
 }
 
 /* Divisions Section */
 .divisions {
   padding: 80px;
-  background: var(--color-bg);
+  background-image: url(../images/divisions_bg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .divisions__list {
+  max-width: 1200px;
   display: flex;
-  gap: 40px;
-  margin-bottom: 40px;
+  gap: 90px;
+  margin: 50px auto 70px;
 }
 
 .division {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  padding: 32px;
-  background: var(--color-section-bg);
+  padding: 50px 76px 120px;
+  background: var(--color-bg);
   border-radius: 20px;
+  box-shadow: 0px 4px 40px var(--color-primary);
 }
 
 .division__title {
-  font-size: 28px;
   font-weight: 600;
-  color: var(--color-dark);
+  font-size: 30px;
+  line-height: 130%;
+  color: var(--color-primary);
   margin: 0;
 }
 
@@ -152,59 +190,73 @@
   font-weight: 400;
   color: var(--color-dark);
   line-height: 1.6;
-  margin: 0;
+  margin: 45px 0 0;
 }
 
 .division__btn {
-  background: var(--color-primary);
-  color: var(--color-btn-text);
-  border: none;
-  border-radius: 14px;
-  padding: 16px 32px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  align-self: flex-start;
-  transition: background 0.2s;
-}
-
-.division__btn:hover {
-  background: #4ea99a;
+  margin: 0 auto;
 }
 
 /* Countries Section */
 .countries {
   padding: 80px;
-  background: var(--color-section-bg);
+  background: var(--color-bg);
 }
 
 .countries__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 16px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .country {
-  background: var(--color-primary);
-  color: var(--color-btn-text);
-  padding: 12px 24px;
-  border-radius: 10px;
-  font-size: 16px;
+  color: var(--color-primary);
   font-weight: 600;
+  font-size: 20px;
+  line-height: 108%;
+}
+
+.country:not(:last-child):after {
+  content: '•';
+  margin-left: 15px;
+  color: var(--color-accent);
+  font-size: 20px;
+}
+
+.countries__map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 40px auto 0;
+}
+
+.countries__map img {
+  width: 100%;
 }
 
 /* Homepage Responsive */
 @media (max-width: 900px) {
-  .about, .services, .quality, .divisions, .countries {
+  .about,
+  .services,
+  .quality,
+  .divisions,
+  .countries {
     padding: 60px 20px;
   }
-  
+
   .divisions__list {
     flex-direction: column;
     gap: 20px;
   }
-  
+
   .countries__list {
     justify-content: center;
   }
-} 
+}

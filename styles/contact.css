@@ -1,16 +1,5 @@
 /* Contact Page Specific Styles */
 
-/* Contact Hero */
-.contact-hero {
-  padding: 120px 80px 80px 80px;
-  background: var(--color-bg);
-  position: relative;
-  min-height: 823px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .contact-hero__background {
   position: absolute;
   top: 0;

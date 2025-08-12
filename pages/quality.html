@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quality – Axivita Pharm</title>
-  <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/quality.css">
-</head>
+  {{> head}}
 <body>
   {{> header}}
 
   <!-- Hero Section -->
   <section class="hero quality-hero">
-    <h1 class="hero__slogan">Quality</h1>
-    <!-- <div class="quality-hero__img">SVG/IMG background with gradient</div> -->
+    <div class="hero__bg"></div>
+    <div class="content">
+      <h1 class="hero__title">{{i18n.quality.title}}</h1>
+    </div>
   </section>
 
   <!-- Quality Intro Section -->
   <section class="quality-intro">
     <h2 class="quality-intro__title">
-      В AxiVita Pharm мы уверены: поставка лекарств — это не просто логистика, а прежде всего ответственность за здоровье и жизнь людей.
+      {{i18n.quality.slogan}}
     </h2>
     <p class="quality-intro__desc">
-      Поэтому мы строго соблюдаем международные стандарты качества на каждом этапе: от поиска и закупки препаратов до их хранения, транспортировки и передачи клиенту.
+      {{i18n.quality.slogan_text}}
     </p>
   </section>
 
@@ -34,9 +30,9 @@
         <div class="quality-principle__icon">
           <!-- SVG иконка стандартов -->
         </div>
-        <h3 class="quality-principle__title">Соответствие международным стандартам</h3>
+        <h3 class="quality-principle__title">{{i18n.quality.sections.0.title}}</h3>
         <p class="quality-principle__desc">
-          Мы работаем в полном соответствии с требованиями GDP (Good Distribution Practice) и обладаем всеми необходимыми лицензиями на оптовую дистрибуцию фармацевтической продукции. Это гарантирует, что каждое лекарство проходит надлежащие этапы хранения и доставки, не теряя своей эффективности.
+          {{i18n.quality.sections.0.text}}
         </p>
       </div>
 
@@ -45,9 +41,9 @@
         <div class="quality-principle__icon">
           <!-- SVG иконка прозрачности -->
         </div>
-        <h3 class="quality-principle__title">Прозрачность и прослеживаемость</h3>
+        <h3 class="quality-principle__title">{{i18n.quality.sections.1.title}}</h3>
         <p class="quality-principle__desc">
-          Все поставки сопровождаются полной документацией и прозрачными процедурами контроля. Это позволяет обеспечить высокую степень подотчётности и исключить риски, связанные с подделками, ошибками или нарушениями условий хранения.
+          {{i18n.quality.sections.1.text}}
         </p>
       </div>
 
@@ -57,10 +53,10 @@
           <!-- SVG иконка партнеров -->
         </div>
         <h3 class="quality-principle__title">
-          Работа с проверенными партнёрами
+          {{i18n.quality.sections.2.title}}
         </h3>
         <p class="quality-principle__desc">
-          Мы сотрудничаем только с сертифицированными производителями, дистрибьюторами и логистическими операторами. Это позволяет нам поддерживать стабильно высокий уровень качества и минимизировать риски по всей цепочке поставок.
+          {{i18n.quality.sections.2.text}}
         </p>
       </div>
 
@@ -70,10 +66,10 @@
           <!-- SVG иконка безопасности -->
         </div>
         <h3 class="quality-principle__title">
-          Безопасность пациентов — наш приоритет
+          {{i18n.quality.sections.3.title}}
         </h3>
         <p class="quality-principle__desc">
-          Каждое решение, которое мы принимаем, направлено на обеспечение максимальной безопасности и эффективности терапии. Мы не просто поставляем лекарства, мы создаём условия для качественного лечения, даже в самых сложных и чувствительных случаях.
+          {{i18n.quality.sections.3.text}}
         </p>
       </div>
 
@@ -82,9 +78,9 @@
         <div class="quality-principle__icon">
           <!-- SVG иконка управления рисками -->
         </div>
-        <h3 class="quality-principle__title">Гибкость и контроль рисков</h3>
+        <h3 class="quality-principle__title">{{i18n.quality.sections.4.title}}</h3>
         <p class="quality-principle__desc">
-          AxiVita Pharm обеспечивает активное управление рисками на всех уровнях процессов. Мы оперативно реагируем на изменения нормативной среды, проводим внутренние аудиты, и постоянно совершенствуем свои стандарты, чтобы соответствовать самым строгим требованиям отрасли.
+          {{i18n.quality.sections.4.text}}
         </p>
       </div>
     </div>
@@ -93,26 +89,22 @@
   <!-- Certificates Section -->
   <section class="quality-certificates">
     <h2 class="quality-certificates__title">
-      Качество наших услуг подтверждено сертификатами
+      {{i18n.quality.certified_quality}}
     </h2>
     <div class="quality-certificates__list">
+      {{#each i18n.quality.certificates}}
       <div class="certificate">
         <div class="certificate__icon">
-          <!-- SVG иконка GDP -->
+          <!-- SVG иконка {{this}} -->
         </div>
-        <span class="certificate__text">GDP</span>
+        <span class="certificate__text">{{this}}</span>
       </div>
-      <div class="certificate">
-        <div class="certificate__icon">
-          <!-- SVG иконка WDA -->
-        </div>
-        <span class="certificate__text">WDA</span>
-      </div>
+      {{/each}}
     </div>
-    <button class="quality-certificates__btn">Связаться с нами</button>
+    <button class="btn">{{i18n.quality.contact_us_button}}</button>
   </section>
 
   {{> footer}}
-  <script src="../scripts/lang-select.js"></script>
+
 </body>
 </html> 

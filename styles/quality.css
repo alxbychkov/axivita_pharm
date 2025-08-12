@@ -1,11 +1,5 @@
 /* Quality Page Specific Styles */
 
-/* Quality Hero */
-.quality-hero {
-  padding: 120px 80px 80px 80px;
-  background: var(--color-bg);
-}
-
 /* Quality Intro */
 .quality-intro {
   padding: 60px 80px;
@@ -123,21 +117,7 @@
   color: var(--color-dark);
 }
 
-.quality-certificates__btn {
-  background: var(--color-primary);
-  color: var(--color-btn-text);
-  border: none;
-  border-radius: 14px;
-  padding: 18px 40px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s;
-}
 
-.quality-certificates__btn:hover {
-  background: #4ea99a;
-}
 
 /* Quality Page Responsive */
 @media (max-width: 900px) {

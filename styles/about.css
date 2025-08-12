@@ -1,11 +1,5 @@
 /* About Page Specific Styles */
 
-/* About Hero */
-.about-hero {
-  padding: 120px 80px 80px 80px;
-  background: var(--color-bg);
-}
-
 .about-hero__subtitle {
   font-size: 24px;
   font-weight: 400;
@@ -53,21 +47,7 @@
   max-width: 800px;
 }
 
-.about-mission__btn {
-  background: var(--color-primary);
-  color: var(--color-btn-text);
-  border: none;
-  border-radius: 14px;
-  padding: 18px 40px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s;
-}
 
-.about-mission__btn:hover {
-  background: #4ea99a;
-}
 
 /* About Principles */
 .about-principles {
@@ -129,21 +109,7 @@
   margin: 0;
 }
 
-.about-values__btn {
-  background: var(--color-primary);
-  color: var(--color-btn-text);
-  border: none;
-  border-radius: 14px;
-  padding: 18px 40px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s;
-}
 
-.about-values__btn:hover {
-  background: #4ea99a;
-}
 
 /* About Advantages */
 .about-advantages {

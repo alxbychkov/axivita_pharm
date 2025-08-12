@@ -1,11 +1,5 @@
 /* Services Page Specific Styles */
 
-/* Services Hero */
-.services-hero {
-  padding: 120px 80px 80px 80px;
-  background: var(--color-bg);
-}
-
 /* Services Main */
 .services-main {
   padding: 80px;
@@ -62,20 +56,7 @@
 }
 
 .service-item__btn {
-  background: var(--color-primary);
-  color: var(--color-btn-text);
-  border: none;
-  border-radius: 14px;
-  padding: 18px 40px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
   align-self: flex-start;
-  transition: background 0.2s;
-}
-
-.service-item__btn:hover {
-  background: #4ea99a;
 }
 
 /* Services Map */

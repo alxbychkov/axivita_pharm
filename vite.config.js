@@ -73,6 +73,7 @@ export default defineConfig(({ mode }) => {
       }),
       // Handlebars templating with i18n injection
       handlebars({
+        viteNext: true,
         partialDirectory: resolve(__dirname, 'partials'),
         context: (pagePath) => {
           return {

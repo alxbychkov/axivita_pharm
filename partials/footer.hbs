@@ -1,14 +1,17 @@
 <!-- Footer / Contacts -->
-<footer class="footer" id="contact">
-  <div class="footer__logo">
-    <!-- SVG логотип -->
-  </div>
-  <div class="footer__contacts">
-    <div class="footer__address">
-      {{company.name}} GmbH<br>
-      {{company.address}}
+<footer class='footer' id='contact'>
+  <div class='content'>
+    <div class='footer__logo'>
+      <img src='images/footer_logo.svg' alt='Axivita Pharm' />
     </div>
-    <div class="footer__phone">{{company.phone}}</div>
-    <div class="footer__email">{{company.email}}</div>
+    <div class='footer__contacts'>
+      <div class='footer__phone'>
+        {{i18n.footer.phone}}</div>
+      <div class='footer__email'>{{i18n.footer.email}}</div>
+      <div class='footer__address'>
+        {{i18n.footer.address}}
+      </div>
+    </div>
   </div>
-</footer> 
+</footer>
+<script src='scripts/index.js'></script>

@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Option click
-  options.forEach(option => {
+  options.forEach((option) => {
     option.addEventListener('click', function (e) {
       e.stopPropagation();
       const lang = option.getAttribute('data-lang');
@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
       label.textContent = textContent;
       langSelect.classList.remove('open');
       langSelect.blur();
-
     });
   });
 });
