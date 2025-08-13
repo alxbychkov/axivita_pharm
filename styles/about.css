@@ -12,55 +12,65 @@
 /* About Intro */
 .about-intro {
   padding: 80px;
-  background: var(--color-section-bg);
-  display: flex;
-  gap: 60px;
-  align-items: flex-start;
-}
-
-.about-intro__logo {
-  font-size: 32px;
-  font-weight: 600;
-  color: var(--color-primary);
-  flex-shrink: 0;
-}
-
-.about-intro__text {
-  font-size: 18px;
-  font-weight: 400;
-  color: var(--color-dark);
-  line-height: 1.6;
-}
-
-/* About Mission */
-.about-mission {
-  padding: 80px;
   background: var(--color-bg);
 }
 
-.about-mission__desc {
-  font-size: 20px;
-  font-weight: 400;
-  color: var(--color-dark);
-  line-height: 1.5;
-  margin-bottom: 40px;
-  max-width: 800px;
+.about-intro__item:not(:last-child) {
+  margin-bottom: 86px;
+  max-width: 80%;
 }
 
+.about-intro__item:last-child {
+  margin-left: auto;
+  max-width: 60%;
+}
 
+.about-intro__pretitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 120%;
+  letter-spacing: -0.2px;
+  color: var(--color-primary);
+  margin-bottom: 135px;
+}
+
+.about-intro__logo {
+  margin-bottom: 10px;
+}
+
+.about-intro__text {
+  font-weight: 400;
+  color: var(--color-dark);
+  font-size: 18px;
+  line-height: 167%;
+}
+
+.about-intro .btn {
+  margin-top: 50px;
+}
+
+.about-intro__img {
+  width: 100%;
+}
 
 /* About Principles */
 .about-principles {
   padding: 80px;
-  background: var(--color-section-bg);
+  background: var(--color-bg);
 }
 
 .about-principles__desc {
-  font-size: 18px;
-  font-weight: 400;
   color: var(--color-dark);
-  line-height: 1.6;
-  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  margin-bottom: 10px;
+}
+
+.about-principles__desc:first-of-type {
+  text-transform: uppercase;
+  margin-top: 18px;
 }
 
 /* About Values */
@@ -73,78 +83,143 @@
   font-size: 18px;
   font-weight: 400;
   color: var(--color-dark);
-  line-height: 1.6;
-  margin-bottom: 60px;
+  line-height: 167%;
+  margin-bottom: 80px;
   max-width: 800px;
+  text-align: center;
+  margin-top: 18px;
 }
 
 .about-values__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 0;
+  column-gap: 10px;
   margin-bottom: 60px;
+  align-items: start;
+}
+
+.value-block:nth-child(1) { grid-column: 1; grid-row: 1; }
+.value-block:nth-child(2) { grid-column: 1; grid-row: 2; }
+.value-block:nth-child(3) { grid-column: 1; grid-row: 3; }
+
+.value-block__image {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+
+.value-block__image img {
+  width: 100%;
+  height: auto;
+}
+
+.value-block:nth-child(5) { grid-column: 3; grid-row: 1; }
+.value-block:nth-child(6) { grid-column: 3; grid-row: 2; }
+.value-block:nth-child(7) { grid-column: 3; grid-row: 3; }
+
+.about-values .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .value-block {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 32px;
-  background: var(--color-section-bg);
-  border-radius: 20px;
+  background: var(--color-bg);
+  margin-bottom: 25px;
 }
 
 .value-block__title {
-  font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 130%;
   color: var(--color-dark);
   margin: 0;
 }
 
 .value-block__desc {
-  font-size: 16px;
   font-weight: 400;
-  color: var(--color-dark);
-  line-height: 1.6;
+  font-size: 15px;
+  color: var(--color-dark-secondary);
+  line-height: 147%;
   margin: 0;
 }
-
-
 
 /* About Advantages */
 .about-advantages {
   padding: 80px;
-  background: var(--color-section-bg);
+  background: var(--color-bg);
 }
 
 .about-advantages__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 40px;
+  border: 4px solid #63bead;
+  border-radius: 34px;
+  overflow: hidden;
+  padding: 60px 20px 20px;
+}
+
+.about-advantages__list .content {
+  position: relative;
 }
 
 .advantage-block {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
   padding: 32px;
   background: var(--color-bg);
   border-radius: 20px;
 }
 
+.advantage-block__head {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
 .advantage-block__title {
-  font-size: 24px;
-  font-weight: 600;
   color: var(--color-dark);
   margin: 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: -0.2px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: calc(28px * 1.2 * 2);
+}
+
+.about-advantages__title {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-bg);
+  padding: 10px 20px;
+  z-index: 1;
 }
 
 .advantage-block__desc {
-  font-size: 16px;
-  font-weight: 400;
   color: var(--color-dark);
-  line-height: 1.6;
   margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 147%;
 }
 
 /* About Map */
@@ -161,24 +236,30 @@
 
 /* About Page Responsive */
 @media (max-width: 900px) {
-  .about-hero, .about-intro, .about-mission, .about-principles, 
-  .about-values, .about-advantages, .about-map, .about-divisions {
+  .about-hero,
+  .about-intro,
+  .about-mission,
+  .about-principles,
+  .about-values,
+  .about-advantages,
+  .about-map,
+  .about-divisions {
     padding: 60px 20px;
   }
-  
+
   .about-intro {
     flex-direction: column;
     gap: 30px;
   }
-  
+
   .about-values__list,
   .about-advantages__list {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .value-block,
   .advantage-block {
     padding: 24px;
   }
-} 
+}

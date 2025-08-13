@@ -16,11 +16,11 @@
   </section>
 
   <!-- About Us Section -->
-  <section class="about">
+  <section class="about section-base">
     <div class="content">
       <h2 class="section-title">{{i18n.homepage.about_us_title}}</h2>
-      <p class="about__subtitle">{{i18n.homepage.about_us_slogan}}</p>
-      <p class="about__desc">
+      <p class="about__subtitle text-title">{{i18n.homepage.about_us_slogan}}</p>
+      <p class="about__desc text-base">
         {{i18n.homepage.about_us_text_1}}
         <br>
         <br>
@@ -37,73 +37,25 @@
   </section>
 
   <!-- Divisions Section -->
-  <section class="divisions">
-    <div class="content">
-      <h2 class="section-title">{{i18n.homepage.divisions_title}}</h2>
-    </div>
-    <div class="divisions__list">
-      <div class="division">
-        <div class="division__logo">
-          <img src="images/axivita_pharm_title.svg" alt="Axivita Pharm">
-        </div>
-        <h3 class="division__title">{{i18n.homepage.division_austria_title}}</h3>
-        <p class="division__desc">
-          {{i18n.homepage.division_austria_text_1}}
-          <br>
-          <br>
-          {{i18n.homepage.division_austria_text_2}}
-          <br>
-          <br>
-          <b>{{i18n.homepage.division_austria_text_3}}</b>
-        </p>
-      </div>
-      <div class="division">
-        <div class="division__logo">
-          <img src="images/axivita_pharm_title.svg" alt="Axivita Pharm">
-        </div>
-        <h3 class="division__title">{{i18n.homepage.division_world_title}}</h3>
-        <p class="division__desc">
-          {{i18n.homepage.division_world_text_1}}
-          <br>
-          <br>
-          {{i18n.homepage.division_world_text_2}}
-          <br>
-          <br>
-          <b>{{i18n.homepage.division_world_text_3}}</b>
-        </p>
-      </div>
-    </div>
-    <button class="btn division__btn">{{i18n.menu.contact_us}}</button>
-  </section>
+  {{> divisions}}
 
   <!-- Countries Section -->
-  <section class="countries">
-    <div class="countries__list">
-      {{#each i18n.homepage.countries}}
-      <span class="country">{{this}}</span>
-      {{/each}}
-    </div>
-    <div class="countries__map">
-      <picture>
-        <img src="images/map.webp" alt="Map">
-      </picture>
-    </div>
-  </section>
+  {{> countries}}
 
   <!-- Services Section -->
-  <section class="services">
+  <section class="services section-base section-flex-center">
     <div class="content">
       <h2 class="section-title">{{i18n.homepage.services_title}}</h2>
       <div class="services__list">
         <div class="service">
-          <h3 class="service__title">{{i18n.homepage.services_4_title}}</h3>
-          <p class="service__desc">
+          <h3 class="service__title text-title">{{i18n.homepage.services_4_title}}</h3>
+          <p class="service__desc text-base">
             {{i18n.homepage.services_3}}
           </p>
         </div>
         <div class="service">
-          <h3 class="service__title">{{i18n.homepage.services_1_title}}</h3>
-          <p class="service__desc">
+          <h3 class="service__title text-title">{{i18n.homepage.services_1_title}}</h3>
+          <p class="service__desc text-base">
             {{i18n.homepage.services_1}}
           </p>
         </div>
@@ -114,20 +66,20 @@
           </picture>
         </div>
         <div class="service">
-          <h3 class="service__title">{{i18n.homepage.services_3_title}}</h3>
-          <p class="service__desc">
+          <h3 class="service__title text-title">{{i18n.homepage.services_3_title}}</h3>
+          <p class="service__desc text-base">
             {{i18n.homepage.services_4}}
           </p>
         </div>
         <div class="service">
-          <h3 class="service__title">{{i18n.homepage.services_2_title}}</h3>
-          <p class="service__desc">
+          <h3 class="service__title text-title">{{i18n.homepage.services_2_title}}</h3>
+          <p class="service__desc text-base">
             {{i18n.homepage.services_2}}
           </p>
         </div>
       </div>
     </div>
-    <button class="btn division__btn btn--empty">{{i18n.homepage.learn_more}}</button>
+    <button class="btn division__btn btn--empty btn-center">{{i18n.homepage.learn_more}}</button>
   </section>
 
   <!-- Quality Section -->
@@ -139,10 +91,10 @@
       </div>
     </div>
   </section>
-  <section class="quality">
+  <section class="quality section-base">
     <div class="content">
       <h2 class="section-title">{{i18n.homepage.quality_title}}</h2>
-      <p class="quality__desc">
+      <p class="quality__desc text-base">
         {{i18n.homepage.quality_text_1}}
         <br>
         <br>
@@ -154,6 +106,7 @@
     </div>
   </section>
 
+  {{> contact}}
 
   {{> footer}}
 </body>

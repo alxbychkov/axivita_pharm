@@ -65,7 +65,8 @@
     "our_services": "Our services"
   },
   "about": {
-    "intro": "Your trusted partner in the supply of rare, prescription, and hard-to-access medicines.\n\nWe are an international pharmaceutical company specializing in the search, procurement, and delivery of unlicensed and scarce medicinal products.\nWe help patients and medical organizations gain access to essential medications, even if they are unavailable from local suppliers.",
+    "intro_1": "Your trusted partner in the supply of rare, prescription, and hard-to-access medicines.",
+    "intro_2": "We are an international pharmaceutical company specializing in the search, procurement, and delivery of unlicensed and scarce medicinal products. We help patients and medical organizations gain access to essential medications, even if they are unavailable from local suppliers.",
     "slogan": "We believe that everyone deserves the best life, and we do everything to make that possible.",
     "about_us": "About us",
     "advantages_title": "Our Advantages",
@@ -75,8 +76,8 @@
         "text": "We work with trusted suppliers and logistics partners worldwide, enabling us to quickly source and deliver essential medications, regardless of the country."
       },
       {
-        "title": "Personalized Approach",
-        "text": "We tailor optimal procurement and logistics solutions based on the urgency and specifics of each order."
+        "title": "Quality and Safety",
+        "text": "Verification of medication authenticity, transport, and storage conditions."
       },
       {
         "title": "Speed and Accuracy",
@@ -87,8 +88,8 @@
         "text": "Legal clarity and transparency. Strict compliance with international and local pharmaceutical regulations."
       },
       {
-        "title": "Quality and Safety",
-        "text": "Verification of medication authenticity, transport, and storage conditions."
+        "title": "Personalized Approach",
+        "text": "We tailor optimal procurement and logistics solutions based on the urgency and specifics of each order."
       },
       {
         "title": "Flexibility and Support",
@@ -103,10 +104,8 @@
     "mission_title": "Mission",
     "mission_text": "Making the unavailable accessible by connecting patients with life-saving medicines in the shortest possible time — through technology, care, and efficient logistics.",
     "core_principles_title": "Core principles",
-    "core_principles": [
-      "Stability, quality, and promptness.",
-      "By working directly with verified manufacturers, license holders, and certified distributors worldwide, we ensure reliable pharmaceutical logistics. The Axivita Pharm team possesses deep expertise in international regulation, allowing us to effectively handle even the most complex challenges in medicine supply."
-    ],
+    "core_principles_1": "Stability, quality, and promptness.",
+    "core_principles_2": "By working directly with verified manufacturers, license holders, and certified distributors worldwide, we ensure reliable pharmaceutical logistics. The Axivita Pharm team possesses deep expertise in international regulation, allowing us to effectively handle even the most complex challenges in medicine supply.",
     "values_title": "Values",
     "values_intro": "Our values reflect the company’s philosophy, shape our approach to partnerships, interactions with patients and society, and define the direction of our development.",
     "values": [
@@ -142,19 +141,52 @@
     "sections": [
       {
         "title": "Supply of Licensed and Unlicensed Medicines",
-        "text": "We understand that every clinical case is unique and that access to specific medicines can be critically important. That’s why we offer flexible, personalized logistics solutions with a strong focus on safety, legality, and delivery efficiency.\n\nWhat we offer:\n\nSupply of licensed medicines directly from manufacturers and authorized distributors.\n\nSourcing and delivery of unlicensed medicines upon physician request (Named Patient Supply), in full compliance with international and local regulations.\n\nFull-cycle support — from inquiry and alternative selection to export and import, documentation, and shipment tracking.\n\nCooperation only with reliable partners who comply with GDP standards and hold valid WDA licenses.\n\nIndividual case management: each request is handled with attention to the needs of the specific patient or healthcare institution."
+        "text": "We understand that every clinical case is unique and that access to specific medicines can be critically important. That’s why we offer flexible, personalized logistics solutions with a strong focus on safety, legality, and delivery efficiency.",
+        "header": "What we offer",
+        "list": [
+          "Supply of licensed medicines directly from manufacturers and authorized distributors.",
+          "Sourcing and delivery of unlicensed medicines upon physician request (Named Patient Supply), in full compliance with international and local regulations.",
+          "Full-cycle support — from inquiry and alternative selection to export and import, documentation, and shipment tracking.",
+          "Cooperation only with reliable partners who comply with GDP standards and hold valid WDA licenses.",
+          "Individual case management: each request is handled with attention to the needs of the specific patient or healthcare institution."
+        ]
       },
       {
         "title": "Supply of Medicines for Clinical Trials",
-        "text": "We offer comprehensive solutions for the provision of clinical trial medicines — from sourcing and procurement of comparators to organizing GDP-compliant delivery.\n\nWe partner with CROs, pharmaceutical companies, and contract manufacturers to ensure full compliance with the requirements of each project.\n\nWhat we offer:\n\nSupply of comparators and reference products with full documentation confirming legality and quality of origin.\n\nAbility to work with both international and local manufacturers, depending on study objectives.\n\nPersonalized batch planning: selection of specific quantities, batches, dosage forms, and expiry dates.\n\nCertification, labeling, and packaging in accordance with study protocols and sponsor requirements.\n\nReliable logistics and distribution per GDP standards, including temperature control, shipment tracking, and documentation flow.\n\nProject support by an experienced team, considering all aspects of clinical protocols and regulatory compliance."
+        "text": "We offer comprehensive solutions for the provision of clinical trial medicines — from sourcing and procurement of comparators to organizing GDP-compliant delivery.",
+        "text_2": "We partner with CROs, pharmaceutical companies, and contract manufacturers to ensure full compliance with the requirements of each project.",
+        "header": "What we offer",
+        "list": [
+          "Supply of comparators and reference products with full documentation confirming legality and quality of origin.",
+          "Ability to work with both international and local manufacturers, depending on study objectives.",
+          "Personalized batch planning: selection of specific quantities, batches, dosage forms, and expiry dates.",
+          "Certification, labeling, and packaging in accordance with study protocols and sponsor requirements.",
+          "Reliable logistics and distribution per GDP standards, including temperature control, shipment tracking, and documentation flow.",
+          "Project support by an experienced team, considering all aspects of clinical protocols and regulatory compliance."
+        ]
       },
       {
         "title": "Global Wholesale Trade",
-        "text": "We provide access to international medicines for patients and organizations around the world. Thanks to our flexible approach, broad partner network, and expert support, we deliver high-quality pharmaceutical solutions in line with local regulations in each country.\n\nOur team:\n\nWorks efficiently with a global network of trusted manufacturers and suppliers;\n\nSelects optimal options in terms of delivery time, conditions, and pricing;\n\nCoordinates the supply process from product search to final delivery."
+        "text": "We provide access to international medicines for patients and organizations around the world. Thanks to our flexible approach, broad partner network, and expert support, we deliver high-quality pharmaceutical solutions in line with local regulations in each country.",
+        "header": "Our team",
+        "list": [
+          "Works efficiently with a global network of trusted manufacturers and suppliers;",
+          "Selects optimal options in terms of delivery time, conditions, and pricing;",
+          "Coordinates the supply process from product search to final delivery."
+        ]
       },
       {
         "title": "Logistics, Warehousing, and Distribution",
-        "text": "We manage the full logistics cycle of pharmaceutical products — from receiving and storage to distribution to pharmacies, clinics, and hospitals.\n\nWe ensure reliable delivery of both licensed and unlicensed medicines, fully compliant with regulatory requirements and GDP standards.\n\nOur team oversees every step — from documentation handling to maintaining storage conditions and temperature compliance.\n\nWe understand the importance of time and quality, especially when dealing with medicines for specific patients or limited batches.\n\nWe provide:\n\nStorage in certified facilities with temperature and humidity control systems;\n\nPreparation of all necessary documentation (including import licenses, quality and origin certificates, etc.);\n\nOrganization of logistics within Austria and internationally, with tracking and timeline control;\n\nA personalized approach: we work with both large suppliers and private pharmacy requests;\n\nTransparency and accountability at every stage — from the first inquiry to final delivery to the end user."
+        "text": "We manage the full logistics cycle of pharmaceutical products — from receiving and storage to distribution to pharmacies, clinics, and hospitals.\n\nWe ensure reliable delivery of both licensed and unlicensed medicines, fully compliant with regulatory requirements and GDP standards.",
+        "text_2": "Our team oversees every step — from documentation handling to maintaining storage conditions and temperature compliance.\n\nWe understand the importance of time and quality, especially when dealing with medicines for specific patients or limited batches.",
+        "header": "We provide",
+        "list": [
+          "Storage in certified facilities with temperature and humidity control systems;",
+          "Preparation of all necessary documentation (including import licenses, quality and origin certificates, etc.);",
+          "Organization of logistics within Austria and internationally, with tracking and timeline control;",
+          "A personalized approach: we work with both large suppliers and private pharmacy requests;",
+          "Transparency and accountability at every stage — from the first inquiry to final delivery to the end user."
+        ]
       }
     ],
     "advantages_title": "Our Advantages",

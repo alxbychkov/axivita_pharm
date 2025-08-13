@@ -1,0 +1,47 @@
+<section class='divisions section-base section-bg-image section-flex-center'>
+  <div class='content'>
+    <h2 class='section-title'>{{i18n.homepage.divisions_title}}</h2>
+  </div>
+  <div class='divisions__list'>
+    <div class='division card-base'>
+      <div class='division__logo'>
+        <img src='/images/axivita_pharm_title.svg' alt='Axivita Pharm' />
+      </div>
+      <h3
+        class='division__title text-primary'
+      >{{i18n.homepage.division_austria_title}}</h3>
+      <p class='division__desc text-base'>
+        {{i18n.homepage.division_austria_text_1}}
+        <br />
+        <br />
+        {{i18n.homepage.division_austria_text_2}}
+        <br />
+        <br />
+        <b>{{i18n.homepage.division_austria_text_3}}</b>
+      </p>
+    </div>
+    <div class='division card-base'>
+      <div class='division__logo'>
+        <img src='/images/axivita_pharm_title.svg' alt='Axivita Pharm' />
+      </div>
+      <h3
+        class='division__title text-primary'
+      >{{i18n.homepage.division_world_title}}</h3>
+      <p class='division__desc text-base'>
+        {{i18n.homepage.division_world_text_1}}
+        <br />
+        <br />
+        {{i18n.homepage.division_world_text_2}}
+        <br />
+        <br />
+        <b>{{i18n.homepage.division_world_text_3}}</b>
+      </p>
+    </div>
+  </div>
+  {{#if isHomepage}}
+    <button
+      class='btn division__btn btn-center'
+    >{{i18n.menu.contact_us}}</button>
+  {{/if}}
+
+</section>

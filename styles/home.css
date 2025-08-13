@@ -1,5 +1,52 @@
 /* Homepage Specific Styles */
 
+/* Utility Classes */
+.section-base {
+  padding: 80px;
+  background: var(--color-bg);
+}
+
+.section-bg-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-base {
+  font-weight: 400;
+  color: var(--color-dark);
+  line-height: 1.6;
+}
+
+.text-title {
+  font-weight: 600;
+  color: var(--color-dark);
+  margin: 0;
+}
+
+.text-primary {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.card-base {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+  border-radius: 20px;
+  box-shadow: 0px 4px 40px var(--color-primary);
+}
+
+.btn-center {
+  margin: 0 auto;
+}
+
 /* About Section */
 .about {
   padding: 80px;
@@ -8,17 +55,19 @@
 }
 
 .about__subtitle {
-  font-size: 24px;
   font-weight: 600;
   color: var(--color-dark);
+  margin: 0;
+  font-size: 24px;
   margin-top: 95px;
   margin-bottom: 24px;
 }
 
 .about__desc {
-  font-size: 18px;
   font-weight: 400;
   color: var(--color-dark);
+  line-height: 1.6;
+  font-size: 18px;
   line-height: 160%;
   margin-bottom: 50px;
 }
@@ -85,19 +134,19 @@
 }
 
 .service__title {
-  font-size: 22px;
-  line-height: 130%;
   font-weight: 600;
   color: var(--color-dark);
   margin: 0;
+  font-size: 22px;
+  line-height: 130%;
 }
 
 .service__desc {
-  font-size: 15px;
   font-weight: 400;
   color: var(--color-dark);
+  line-height: 1.6;
+  font-size: 15px;
   line-height: 147%;
-  margin: 0;
   letter-spacing: -0.2px;
 }
 
@@ -120,10 +169,10 @@
 }
 
 .quality__desc {
-  font-size: 18px;
   font-weight: 400;
   color: var(--color-dark);
   line-height: 1.6;
+  font-size: 18px;
   margin-top: 60px;
   margin-bottom: 40px;
 }
@@ -134,10 +183,10 @@
 }
 
 .quality__badge {
+  color: var(--color-btn-text);
   font-weight: 600;
   font-size: 64px;
   line-height: 120%;
-  color: var(--color-btn-text);
   mix-blend-mode: normal;
 }
 
@@ -148,9 +197,47 @@
   font-size: 64px;
 }
 
+/* Contact Section */
+.contact__bg {
+  position: relative;
+  padding: 200px 80px;
+  background: url(../images/contact_section.webp) no-repeat center center;
+  background-size: cover;
+}
+
+.contact__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 945px;
+  /* backdrop-filter: blur(25px); */
+  position: relative;
+  padding: 120px 120px;
+  background: url(../images/contac_octagon.webp) no-repeat center center;
+  background-size: cover;
+  margin: auto;
+}
+
+.contact__desc {
+  font-weight: 400;
+  color: var(--color-dark);
+  line-height: 1.6;
+  font-size: 33px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.contact__btn {
+  margin-top: 40px;
+}
+
 /* Divisions Section */
 .divisions {
   padding: 80px;
+  background: var(--color-bg);
   background-image: url(../images/divisions_bg.webp);
   background-size: cover;
   background-position: center;
@@ -168,28 +255,28 @@
 }
 
 .division {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 50px 76px 120px;
   background: var(--color-bg);
   border-radius: 20px;
   box-shadow: 0px 4px 40px var(--color-primary);
+  flex: 1;
+  padding: 50px 76px 120px;
 }
 
 .division__title {
+  color: var(--color-primary);
   font-weight: 600;
   font-size: 30px;
   line-height: 130%;
-  color: var(--color-primary);
   margin: 0;
 }
 
 .division__desc {
-  font-size: 16px;
   font-weight: 400;
   color: var(--color-dark);
   line-height: 1.6;
+  font-size: 16px;
   margin: 45px 0 0;
 }
 

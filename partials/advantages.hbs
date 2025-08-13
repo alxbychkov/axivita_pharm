@@ -1,0 +1,11 @@
+{{#each i18n.about.advantages}}
+  <div class='advantage-block'>
+    <div class='advantage-block__head'>
+      <picture>
+        <img src='/images/icons/adv_{{@index}}.webp' alt='{{this.title}}' />
+      </picture>
+      <h3 class='advantage-block__title'>{{this.title}}</h3>
+    </div>
+    <p class='advantage-block__desc'>{{this.text}}</p>
+  </div>
+{{/each}}

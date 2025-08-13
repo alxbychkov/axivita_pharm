@@ -14,12 +14,14 @@
 
   <!-- Quality Intro Section -->
   <section class="quality-intro">
-    <h2 class="quality-intro__title">
-      {{i18n.quality.slogan}}
-    </h2>
-    <p class="quality-intro__desc">
-      {{i18n.quality.slogan_text}}
-    </p>
+    <div class="content">
+      <h2 class="quality-intro__title">
+        {{i18n.quality.slogan}}
+      </h2>
+      <p class="quality-intro__desc">
+        {{i18n.quality.slogan_text}}
+      </p>
+    </div>
   </section>
 
   <!-- Quality Principles Section -->
@@ -28,7 +30,9 @@
       <!-- Principle 1: International Standards -->
       <div class="quality-principle">
         <div class="quality-principle__icon">
-          <!-- SVG иконка стандартов -->
+          <picture>
+            <img src="/images/icons/qua_0.webp" alt="Quality">
+          </picture>
         </div>
         <h3 class="quality-principle__title">{{i18n.quality.sections.0.title}}</h3>
         <p class="quality-principle__desc">
@@ -39,7 +43,9 @@
       <!-- Principle 2: Transparency -->
       <div class="quality-principle">
         <div class="quality-principle__icon">
-          <!-- SVG иконка прозрачности -->
+          <picture>
+            <img src="/images/icons/qua_1.webp" alt="Quality">
+          </picture>
         </div>
         <h3 class="quality-principle__title">{{i18n.quality.sections.1.title}}</h3>
         <p class="quality-principle__desc">
@@ -50,7 +56,9 @@
       <!-- Principle 3: Verified Partners -->
       <div class="quality-principle">
         <div class="quality-principle__icon">
-          <!-- SVG иконка партнеров -->
+          <picture>
+            <img src="/images/icons/qua_2.webp" alt="Quality">
+          </picture>
         </div>
         <h3 class="quality-principle__title">
           {{i18n.quality.sections.2.title}}
@@ -63,7 +71,9 @@
       <!-- Principle 4: Patient Safety -->
       <div class="quality-principle">
         <div class="quality-principle__icon">
-          <!-- SVG иконка безопасности -->
+          <picture>
+            <img src="/images/icons/qua_3.webp" alt="Quality">
+          </picture>
         </div>
         <h3 class="quality-principle__title">
           {{i18n.quality.sections.3.title}}
@@ -72,11 +82,14 @@
           {{i18n.quality.sections.3.text}}
         </p>
       </div>
-
+    </div>
+    <div class="quality-principles__grid quality-principles__grid--extra">
       <!-- Principle 5: Risk Management -->
       <div class="quality-principle">
         <div class="quality-principle__icon">
-          <!-- SVG иконка управления рисками -->
+          <picture>
+            <img src="/images/icons/qua_4.webp" alt="Quality">
+          </picture>
         </div>
         <h3 class="quality-principle__title">{{i18n.quality.sections.4.title}}</h3>
         <p class="quality-principle__desc">
@@ -84,24 +97,17 @@
         </p>
       </div>
     </div>
+    <div class="quality-principles__btn">
+      <button class="btn">{{i18n.quality.contact_us_button}}</button>
+    </div>
   </section>
 
   <!-- Certificates Section -->
   <section class="quality-certificates">
-    <h2 class="quality-certificates__title">
-      {{i18n.quality.certified_quality}}
-    </h2>
-    <div class="quality-certificates__list">
-      {{#each i18n.quality.certificates}}
-      <div class="certificate">
-        <div class="certificate__icon">
-          <!-- SVG иконка {{this}} -->
-        </div>
-        <span class="certificate__text">{{this}}</span>
-      </div>
-      {{/each}}
-    </div>
-    <button class="btn">{{i18n.quality.contact_us_button}}</button>
+    <h2 class="section-title">{{i18n.quality.certified_quality}}</h2>
+    <picture>
+      <img src="/images/certificates_section.webp" alt="Certificates">
+    </picture>
   </section>
 
   {{> footer}}

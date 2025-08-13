@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 {{> head}}
+
 <body>
   {{> header}}
 
@@ -14,91 +15,102 @@
 
   <!-- Intro Section -->
   <section class="about-intro">
-    <div class="about-intro__logo">{{i18n.header.logo}}</div>
-    <div class="about-intro__text">
-      {{i18n.about.intro}}
+    <div class="content">
+      <div class="about-intro__pretitle">{{i18n.about.slogan}}</div>
+      <div class="about-intro__item">
+        <div class="section-title about-intro__logo">{{i18n.header.logo}}</div>
+        <div class="about-intro__text">
+          <b>{{i18n.about.intro_1}}</b>
+          <br>
+          <br>
+          {{i18n.about.intro_2}}
+        </div>
+        <button class="btn">{{i18n.menu.contact_us}}</button>
+      </div>
+      <div class="about-intro__item">
+        <h2 class="section-title about-intro__logo">{{i18n.about.mission_title}}</h2>
+        <p class="about-intro__text">
+          {{i18n.about.mission_text}}
+        </p>
+      </div>
     </div>
   </section>
 
-  <!-- Mission Section -->
-  <section class="about-mission">
-    <h2 class="section-title">{{i18n.about.mission_title}}</h2>
-    <p class="about-mission__desc">
-      {{i18n.about.mission_text}}
-    </p>
-    <button class="btn">{{i18n.menu.contact_us}}</button>
+  <section>
+    <picture>
+      <img class="about-intro__img" src="/images/intro_section_en.webp" alt="intro section">
+    </picture>
   </section>
 
   <!-- Core Principles Section -->
   <section class="about-principles">
-    <h2 class="section-title">{{i18n.about.core_principles_title}}</h2>
-    {{#each i18n.about.core_principles}}
-    <p class="about-principles__desc">
-      {{this}}
-    </p>
-    {{/each}}
+    <div class="content">
+      <h2 class="section-title">{{i18n.about.core_principles_title}}</h2>
+      <p class="about-principles__desc">
+        {{i18n.about.core_principles_1}}
+      </p>
+      <p class="about-principles__desc">
+        {{i18n.about.core_principles_2}}
+      </p>
+    </div>
   </section>
 
   <!-- Values Section -->
   <section class="about-values">
-    <h2 class="section-title">{{i18n.about.values_title}}</h2>
-    <p class="about-values__desc">
-      {{i18n.about.values_intro}}
-    </p>
-    <div class="about-values__list">
-      {{#each i18n.about.values}}
-      <div class="value-block">
-        <h3 class="value-block__title">{{this.title}}</h3>
-        <p class="value-block__desc">{{this.text}}</p>
+    <div class="content">
+      <h2 class="section-title">{{i18n.about.values_title}}</h2>
+      <p class="about-values__desc">
+        {{i18n.about.values_intro}}
+      </p>
+      <div class="about-values__list">
+        <div class="value-block">
+          <h3 class="value-block__title">{{i18n.about.values.[2].title}}</h3>
+          <p class="value-block__desc">{{i18n.about.values.[2].text}}</p>
+        </div>
+        <div class="value-block">
+          <h3 class="value-block__title">{{i18n.about.values.[1].title}}</h3>
+          <p class="value-block__desc">{{i18n.about.values.[1].text}}</p>
+        </div>
+        <div class="value-block">
+          <h3 class="value-block__title">{{i18n.about.values.[0].title}}</h3>
+          <p class="value-block__desc">{{i18n.about.values.[0].text}}</p>
+        </div>
+        <div class="value-block__image">
+          <img src="/images/molecule.webp" alt="About values">
+        </div>
+        <div class="value-block">
+          <h3 class="value-block__title">{{i18n.about.values.[3].title}}</h3>
+          <p class="value-block__desc">{{i18n.about.values.[3].text}}</p>
+        </div>
+        <div class="value-block">
+          <h3 class="value-block__title">{{i18n.about.values.[5].title}}</h3>
+          <p class="value-block__desc">{{i18n.about.values.[5].text}}</p>
+        </div>
+        <div class="value-block">
+          <h3 class="value-block__title">{{i18n.about.values.[4].title}}</h3>
+          <p class="value-block__desc">{{i18n.about.values.[4].text}}</p>
+        </div>
       </div>
-      {{/each}}
+      <button class="btn">{{i18n.menu.contact_us}}</button>
     </div>
-    <button class="btn">{{i18n.menu.contact_us}}</button>
   </section>
 
-  <!-- Advantages Section -->
-  <section class="about-advantages">
-    <h2 class="section-title">{{i18n.about.advantages_title}}</h2>
-    <div class="about-advantages__list">
-      {{#each i18n.about.advantages}}
-      <div class="advantage-block">
-        <h3 class="advantage-block__title">{{this.title}}</h3>
-        <p class="advantage-block__desc">{{this.text}}</p>
+  {{> divisions}}
+
+  {{> countries}}
+
+  <section class='about-advantages'>
+    <div class='content'>
+      <div class='about-advantages__list'>
+        <h2 class='section-title about-advantages__title'>{{i18n.about.advantages_title}}</h2>
+        {{> advantages}}
       </div>
-      {{/each}}
     </div>
   </section>
 
-  <!-- Map Section -->
-  <section class="about-map">
-    <h2 class="section-title">Countries</h2>
-    <div class="countries__list">
-      {{#each i18n.about.countries}}
-        <span class="country">{{this}}</span>
-      {{/each}}
-    </div>
-    <!-- SVG карта/иллюстрация -->
-  </section>
-
-  <!-- Divisions Section -->
-  <section class="about-divisions">
-    <h2 class="section-title">{{i18n.about.divisions_title}}</h2>
-    <div class="divisions__list">
-      <div class="division">
-        <h3 class="division__title">{{i18n.about.division_austria_title}}</h3>
-        <p class="division__desc">
-          {{i18n.about.division_austria_text}}
-        </p>
-      </div>
-      <div class="division">
-        <h3 class="division__title">{{i18n.about.division_world_title}}</h3>
-        <p class="division__desc">
-          {{i18n.about.division_world_text}}
-        </p>
-      </div>
-    </div>
-  </section>
+  {{> contact}}
 
   {{> footer}}
 </body>
+
 </html>

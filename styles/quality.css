@@ -2,53 +2,65 @@
 
 /* Quality Intro */
 .quality-intro {
-  padding: 60px 80px;
-  background: var(--color-section-bg);
+  padding: 140px 80px 60px;
+  background: var(--color-bg);
 }
 
 .quality-intro__title {
-  font-size: 38px;
   font-weight: 600;
-  color: var(--color-dark);
-  line-height: 1.1;
-  margin-bottom: 32px;
-  max-width: 1085px;
+  font-size: 38px;
+  line-height: 111%;
+  letter-spacing: 0.03em;
+  color: var(--color-primary);
+  margin-bottom: 26px;
 }
 
 .quality-intro__desc {
-  font-size: 24px;
-  font-weight: 400;
   color: var(--color-dark);
-  line-height: 1.4;
-  max-width: 800px;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 116%;
+  letter-spacing: 0.03em;
 }
 
 /* Quality Principles */
 .quality-principles {
-  padding: 80px;
+  padding: 80px 20px 130px;
   background: var(--color-bg);
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
 }
 
 .quality-principles__grid {
+  background-image: url('/images/quality_octagon.webp');
+  background-size: 80% auto;
+  background-position: center;
+  background-repeat: no-repeat;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 40px;
+  justify-items: center;
+  column-gap: 140px;
+  row-gap: 120px;
+}
+
+.quality-principles__grid--extra {
+  padding: 140px 0;
 }
 
 .quality-principle {
+  max-width: 510px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  padding: 40px;
-  background: var(--color-section-bg);
+  align-items: flex-start;
+  gap: 20px;
+  padding: 70px 75px 40px;
+  background: var(--color-bg);
+  box-shadow: 0px 4px 55px rgba(99, 190, 173, 0.8);
   border-radius: 20px;
 }
 
 .quality-principle__icon {
-  width: 120px;
-  height: 120px;
-  background: var(--color-primary);
-  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,117 +68,97 @@
 }
 
 .quality-principle__title {
-  font-size: 28px;
   font-weight: 600;
+  font-size: 38px;
+  line-height: 111%;
+  letter-spacing: 0.03em;
   color: var(--color-dark);
   margin: 0;
 }
 
 .quality-principle__desc {
-  font-size: 16px;
   font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
   color: var(--color-dark);
-  line-height: 1.6;
   margin: 0;
+}
+
+.quality-principles__btn {
+  width: 100%;
+  text-align: center;
+}
+
+.quality-principles .btn {
+  margin: 50px auto 0;
 }
 
 /* Quality Certificates */
 .quality-certificates {
-  padding: 80px;
-  background: var(--color-section-bg);
+  position: relative;
+}
+
+.quality-certificates .section-title {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 750px;
   text-align: center;
 }
 
-.quality-certificates__title {
-  font-size: 42px;
-  font-weight: 600;
-  color: var(--color-dark);
-  margin-bottom: 60px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.quality-certificates__list {
+.quality-certificates picture {
   display: flex;
   justify-content: center;
-  gap: 60px;
-  margin-bottom: 60px;
-}
-
-.certificate {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 20px;
 }
 
-.certificate__icon {
-  width: 368px;
-  height: 315px;
-  background: var(--color-primary);
-  border-radius: 7px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.quality-certificates picture img {
+  width: 100%;
 }
-
-.certificate__text {
-  font-size: 43px;
-  font-weight: 600;
-  color: var(--color-dark);
-}
-
 
 
 /* Quality Page Responsive */
 @media (max-width: 900px) {
-  .quality-hero, .quality-intro, .quality-principles, .quality-certificates {
+  .quality-hero,
+  .quality-intro,
+  .quality-principles {
     padding: 60px 20px;
   }
-  
+
   .quality-intro__title {
     font-size: 28px;
   }
-  
+
   .quality-intro__desc {
     font-size: 20px;
   }
-  
+
   .quality-principles__grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .quality-principle {
     padding: 24px;
   }
-  
+
   .quality-principle__icon {
     width: 100px;
     height: 100px;
   }
-  
+
   .quality-principle__title {
     font-size: 24px;
   }
-  
-  .quality-certificates__title {
-    font-size: 32px;
-  }
-  
-  .quality-certificates__list {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-  
+
   .certificate__icon {
     width: 280px;
     height: 240px;
   }
-  
+
   .certificate__text {
     font-size: 32px;
   }
-} 
+}

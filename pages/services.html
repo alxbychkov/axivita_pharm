@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  {{> head}}
+{{> head}}
+
 <body>
   {{> header}}
 
@@ -14,89 +15,139 @@
 
   <!-- Main Services Section -->
   <section class="services-main">
-    <h2 class="services-main__title">{{i18n.service.access_to_medicines}}</h2>
-    
-    <!-- Service 1: Supply of Licensed and Unlicensed Medicines -->
-    <div class="service-item">
-      <div class="service-item__icon">
-        <!-- SVG пикто_таблетки -->
-      </div>
-      <div class="service-item__content">
-        <h3 class="service-item__title">{{i18n.service.sections.0.title}}</h3>
-        <p class="service-item__desc">
-          {{i18n.service.sections.0.text}}
-        </p>
-        <button class="btn service-item__btn">{{i18n.menu.contact_us}}</button>
-      </div>
+    <div class="content">
+      <h2 class="section-title services-main__title">{{i18n.service.access_to_medicines}}</h2>
     </div>
+  </section>
 
-    <!-- Service 2: Supply of Medicines for Clinical Trials -->
-    <div class="service-item">
-      <div class="service-item__icon">
-        <!-- SVG пикто_cts -->
+  <section class="services-main service_border">
+    <div class="content">
+      <!-- Service 1: Supply of Licensed and Unlicensed Medicines -->
+      <div class="service-item">
+        <div class="service-item__icon">
+          <picture>
+            <img src="/images/icons/srv_0.webp" alt="Medicines">
+          </picture>
+        </div>
+        <div class="service-item__content">
+          <h3 class="service-item__title">{{i18n.service.sections.0.title}}</h3>
+          <p class="service-item__desc">
+            {{i18n.service.sections.0.text}}
+          </p>
+          <p class="service-item__desc service-item__header">
+            {{i18n.service.sections.0.header}}:
+          </p>
+          <ul class="service-item__desc service-item__list">
+            {{#each i18n.service.sections.0.list}}
+            <li class="service-item__list-item">{{this}}</li>
+            {{/each}}
+          </ul>
+          <button class="btn service-item__btn">{{i18n.menu.contact_us}}</button>
+        </div>
       </div>
-      <div class="service-item__content">
-        <h3 class="service-item__title">{{i18n.service.sections.1.title}}</h3>
-        <p class="service-item__desc">
-          {{i18n.service.sections.1.text}}
-        </p>
-        <button class="btn service-item__btn">{{i18n.menu.contact_us}}</button>
-      </div>
-    </div>
+  </section>
 
-    <!-- Service 3: Global Wholesale Trade -->
-    <div class="service-item">
-      <div class="service-item__icon">
-        <!-- SVG пикто_мир -->
+  <section class="services-main service_border">
+    <div class="content">
+      <!-- Service 2: Supply of Medicines for Clinical Trials -->
+      <div class="service-item">
+        <div class="service-item__icon">
+          <picture>
+            <img src="/images/icons/srv_1.webp" alt="Clinical">
+          </picture>
+        </div>
+        <div class="service-item__content">
+          <h3 class="service-item__title">{{i18n.service.sections.1.title}}</h3>
+          <p class="service-item__desc">
+            {{i18n.service.sections.1.text}}
+            <br>
+            {{i18n.service.sections.1.text_2}}
+          </p>
+          <p class="service-item__desc service-item__header">
+            {{i18n.service.sections.1.header}}:
+          </p>
+          <ul class="service-item__desc service-item__list">
+            {{#each i18n.service.sections.1.list}}
+            <li class="service-item__list-item">{{this}}</li>
+            {{/each}}
+          </ul>
+          <button class="btn service-item__btn">{{i18n.menu.contact_us}}</button>
+        </div>
       </div>
-      <div class="service-item__content">
-        <h3 class="service-item__title">{{i18n.service.sections.2.title}}</h3>
-        <p class="service-item__desc">
-          {{i18n.service.sections.2.text}}
-        </p>
-        <button class="btn service-item__btn">{{i18n.menu.contact_us}}</button>
-      </div>
-    </div>
+  </section>
 
-    <!-- Service 4: Logistics, Warehousing, and Distribution -->
-    <div class="service-item">
-      <div class="service-item__icon">
-        <!-- SVG пикто_машина -->
-      </div>
-      <div class="service-item__content">
-        <h3 class="service-item__title">{{i18n.service.sections.3.title}}</h3>
-        <p class="service-item__desc">
-          {{i18n.service.sections.3.text}}
-        </p>
-        <button class="btn service-item__btn">{{i18n.menu.contact_us}}</button>
+  <section class="services-main service_border">
+    <div class="content">
+      <!-- Service 3: Global Wholesale Trade -->
+      <div class="service-item">
+        <div class="service-item__icon">
+          <picture>
+            <img src="/images/icons/srv_2.webp" alt="Trade">
+          </picture>
+        </div>
+        <div class="service-item__content">
+          <h3 class="service-item__title">{{i18n.service.sections.2.title}}</h3>
+          <p class="service-item__desc">
+            {{i18n.service.sections.2.text}}
+          </p>
+          <p class="service-item__desc service-item__header">
+            {{i18n.service.sections.2.header}}:
+          </p>
+          <ul class="service-item__desc service-item__list">
+            {{#each i18n.service.sections.2.list}}
+            <li class="service-item__list-item">{{this}}</li>
+            {{/each}}
+          </ul>
+          <button class="btn service-item__btn">{{i18n.menu.contact_us}}</button>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Map Section -->
-  <section class="services-map">
-    <h2 class="section-title">Countries</h2>
-    <div class="countries__list">
-      {{#each i18n.service.countries}}
-        <span class="country">{{this}}</span>
-      {{/each}}
+  {{> countries}}
+
+  <section class="services-main service_border">
+    <div class="content">
+      <!-- Service 4: Logistics, Warehousing, and Distribution -->
+      <div class="service-item">
+        <div class="service-item__icon">
+          <picture>
+            <img src="/images/icons/srv_3.webp" alt="Logistics">
+          </picture>
+        </div>
+        <div class="service-item__content">
+          <h3 class="service-item__title">{{i18n.service.sections.3.title}}</h3>
+          <p class="service-item__desc">
+            {{i18n.service.sections.3.text}}
+            <br>
+            <br>
+            {{i18n.service.sections.3.text_2}}
+          </p>
+          <p class="service-item__desc service-item__header">
+            {{i18n.service.sections.3.header}}:
+          </p>
+          <ul class="service-item__desc service-item__list">
+            {{#each i18n.service.sections.3.list}}
+            <li class="service-item__list-item">{{this}}</li>
+            {{/each}}
+          </ul>
+          <button class="btn service-item__btn">{{i18n.menu.contact_us}}</button>
+        </div>
+      </div>
     </div>
-    <!-- SVG карта/иллюстрация -->
   </section>
 
   <!-- Advantages Section -->
   <section class="services-advantages">
-    <h2 class="section-title">{{i18n.service.advantages_title}}</h2>
-    <div class="services-advantages__list">
-      {{#each i18n.service.advantages}}
-      <div class="advantage-block">
-        <h3 class="advantage-block__title">{{this.title}}</h3>
-        <p class="advantage-block__desc">{{this.text}}</p>
+    <div class="content">
+      <div class="services-advantages__list">
+        <h2 class="section-title">{{i18n.service.advantages_title}}</h2>
+        {{> advantages}}
       </div>
-      {{/each}}
     </div>
   </section>
 
   {{> footer}}
 </body>
-</html> 
+
+</html>
