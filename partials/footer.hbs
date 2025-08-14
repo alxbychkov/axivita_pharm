@@ -2,12 +2,13 @@
 <footer class='footer' id='contact'>
   <div class='content'>
     <div class='footer__logo'>
-      <img src='/images/footer_logo.svg' alt='Axivita Pharm' />
+      <a href="/">{{> logo/footer-logo}}</a>
     </div>
     <div class='footer__contacts'>
       <div class='footer__phone'>
-        {{i18n.footer.phone}}</div>
-      <div class='footer__email'>{{i18n.footer.email}}</div>
+        <a href="tel:{{company.phone}}">{{i18n.footer.phone}}</a>
+      </div>
+      <div class='footer__email'><a href="mailto:{{i18n.footer.email}}">{{i18n.footer.email}}</a></div>
       <div class='footer__address'>
         {{i18n.footer.address}}
       </div>

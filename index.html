@@ -7,11 +7,15 @@
   {{> header}}
   <!-- Hero Section -->
   <section class="hero home-hero">
-    <div class="hero__bg"></div>
-    <div class="content">
+    <div class="hero__bg">
+      <picture>
+        <img src="/images/hero/homepage_vector_with_elements.webp" alt="Home" width="100%">
+      </picture>
+    </div>
+    <div class="content hero-content">
       <h1 class="hero__title">{{i18n.header.logo}}</h1>
       <p class="hero__slogan">{{i18n.header.slogan}}</p>
-      <button class="btn">{{i18n.homepage.our_services}}</button>
+      <a href="#services" class="btn">{{i18n.homepage.our_services}}</a>
     </div>
   </section>
 
@@ -43,7 +47,7 @@
   {{> countries}}
 
   <!-- Services Section -->
-  <section class="services section-base section-flex-center">
+  <section class="services section-base section-flex-center" id="services">
     <div class="content">
       <h2 class="section-title">{{i18n.homepage.services_title}}</h2>
       <div class="services__list">
@@ -84,12 +88,14 @@
 
   <!-- Quality Section -->
   <section class="quality__bg">
-    <div class="content">
-      <div class="quality__badges">
-        <span class="quality__badge">{{i18n.homepage.gdp}}</span>
-        <span class="quality__badge">{{i18n.homepage.wda}}</span>
-      </div>
+    <div class="bottom__light__shape">
+      <picture>
+        <img src="/images/bottom_light_shape_small.webp" alt="Bottom light shape" width="100%">
+      </picture>
     </div>
+    <picture>
+      <img src="/images/quality_section_bg_with_elements_.webp" alt="Quality background" width="100%">
+    </picture>
   </section>
   <section class="quality section-base">
     <div class="content">

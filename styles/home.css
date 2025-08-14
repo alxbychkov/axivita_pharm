@@ -49,9 +49,9 @@
 
 /* About Section */
 .about {
-  padding: 80px;
+  padding: 80px 0;
   background: var(--color-bg);
-  box-shadow: 0px 4px 55px rgba(99, 190, 173, 0.8);
+  margin-bottom: -1px;
 }
 
 .about__subtitle {
@@ -74,11 +74,31 @@
 
 /* Services Section */
 .services {
-  padding: 80px;
+  padding: 80px 0;
   background: var(--color-bg);
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+.bottom__light__shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+}
+
+.bottom__light__shape img,
+.bottom__light__shape picture {
+  display: flex;
+  width: 100%;
+}
+
+.divisions .bottom__light__shape {
+  position: unset;
 }
 
 .services__list {
@@ -152,20 +172,37 @@
 
 /* Quality Section */
 .quality__bg {
-  position: relative;
-  padding: 400px 80px 0;
-  background: url(../images/quality_section.webp) no-repeat center center;
+  /* position: relative;
+  padding: 400px 0 0;
+  background: url(../images/quality_section.webp) no-repeat center center; */
 }
 
 .quality {
-  padding: 80px;
+  padding: 0 0 400px;
   background: var(--color-bg);
+  position: relative;
+}
+
+.quality__shape {
+  position: absolute;
+  top: -45%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .quality__bg .content,
 .quality .content {
-  max-width: 760px;
-  padding: 0;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.quality .content {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  right: 0;
 }
 
 .quality__desc {
@@ -200,32 +237,60 @@
 /* Contact Section */
 .contact__bg {
   position: relative;
-  padding: 200px 80px;
-  background: url(../images/contact_section.webp) no-repeat center center;
-  background-size: cover;
+}
+
+.contact__bg:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-color: var(--color-bg);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+.contact__bg::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 300px;
+  background-color: var(--color-dark);
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
 }
 
 .contact__body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 40px;
   width: 100%;
-  max-width: 945px;
-  /* backdrop-filter: blur(25px); */
-  position: relative;
-  padding: 120px 120px;
-  background: url(../images/contac_octagon.webp) no-repeat center center;
-  background-size: cover;
+  max-width: 30%;
   margin: auto;
+  padding-bottom: 10%;
+}
+
+.contact__body .section-title {
+  font-size: calc(14px + (36 * ((100vw - 375px) / 1545)));
+}
+
+.contact__body .section-title {
+  font-size: calc(14px + (36 * ((100vw - 375px) / 1545)));
 }
 
 .contact__desc {
   font-weight: 400;
   color: var(--color-dark);
   line-height: 1.6;
-  font-size: 33px;
+  font-size: calc(12px + (21 * ((100vw - 375px) / 1545)));
   line-height: 120%;
   text-align: center;
 }
@@ -236,7 +301,7 @@
 
 /* Divisions Section */
 .divisions {
-  padding: 80px;
+  padding: 0 0 80px;
   background: var(--color-bg);
   background-image: url(../images/divisions_bg.webp);
   background-size: cover;
@@ -252,6 +317,7 @@
   display: flex;
   gap: 90px;
   margin: 50px auto 70px;
+  padding: 0 20px;
 }
 
 .division {
@@ -286,7 +352,7 @@
 
 /* Countries Section */
 .countries {
-  padding: 80px;
+  padding: 80px 20px;
   background: var(--color-bg);
 }
 
@@ -329,21 +395,213 @@
 }
 
 /* Homepage Responsive */
+@media (min-width: 1921px) {
+  .contact__body .section-title {
+    font-size: 50px;
+  }
+  
+  .contact__desc {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .quality .content {
+    top: -35%;
+  }
+
+  .quality .section-title {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .division {
+    padding: 50px 76px;
+  }
+
+  .divisions__list {
+    gap: 40px;
+  }
+
+  .contact__body {
+    gap: 10px;
+  }
+
+  .contact__btn {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .quality__shape {
+    top: -30%;
+  }
+
+  .quality .content {
+    top: -25%;
+  }
+
+  .quality__desc {
+    margin-top: 40px;
+  }
+
+  .quality .section-title {
+    max-width: 70%;
+  }
+}
+
 @media (max-width: 900px) {
   .about,
   .services,
-  .quality,
-  .divisions,
+  .divisions {
+    padding: 0 0 60px;
+  }
   .countries {
     padding: 60px 20px;
   }
 
   .divisions__list {
     flex-direction: column;
-    gap: 20px;
   }
 
   .countries__list {
     justify-content: center;
+  }
+
+  .about__subtitle {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
+  .quality__des,
+  .about__desc {
+    font-size: 16px;
+  }
+
+  .services__list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 40px;
+  }
+
+  .service {
+    padding: 22px 0;
+  }
+
+  .service:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .service:nth-child(2) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .service__logo {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+
+  .service:nth-child(4) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .service:nth-child(5) {
+    grid-column: 2;
+    grid-row: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .division__title,
+  .country {
+    font-size: 20px;
+  }
+
+  .quality .content {
+    top: -15%;
+  }
+
+  .contact__bg:before {
+    height: 100px;
+  }
+  
+  .contact__bg::after {
+    height: 100px;
+  }
+
+  .contact__btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 561px) {
+  .division {
+    padding: 50px;
+  }
+
+  .services__list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 20px;
+  }
+
+  .service:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .service:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .service__logo {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .service:nth-child(4) {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .service:nth-child(5) {
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .quality {
+    padding: 0 0 700px;
+  }
+
+  .quality__shape {
+    top: -10%;
+  }
+
+  .quality .content {
+    top: -5%;
+  }
+
+  .contact__body {
+    gap: 10px;
+    max-width: 100%;
+    padding: 20px 20px 0;
+  }
+
+  .contact__btn {
+    position: relative;
+    bottom: unset;
+    left: unset;
+    transform: unset;
+    margin-top: 10px;
   }
 }

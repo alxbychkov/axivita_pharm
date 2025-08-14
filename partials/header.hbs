@@ -1,7 +1,9 @@
 <!-- Header -->
 <header class="header">
   <div class="header__logo">
-    <img src="/images/axivita_logo.svg" alt="logo">
+    <a href="/">
+      {{> logo/header-logo}}
+    </a>
   </div>
   <nav class="header__nav">
     <a href="{{#if isHomepage}}#{{else}}../index.html{{/if}}" class="nav__link{{#if isHomepage}} nav__link--active{{/if}}">{{i18n.menu.homepage}}</a>

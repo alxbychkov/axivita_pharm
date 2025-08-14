@@ -86,7 +86,7 @@ export default defineConfig(({ mode }) => {
             company: {
               name: 'Axivita Pharm',
               address: 'Leopold Ungar Platz 2, 1190 Vienna, Austria',
-              phone: '+43 664 148 06 20',
+              phone: '+436641480620',
               email: 'office@axivita-pharm.com',
             },
           };

@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  {{> head}}
+{{> head}}
+
 <body>
   {{> header}}
 
   <!-- Hero Section -->
   <section class="hero quality-hero">
-    <div class="hero__bg"></div>
-    <div class="content">
+    <div class="hero__bg">
+      <div class="hero__bg">
+        <picture>
+          <img src="/images/hero/quality_vector_with_elements.webp" alt="Quality" width="100%">
+        </picture>
+      </div>
+    </div>
+    <div class="content hero-content">
       <h1 class="hero__title">{{i18n.quality.title}}</h1>
     </div>
   </section>
@@ -113,4 +120,5 @@
   {{> footer}}
 
 </body>
-</html> 
+
+</html>
