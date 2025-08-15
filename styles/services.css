@@ -86,11 +86,12 @@
   background-position: center;
   background-repeat: no-repeat;
   backdrop-filter: blur(22.5px);
+  background-attachment: fixed;
 }
 
 .services-advantages__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   border-radius: 34px;
   overflow: hidden;
@@ -108,28 +109,8 @@
   color: var(--color-primary);
 }
 
-.advantage-block {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 32px;
-  background: var(--color-bg);
-  border-radius: 20px;
-}
-
-.advantage-block__title {
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--color-dark);
-  margin: 0;
-}
-
-.advantage-block__desc {
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--color-dark);
-  line-height: 1.6;
-  margin: 0;
+.services-advantages-title {
+  white-space: nowrap;
 }
 
 /* Services Page Responsive */
@@ -137,7 +118,7 @@
   .services-main,
   .services-map,
   .services-advantages {
-    padding: 60px 20px;
+    padding: 60px 0;
   }
 
   .services-main__title {
@@ -151,21 +132,16 @@
     margin-bottom: 60px;
   }
 
-  .service-item__icon {
-    width: 100px;
-    height: 100px;
-  }
-
-  .service-item__title {
-    font-size: 28px;
-  }
-
   .services-advantages__list {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-
-  .advantage-block {
-    padding: 24px;
+}
+@media (max-width: 768px) {
+  .service-item__title {
+    font-size: 26px;
+  }
+  .service-item__desc {
+    font-size: 16px;
   }
 }

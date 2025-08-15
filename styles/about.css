@@ -28,7 +28,7 @@
 .about-intro__pretitle {
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
+  font-size: clamp(28px, 5vw, 50px);
   line-height: 120%;
   letter-spacing: -0.2px;
   color: var(--color-primary);
@@ -100,9 +100,18 @@
   align-items: start;
 }
 
-.value-block:nth-child(1) { grid-column: 1; grid-row: 1; }
-.value-block:nth-child(2) { grid-column: 1; grid-row: 2; }
-.value-block:nth-child(3) { grid-column: 1; grid-row: 3; }
+.value-block:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+.value-block:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+.value-block:nth-child(3) {
+  grid-column: 1;
+  grid-row: 3;
+}
 
 .value-block__image {
   grid-column: 2;
@@ -119,9 +128,18 @@
   height: auto;
 }
 
-.value-block:nth-child(5) { grid-column: 3; grid-row: 1; }
-.value-block:nth-child(6) { grid-column: 3; grid-row: 2; }
-.value-block:nth-child(7) { grid-column: 3; grid-row: 3; }
+.value-block:nth-child(5) {
+  grid-column: 3;
+  grid-row: 1;
+}
+.value-block:nth-child(6) {
+  grid-column: 3;
+  grid-row: 2;
+}
+.value-block:nth-child(7) {
+  grid-column: 3;
+  grid-row: 3;
+}
 
 .about-values .content {
   display: flex;
@@ -162,7 +180,7 @@
 
 .about-advantages__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   border: 4px solid #63bead;
   border-radius: 34px;
@@ -196,12 +214,6 @@
   font-size: 28px;
   line-height: 120%;
   letter-spacing: -0.2px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  height: calc(28px * 1.2 * 2);
 }
 
 .about-advantages__title {
@@ -212,6 +224,7 @@
   background: var(--color-bg);
   padding: 10px 20px;
   z-index: 1;
+  white-space: nowrap;
 }
 
 .advantage-block__desc {
@@ -235,6 +248,16 @@
 }
 
 /* About Page Responsive */
+@media (min-width: 1200px) {
+  .advantage-block__title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: calc(28px * 1.2 * 2);
+  }
+}
 @media (max-width: 900px) {
   .about-intro,
   .about-mission,
@@ -243,7 +266,7 @@
   .about-advantages,
   .about-map,
   .about-divisions {
-    padding: 60px 20px;
+    padding: 60px 0;
   }
 
   .about-intro {
@@ -251,14 +274,103 @@
     gap: 30px;
   }
 
-  .about-values__list,
   .about-advantages__list {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 
-  .value-block,
   .advantage-block {
-    padding: 24px;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .advantage-block__head {
+    gap: 20px;
+  }
+
+  .about-values__list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 0;
+    position: relative;
+  }
+
+  .value-block:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .value-block:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .value-block:nth-child(3) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .value-block__image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    grid-column: 1 / 3;
+    z-index: -1;
+    opacity: 0.1;
+  }
+
+  .value-block {
+    background: transparent;
+  }
+
+  .value-block:nth-child(5) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .value-block:nth-child(6) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .value-block:nth-child(7) {
+    grid-column: 2;
+    grid-row: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-intro__pretitle {
+    margin-bottom: 65px;
+  }
+  .about-values__desc,
+  .about-principles__desc,
+  .about-intro__text {
+    font-size: 16px;
+  }
+  .about-values__desc {
+    margin-bottom: 40px;
+  }
+  .advantage-block__title,
+  .value-block__title {
+    font-size: 24px;
+  }
+  .advantage-block__desc,
+  .value-block__desc {
+    font-size: 14px;
+  }
+  .about-advantages__title {
+    top: -25px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 561px) {
+  .about-intro__item:not(:last-child) {
+    margin-bottom: 40px;
+    max-width: 100%;
+  }
+
+  .about-intro__item:last-child {
+    margin-left: auto;
+    max-width: 100%;
   }
 }
