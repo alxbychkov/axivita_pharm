@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{lang}}">
 {{> head}}
 
 <body>
@@ -10,7 +10,7 @@
     <div class="hero__bg">
       <div class="hero__bg">
         <picture>
-          <img src="/images/hero/services_vector_with_elements.webp" alt="Services" width="100%">
+          <img src="/assets/images/hero/services_vector_with_elements.webp" alt="Services" width="100%">
         </picture>
       </div>
     </div>
@@ -32,7 +32,7 @@
       <div class="service-item">
         <div class="service-item__icon">
           <picture>
-            <img src="/images/icons/srv_0.webp" alt="Medicines">
+            <img src="/assets/images/icons/srv_0.webp" alt="Medicines">
           </picture>
         </div>
         <div class="service-item__content">
@@ -48,7 +48,7 @@
             <li class="service-item__list-item">{{this}}</li>
             {{/each}}
           </ul>
-          <button class="btn service-item__btn">{{i18n.menu.contact_us}}</button>
+          <a href="contact.html" class="btn service-item__btn">{{i18n.menu.contact_us}}</a>
         </div>
       </div>
   </section>
@@ -59,7 +59,7 @@
       <div class="service-item">
         <div class="service-item__icon">
           <picture>
-            <img src="/images/icons/srv_1.webp" alt="Clinical">
+            <img src="/assets/images/icons/srv_1.webp" alt="Clinical">
           </picture>
         </div>
         <div class="service-item__content">
@@ -77,7 +77,7 @@
             <li class="service-item__list-item">{{this}}</li>
             {{/each}}
           </ul>
-          <button class="btn service-item__btn">{{i18n.menu.contact_us}}</button>
+          <a href="contact.html" class="btn service-item__btn">{{i18n.menu.contact_us}}</a>
         </div>
       </div>
   </section>
@@ -88,7 +88,7 @@
       <div class="service-item">
         <div class="service-item__icon">
           <picture>
-            <img src="/images/icons/srv_2.webp" alt="Trade">
+            <img src="/assets/images/icons/srv_2.webp" alt="Trade">
           </picture>
         </div>
         <div class="service-item__content">
@@ -104,7 +104,7 @@
             <li class="service-item__list-item">{{this}}</li>
             {{/each}}
           </ul>
-          <button class="btn service-item__btn">{{i18n.menu.contact_us}}</button>
+          <a href="contact.html" class="btn service-item__btn">{{i18n.menu.contact_us}}</a>
         </div>
       </div>
     </div>
@@ -118,7 +118,7 @@
       <div class="service-item">
         <div class="service-item__icon">
           <picture>
-            <img src="/images/icons/srv_3.webp" alt="Logistics">
+            <img src="/assets/images/icons/srv_3.webp" alt="Logistics">
           </picture>
         </div>
         <div class="service-item__content">
@@ -137,7 +137,7 @@
             <li class="service-item__list-item">{{this}}</li>
             {{/each}}
           </ul>
-          <button class="btn service-item__btn">{{i18n.menu.contact_us}}</button>
+          <a href="contact.html" class="btn service-item__btn">{{i18n.menu.contact_us}}</a>
         </div>
       </div>
     </div>
@@ -145,9 +145,11 @@
 
   <!-- Advantages Section -->
   <section class="services-advantages">
+    {{> sign/sign-165}}
+    {{> sign/sign-165}}
     <div class="bottom__light__shape">
       <picture>
-        <img src="/images/bottom_light_shape_small.webp" alt="Bottom light shape" width="100%">
+        <img src="/assets/images/bottom_light_shape_small.webp" alt="Bottom light shape" width="100%">
       </picture>
     </div>
     <div class="content">

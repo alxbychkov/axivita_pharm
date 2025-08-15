@@ -52,6 +52,11 @@
   padding: 80px 0;
   background: var(--color-bg);
   margin-bottom: -1px;
+  position: relative;
+}
+
+.about .content {
+  position: unset;
 }
 
 .about__subtitle {
@@ -70,6 +75,16 @@
   font-size: 18px;
   line-height: 160%;
   margin-bottom: 50px;
+  max-width: 820px;
+}
+
+.about .sign__icon--272 {
+  top: 22%;
+  right: 10%;
+}
+.about .sign__icon--191 {
+  top: 66%;
+  right: 19%;
 }
 
 /* Services Section */
@@ -84,7 +99,7 @@
 
 .bottom__light__shape {
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
   right: 0;
   width: 100%;
@@ -171,11 +186,7 @@
 }
 
 /* Quality Section */
-.quality__bg {
-  /* position: relative;
-  padding: 400px 0 0;
-  background: url(../images/quality_section.webp) no-repeat center center; */
-}
+.quality__bg {}
 
 .quality {
   padding: 0 0 400px;
@@ -355,6 +366,28 @@
 .countries {
   padding: 80px 20px;
   background: var(--color-bg);
+  position: relative;
+}
+
+.countries .sign__icon--101 {
+  top: 10%;
+  right: 10%;
+}
+.countries .sign__icon--155 {
+  bottom: 10%;
+  right: 15%;
+}
+.countries .sign__icon--197 {
+  top: 55%;
+  left: 10%;
+}
+.countries .sign__icon--205:nth-child(1) {
+  bottom: 5%;
+  left: 5%;
+}
+.countries .sign__icon--205:nth-child(2) {
+  top: 15%;
+  right: 5%;
 }
 
 .countries__list {
@@ -389,6 +422,7 @@
   width: 100%;
   max-width: var(--content-width);
   margin: 40px auto 0;
+  position: relative;
 }
 
 .countries__map img {
@@ -541,6 +575,16 @@
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .sign__icon {
+    opacity: 0.5;
+  }
+  .about .sign__icon picture img {
+    width: 50%;
+  }
+  .countries .sign__icon {
+    display: none;
   }
 }
 

@@ -7,7 +7,7 @@
 }
 
 .service_border {
-  background-image: url('/images/services_border.webp');
+  background-image: url(../images/services_border.webp);
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
@@ -81,7 +81,7 @@
 /* Services Advantages */
 .services-advantages {
   padding: 200px 80px 80px;
-  background-image: url('/images/advantages_section.webp');
+  background-image: url(../images/advantages_section.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -111,6 +111,17 @@
 
 .services-advantages-title {
   white-space: nowrap;
+}
+
+.services-advantages .sign__icon--165:nth-child(1) {
+  top: -5%;
+  right: 5%;
+  z-index: 1;
+}
+
+.services-advantages .sign__icon--165:nth-child(2) {
+  top: 25%;
+  left: 5%;
 }
 
 /* Services Page Responsive */
@@ -143,5 +154,8 @@
   }
   .service-item__desc {
     font-size: 16px;
+  }
+  .services-advantages .sign__icon--165 picture img {
+    width: 50%;
   }
 }

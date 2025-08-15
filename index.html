@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{lang}}">
 
 {{> head}}
 
@@ -9,7 +9,7 @@
   <section class="hero home-hero">
     <div class="hero__bg">
       <picture>
-        <img src="/images/hero/homepage_vector_with_elements.webp" alt="Home" width="100%">
+        <img src="/assets/images/hero/homepage_vector_with_elements.webp" alt="Home" width="100%">
       </picture>
     </div>
     <div class="content hero-content">
@@ -22,6 +22,8 @@
   <!-- About Us Section -->
   <section class="about section-base">
     <div class="content">
+      {{> sign/sign-272}}
+      {{> sign/sign-191}}
       <h2 class="section-title">{{i18n.homepage.about_us_title}}</h2>
       <p class="about__subtitle text-title">{{i18n.homepage.about_us_slogan}}</p>
       <p class="about__desc text-base">
@@ -36,7 +38,7 @@
         <br>
         <b>{{i18n.homepage.about_us_text_4}}</b>
       </p>
-      <button class="btn">{{i18n.homepage.learn_more}}</button>
+      <a href="pages/about.html" class="btn">{{i18n.homepage.learn_more}}</a>
     </div>
   </section>
 
@@ -66,7 +68,7 @@
 
         <div class="service__logo">
           <picture>
-            <img src="images/services_section.webp" alt="Services section">
+            <img src="/assets/images/services_section.webp" alt="Services section">
           </picture>
         </div>
         <div class="service">
@@ -83,18 +85,18 @@
         </div>
       </div>
     </div>
-    <button class="btn division__btn btn--empty btn-center">{{i18n.homepage.learn_more}}</button>
+    <a href="pages/services.html" class="btn division__btn btn--empty btn-center">{{i18n.homepage.learn_more}}</a>
   </section>
 
   <!-- Quality Section -->
   <section class="quality__bg">
     <div class="bottom__light__shape">
       <picture>
-        <img src="/images/bottom_light_shape_small.webp" alt="Bottom light shape" width="100%">
+        <img src="/assets/images/bottom_light_shape_small.webp" alt="Bottom light shape" width="100%">
       </picture>
     </div>
     <picture>
-      <img src="/images/quality_section_bg_with_elements_.webp" alt="Quality background" width="100%">
+      <img src="/assets/images/quality_section_bg_with_elements_.webp" alt="Quality background" width="100%">
     </picture>
   </section>
   <section class="quality section-base">

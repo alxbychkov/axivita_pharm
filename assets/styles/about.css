@@ -13,6 +13,23 @@
 .about-intro {
   padding: 80px;
   background: var(--color-bg);
+  position: relative;
+}
+
+.about-intro .sign__icon--272 {
+  top: 35%;
+  right: 10%;
+}
+.about-intro .sign__icon--152 {
+  top: 60%;
+  right: 25%;
+}
+.about-intro__box {
+  position: relative;
+}
+.about-intro__box .sign__icon--260 {
+  top: -10%;
+  left: 10%;
 }
 
 .about-intro__item:not(:last-child) {
@@ -58,6 +75,16 @@
 .about-principles {
   padding: 80px;
   background: var(--color-bg);
+  position: relative;
+}
+
+.about-principles .sign__icon--272b {
+  top: 5%;
+  right: 5%;
+}
+.about-principles .sign__icon--152 {
+  top: 90%;
+  right: 30%;
 }
 
 .about-principles__desc {
@@ -76,7 +103,6 @@
 /* About Values */
 .about-values {
   padding: 80px;
-  background: var(--color-bg);
 }
 
 .about-values__desc {
@@ -360,6 +386,13 @@
   .about-advantages__title {
     top: -25px;
     padding: 10px;
+  }
+  .about-intro__box .sign__icon--260 {
+    top: -30%;
+    left: 5%;
+  }
+  .about-intro__box .sign__icon picture img {
+    width: 50%;
   }
 }
 

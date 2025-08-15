@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{lang}}">
 {{> head}}
 
 <body>
@@ -9,7 +9,7 @@
   <section class="hero contact-hero">
     <div class="hero__bg">
       <picture>
-        <img src="/images/hero/contacts_vector_with_elements.webp" alt="Contacts" width="100%">
+        <img src="/assets/images/hero/contacts_vector_with_elements.webp" alt="Contacts" width="100%">
       </picture>
     </div>
     <div class="content hero-content">
@@ -19,6 +19,8 @@
 
   <!-- Contact Information Section -->
   <section class="contact-info">
+    {{> sign/sign-123}}
+    {{> sign/sign-179}}
     <div class="content">
       <div class="contact-info__container">
         <div class="contact-info__item">
@@ -54,7 +56,7 @@
       </div>
     </div>
     <div class="shape-bottom">
-      <img src="/images/shape_bottom.webp" alt="shape-bottom" width="100%"/>
+      <img src="/assets/images/shape_bottom.webp" alt="shape-bottom" width="100%"/>
     </div>
   </section>
 

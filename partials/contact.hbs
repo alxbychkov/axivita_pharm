@@ -2,7 +2,7 @@
   <div class='contact__background'>
     <picture>
       <img
-        src='/images/contacus_vector_section_.webp'
+        src='/assets/images/contacus_vector_section_.webp'
         alt='Contact background'
         width='100%'
       />
@@ -13,8 +13,8 @@
     <p class='contact__desc text-base'>
       {{i18n.homepage.contact_us_text}}
     </p>
-    <button
+    <a href="{{#if isHomepage}}pages/contact.html{{else}}contact.html{{/if}}"
       class='btn contact__btn'
-    >{{i18n.homepage.contact_us_button}}</button>
+    >{{i18n.homepage.contact_us_button}}</a>
   </div>
 </section>

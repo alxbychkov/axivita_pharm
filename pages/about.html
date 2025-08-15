@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{lang}}">
 {{> head}}
 
 <body>
@@ -10,7 +10,7 @@
     <div class="hero__bg">
       <div class="hero__bg">
         <picture>
-          <img src="/images/hero/about_vector_with_elements.webp" alt="About" width="100%">
+          <img src="/assets/images/hero/about_vector_with_elements.webp" alt="About" width="100%">
         </picture>
       </div>
     </div>
@@ -21,6 +21,8 @@
 
   <!-- Intro Section -->
   <section class="about-intro">
+    {{> sign/sign-152}}
+    {{> sign/sign-272}}
     <div class="content">
       <div class="about-intro__pretitle">{{i18n.about.slogan}}</div>
       <div class="about-intro__item">
@@ -31,7 +33,7 @@
           <br>
           {{i18n.about.intro_2}}
         </div>
-        <button class="btn">{{i18n.menu.contact_us}}</button>
+        <a href="contact.html" class="btn">{{i18n.menu.contact_us}}</a>
       </div>
       <div class="about-intro__item">
         <h2 class="section-title about-intro__logo">{{i18n.about.mission_title}}</h2>
@@ -42,14 +44,21 @@
     </div>
   </section>
 
-  <section>
+  <section class="about-intro__box">
+    {{> sign/sign-260}}
     <picture>
-      <img class="about-intro__img" src="/images/box_vector_en.webp" alt="intro section">
+      {{#if (eq lang 'en')}}
+        <img class="about-intro__img" src="/assets/images/box_vector_en.webp" alt="intro section">
+      {{else}}
+        <img class="about-intro__img" src="/assets/images/box_vector_de.webp" alt="intro section">
+      {{/if}}
     </picture>
   </section>
 
   <!-- Core Principles Section -->
   <section class="about-principles">
+    {{> sign/sign-272b}}
+    {{> sign/sign-152}}
     <div class="content">
       <h2 class="section-title">{{i18n.about.core_principles_title}}</h2>
       <p class="about-principles__desc">
@@ -82,7 +91,7 @@
           <p class="value-block__desc">{{i18n.about.values.[0].text}}</p>
         </div>
         <div class="value-block__image">
-          <img src="/images/molecule.webp" alt="About values">
+          <img src="/assets/images/molecule.webp" alt="About values">
         </div>
         <div class="value-block">
           <h3 class="value-block__title">{{i18n.about.values.[3].title}}</h3>
@@ -97,7 +106,7 @@
           <p class="value-block__desc">{{i18n.about.values.[4].text}}</p>
         </div>
       </div>
-      <button class="btn">{{i18n.menu.contact_us}}</button>
+      <a href="contact.html" class="btn">{{i18n.menu.contact_us}}</a>
     </div>
   </section>
 

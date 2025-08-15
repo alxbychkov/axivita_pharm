@@ -45,6 +45,26 @@ document.addEventListener('DOMContentLoaded', function () {
       label.textContent = textContent;
       langSelect.classList.remove('open');
       langSelect.blur();
+
+      // Redirect to appropriate language version
+      const currentUrl = window.location.href;
+      const origin = window.location.origin;
+      const pathAfterOrigin = currentUrl.replace(origin, '');
+      
+      if (lang === 'de') {
+        // Add /de after origin
+        if (pathAfterOrigin.startsWith('/de')) {
+          // Already in German version, do nothing
+          return;
+        }
+        window.location.href = origin + '/de' + pathAfterOrigin;
+      } else {
+        // Remove /de from path
+        if (pathAfterOrigin.startsWith('/de')) {
+          const pathWithoutDe = pathAfterOrigin.replace('/de', '');
+          window.location.href = origin + pathWithoutDe;
+        }
+      }
     });
   });
 });

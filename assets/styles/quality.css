@@ -33,7 +33,7 @@
 }
 
 .quality-principles__grid {
-  background-image: url('/images/quality_octagon.webp');
+  background-image: url(../images/quality_octagon.webp);
   background-size: 80% auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -46,6 +46,16 @@
 
 .quality-principles__grid--extra {
   padding: 140px 0;
+  position: relative;
+}
+
+.quality-principles__grid--extra .sign__icon--197 {
+  top: 5%;
+  right: -10%;
+}
+.quality-principles__grid--extra .sign__icon--272 {
+  bottom: 5%;
+  left: -15%;
 }
 
 .quality-principle {
@@ -170,6 +180,10 @@
 
   .certificate__text {
     font-size: 32px;
+  }
+
+  .quality-principles__grid--extra .sign__icon {
+    display: none;
   }
 }
 

@@ -5,7 +5,9 @@ import handlebars from 'vite-plugin-handlebars';
 import { imagetools } from 'vite-imagetools';
 import viteImagemin from 'vite-plugin-imagemin';
 import imagePresets from 'vite-plugin-image-presets';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 import fs from 'fs';
+import path from 'path';
 
 export default defineConfig(({ mode }) => {
   const lang = mode === 'de' ? 'de' : 'en';
@@ -17,9 +19,9 @@ export default defineConfig(({ mode }) => {
 
   return {
     root: '.',
+    assetsDir: 'assets',
     build: {
       outDir,
-      assetsDir: 'assets',
       emptyOutDir: lang !== 'de',
       rollupOptions: {
         input: {
@@ -30,18 +32,19 @@ export default defineConfig(({ mode }) => {
           contact: resolve(__dirname, 'pages/contact.html'),
         },
         output: {
-          chunkFileNames: 'assets/js/[name]-[hash].js',
-          entryFileNames: 'assets/js/[name]-[hash].js',
+          chunkFileNames: 'js/[name]-[hash].js',
+          entryFileNames: 'js/[name]-[hash].js',
           assetFileNames: (assetInfo) => {
             const info = assetInfo.name.split('.');
             const ext = info[info.length - 1];
+
             if (/\.(css)$/.test(assetInfo.name)) {
-              return `assets/css/[name]-[hash].${ext}`;
+              return `css/[name]-[hash].${ext}`;
             }
             if (/\.(png|jpe?g|svg|gif|tiff|bmp|ico|webp)$/i.test(assetInfo.name)) {
-              return `assets/images/[name]-[hash].${ext}`;
+              return `images/[name]-[hash].${ext}`;
             }
-            return `assets/[name]-[hash].${ext}`;
+            return `[name].${ext}`;
           },
         },
       },
@@ -68,16 +71,22 @@ export default defineConfig(({ mode }) => {
           minifyJS: true,
         },
         inject: {
-          data: { i18n },
+          data: { i18n, lang },
         },
       }),
       // Handlebars templating with i18n injection
       handlebars({
         viteNext: true,
         partialDirectory: resolve(__dirname, 'partials'),
+        helpers: {
+          eq: function (a, b) {
+            return a === b;
+          },
+        },
         context: (pagePath) => {
           return {
             i18n,
+            lang,
             isHomepage: pagePath.endsWith('index.html'),
             isAbout: pagePath.endsWith('about.html'),
             isServices: pagePath.endsWith('services.html'),
@@ -108,6 +117,25 @@ export default defineConfig(({ mode }) => {
           avatar: { formats: ['webp'], widths: [100, 200], sizes: '(max-width: 600px) 100px, 200px', loading: 'lazy' },
         },
       }),
+      // Плагин для очистки папки /de после сборки
+      {
+        name: 'clean-de-folder',
+        closeBundle() {
+          const deDir = resolve(__dirname, 'dist/de');
+          if (fs.existsSync(deDir)) {
+            const files = fs.readdirSync(deDir);
+            files.forEach(file => {
+              const filePath = path.join(deDir, file);
+              const stat = fs.statSync(filePath);
+              if (stat.isFile() && !file.endsWith('.html')) {
+                fs.unlinkSync(filePath);
+              } else if (stat.isDirectory() && file !== 'pages') {
+                fs.rmSync(filePath, { recursive: true, force: true });
+              }
+            });
+          }
+        },
+      },
     ],
     server: { port: 3000, open: true, host: true },
     preview: { port: 4173, open: true },

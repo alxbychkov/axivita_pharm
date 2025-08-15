@@ -1,7 +1,11 @@
 <!-- Header -->
 <header class="header">
   <div class="header__logo">
-    <a href="/">
+    {{#if (eq lang 'en')}}
+      <a href="/">
+    {{else}}
+      <a href="/de/">
+    {{/if}}
       {{> logo/header-logo}}
     </a>
   </div>
@@ -12,16 +16,21 @@
     <a href="{{#if isHomepage}}pages/quality.html{{else}}quality.html{{/if}}" class="nav__link{{#if isQuality}} nav__link--active{{/if}}">{{i18n.menu.quality}}</a>
     <a href="{{#if isHomepage}}pages/contact.html{{else}}contact.html{{/if}}" class="nav__link{{#if isContact}} nav__link--active{{/if}}">{{i18n.menu.contact_us}}</a>
     <div class="nav__lang-select" tabindex="0">
-      <img class="nav__lang-flag" src="/images/icons/en.png" alt="EN">
-      <span class="nav__lang-label">{{i18n.menu.english}}</span>
+      {{#if (eq lang 'en')}}
+        <img class="nav__lang-flag" src="/assets/images/icons/en.png" alt="en">
+        <span class="nav__lang-label">{{i18n.menu.english}}</span>
+      {{else}}
+        <img class="nav__lang-flag" src="/assets/images/icons/de.png" alt="de">
+        <span class="nav__lang-label">{{i18n.menu.deutsch}}</span>
+      {{/if}}
       <span class="nav__lang-arrow">&#9662;</span>
       <div class="nav__lang-dropdown">
         <div class="nav__lang-option" data-lang="en">
-          <img src="/images/icons/en.png" alt="en">
+          <img src="/assets/images/icons/en.png" alt="en">
           <span>{{i18n.menu.english}}</span>
         </div>
         <div class="nav__lang-option" data-lang="de">
-          <img src="/images/icons/de.png" alt="de">
+          <img src="/assets/images/icons/de.png" alt="de">
           <span>{{i18n.menu.deutsch}}</span>
         </div>
       </div>
