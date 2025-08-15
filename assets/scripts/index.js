@@ -49,7 +49,8 @@ document.addEventListener('DOMContentLoaded', function () {
       // Redirect to appropriate language version
       const currentUrl = window.location.href;
       const origin = window.location.origin;
-      const pathAfterOrigin = currentUrl.replace(origin, '');
+      const base = window.location.pathname.includes('/axivita_pharm/') ? '/axivita_pharm' : '';
+      const pathAfterOrigin = currentUrl.replace(origin + base, '');
       
       if (lang === 'de') {
         // Add /de after origin
@@ -57,12 +58,12 @@ document.addEventListener('DOMContentLoaded', function () {
           // Already in German version, do nothing
           return;
         }
-        window.location.href = origin + '/de' + pathAfterOrigin;
+        window.location.href = origin + base + '/de' + pathAfterOrigin;
       } else {
         // Remove /de from path
         if (pathAfterOrigin.startsWith('/de')) {
           const pathWithoutDe = pathAfterOrigin.replace('/de', '');
-          window.location.href = origin + pathWithoutDe;
+          window.location.href = origin + base + pathWithoutDe;
         }
       }
     });
