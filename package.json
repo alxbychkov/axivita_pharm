@@ -10,7 +10,7 @@
     "build": "npm run build:en && npm run build:de",
     "build:gh-pages": "NODE_ENV=production npm run build",
     "preview": "vite preview --outDir dist",
-    "deploy": "npm run build:gh-pages && gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "eslint": "^8.55.0",
