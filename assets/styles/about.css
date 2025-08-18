@@ -11,7 +11,7 @@
 
 /* About Intro */
 .about-intro {
-  padding: 80px;
+  padding: 80px 0;
   background: var(--color-bg);
   position: relative;
 }
@@ -32,6 +32,13 @@
   left: 10%;
 }
 
+.about-intro__box.lang-de .about-intro__img--en {
+  display: none;
+}
+.about-intro__box.lang-en .about-intro__img--de {
+  display: none;
+}
+
 .about-intro__item:not(:last-child) {
   margin-bottom: 86px;
   max-width: 80%;
@@ -39,7 +46,7 @@
 
 .about-intro__item:last-child {
   margin-left: auto;
-  max-width: 60%;
+  max-width: max-content;
 }
 
 .about-intro__pretitle {
@@ -61,6 +68,11 @@
   color: var(--color-dark);
   font-size: 18px;
   line-height: 167%;
+  max-width: 810px;
+}
+
+.about-intro__item:last-child .about-intro__text {
+  max-width: 665px;
 }
 
 .about-intro .btn {
@@ -73,17 +85,20 @@
 
 /* About Principles */
 .about-principles {
-  padding: 80px;
+  padding: 125px 0 80px;
   background: var(--color-bg);
   position: relative;
 }
 
 .about-principles .sign__icon--272b {
-  top: 5%;
-  right: 5%;
+  top: 15%;
+  right: 15%;
+}
+.about-principles .sign__icon--272b img {
+  max-width: 242px;
 }
 .about-principles .sign__icon--152 {
-  top: 90%;
+  top: 65%;
   right: 30%;
 }
 
@@ -93,6 +108,7 @@
   font-size: 18px;
   line-height: 167%;
   margin-bottom: 10px;
+  max-width: 690px;
 }
 
 .about-principles__desc:first-of-type {
@@ -102,7 +118,7 @@
 
 /* About Values */
 .about-values {
-  padding: 80px;
+  padding: 80px 0;
 }
 
 .about-values__desc {
@@ -200,7 +216,7 @@
 
 /* About Advantages */
 .about-advantages {
-  padding: 80px;
+  padding: 80px 0;
   background: var(--color-bg);
 }
 
@@ -263,7 +279,7 @@
 
 /* About Map */
 .about-map {
-  padding: 80px;
+  padding: 80px 0;
   background: var(--color-bg);
 }
 

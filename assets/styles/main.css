@@ -11,7 +11,7 @@
   --color-btn-text: #fff;
   --color-section-bg: #f5f7fa;
   --font-main: 'Montserrat', Arial, sans-serif;
-  --content-width: 1200px;
+  --content-width: 1400px;
 }
 
 * {
@@ -232,7 +232,7 @@ section {
   font-weight: 600;
   color: var(--color-dark);
   line-height: 120%;
-  max-width: 990px;
+  max-width: 930px;
   margin: 15px 0 60px;
 }
 
@@ -407,7 +407,7 @@ section {
 }
 .sign__icon--272b picture img,
 .sign__icon--272 picture img {
-  max-width: 272px;
+  max-width: 252px;
 }
 .sign__icon--191 picture img {
   max-width: 191px;

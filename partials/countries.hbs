@@ -1,18 +1,18 @@
 <section class='countries section-base'>
-  {{#if isHomepage}}
-    {{> sign/sign-101}}
-    {{> sign/sign-155}}
-    {{> sign/sign-197}}
-  {{else if isAbout}}
-    {{> sign/sign-205}}
-    {{> sign/sign-205}}
-  {{/if}}
   <div class='countries__list'>
     {{#each i18n.homepage.countries}}
       <span class='country text-primary'>{{this}}</span>
     {{/each}}
   </div>
   <div class='countries__map'>
+    {{#if isHomepage}}
+      {{> sign/sign-101}}
+      {{> sign/sign-155}}
+      {{> sign/sign-197}}
+    {{else if isAbout}}
+      {{> sign/sign-205}}
+      {{> sign/sign-205}}
+    {{/if}}
     <picture>
       <img src='/assets/images/map.webp' alt='Map' />
     </picture>
