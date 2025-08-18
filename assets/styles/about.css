@@ -32,10 +32,10 @@
   left: 10%;
 }
 
-.about-intro__box.lang-de .about-intro__img--en {
+.lang-de .about-intro__box .about-intro__img--en {
   display: none;
 }
-.about-intro__box.lang-en .about-intro__img--de {
+.lang-en .about-intro__box .about-intro__img--de {
   display: none;
 }
 
