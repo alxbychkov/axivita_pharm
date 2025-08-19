@@ -1,12 +1,12 @@
 {
   "header": {
-    "slogan": "Ihr verlässlicher Partner für die Versorgung mit seltenen, verschreibungspflichtigen und schwer beschaffbaren Arzneimitteln",
+    "slogan": "Ihr verlässlicher Partner für die Versorgung mit seltenen, verschreibungspflichtigen und schwer zugänglichen Arzneimitteln.",
     "logo": "Axivita Pharm"
   },
   "menu": {
     "homepage": "Startseite",
     "about": "Über uns",
-    "services": "Leistungen",
+    "services": "Dienstleistungen",
     "quality": "Qualität",
     "english": "Englisch",
     "deutsch": "Deutsch",
@@ -14,36 +14,36 @@
   },
   "footer": {
     "phone": "+43 664 148 06 20",
-    "address": "Axivita Pharm GmbH\nLeopold Ungar Platz 2\n1190 Vienna, Austria",
+    "address": "Axivita Pharm GmbH\nLeopold-Ungar-Platz 2\n1190 Wien, Österreich",
     "email": "office@axivitapharm.com"
   },
   "homepage": {
-    "contact_us_button": "Kontakt",
-    "contact_us_text": "Kontaktieren Sie uns, um zu erfahren, wie wir Sie bei der Suche nach und der Lieferung der benötigten Medikamente unterstützen können – schnell, transparent und mit Qualitätsgarantie.",
-    "contact_us_title": "Kontakt",
+    "contact_us_button": "Kontaktieren Sie uns",
+    "contact_us_text": "Kontaktieren Sie uns, um zu erfahren, wie wir Ihnen bei der Suche und Lieferung der benötigten Medikamente helfen können — schnell, transparent und mit Qualitätsgarantie.",
+    "contact_us_title": "Kontaktieren Sie uns",
     "quality_title": "Qualität ohne Kompromisse",
-    "quality_text_1": "Bei Axivita Pharm halten wir uns in jeder Phase unserer Tätigkeit an strenge Standards – von der Partnerauswahl bis zur Auslieferung der Arzneimittel. Wir arbeiten ausschließlich mit vertrauenswürdigen Lieferanten und Logistikpartnern zusammen, um die Sicherheit und Konformität der gesamten Lieferkette zu gewährleisten.",
-    "quality_text_2": "Sämtliche Unternehmensprozesse entsprechen den Anforderungen der Good Distribution Practice (GDP), unsere Lagereinrichtungen sind gemäß den geltenden europäischen Vorschriften lizenziert.",
+    "quality_text_1": "Bei Axivita Pharm halten wir uns in allen Phasen unserer Arbeit an strenge Standards – von der sorgfältigen Auswahl unserer Partner bis zur sicheren Auslieferung der Arzneimittel. Wir arbeiten ausschließlich mit geprüften Lieferanten und Logistikdienstleistern zusammen, um die Sicherheit und Konformität der gesamten Lieferkette zu gewährleisten.",
+    "quality_text_2": "Alle Unternehmensprozesse entsprechen den Anforderungen der Guten Vertriebspraxis (GDP), und unsere Lagerstätten sind gemäß den geltenden europäischen Vorschriften lizenziert.",
     "quality_text_3": "Aktuelle Lizenzen und Begleitdokumente finden Sie hier.",
     "gdp": "GDP",
     "wda": "WDA",
-    "services_title": "Leistungen",
-    "services_1": "Zugang zu lokal zugelassenen sowie schwer erhältlichen oder vorübergehend nicht verfügbaren (unlizenzierten) Arzneimitteln",
-    "services_2": "Wir gewährleisten eine zuverlässige und schnelle Lieferung, Lagerung in zertifizierten Lagern mit Temperatur‑ und Feuchtigkeitskontrolle sowie vollständige Transparenz der Dokumentation in jeder Phase.",
-    "services_3": "Ein etabliertes Netzwerk von Lieferanten, Qualitätskontrolle und umfassende Unterstützung entlang der gesamten Logistikkette. Wir bieten flexible und sichere Lösungen für den Import und Export pharmazeutischer Produkte.",
+    "services_title": "Dienstleistungen",
+    "services_1": "Zugang zu sowohl lokal zugelassenen als auch schwer verfügbaren oder vorübergehend nicht erhältlichen (nicht zugelassenen) Arzneimitteln",
+    "services_2": "Wir gewährleisten eine zuverlässige und schnelle Lieferung, Lagerung in zertifizierten Lagern mit Temperatur- und Feuchtigkeitskontrolle sowie vollständige Dokumententransparenz in jeder Phase.",
+    "services_3": "Ein etabliertes Lieferantennetzwerk, Qualitätskontrolle und Begleitung in allen Phasen der Logistik. Wir bieten flexible und sichere Lösungen für den Import und Export von pharmazeutischen Produkten.",
     "services_4": "Umfassende Lösungen für die Versorgung klinischer Studien – von der Beschaffung von Vergleichspräparaten bis zur Organisation der GDP‑konformen Lieferung.",
-    "services_1_title": "Versorgung mit zugelassenen und nicht zugelassenen Arzneimitteln",
+    "services_1_title": "Lieferung von zugelassenen und nicht zugelassenen Arzneimitteln",
     "services_2_title": "Logistik, Lagerung und Distribution",
-    "services_3_title": "Versorgung mit Arzneimitteln für klinische Studien",
-    "services_4_title": "Globaler Großhandel",
+    "services_3_title": "Lieferung von Medikamenten für klinische Studien",
+    "services_4_title": "Weltweiter Großhandel",
     "learn_more": "Mehr erfahren",
     "divisions_title": "Unsere Geschäftsbereiche",
     "about_us_title": "Über uns",
-    "about_us_text_1": "Wir helfen Patientinnen und Patienten, Leistungserbringern im Gesundheitswesen und Organisationen, wenn Standardwege nicht verfügbar sind, die passenden Lösungen zu finden.",
-    "about_us_text_2": "Durch die Zusammenarbeit mit zertifizierten Herstellern, lizenzierten Lieferanten und spezialisierten Distributoren weltweit gewährleisten wir die Lieferung von Arzneimitteln in strikter Übereinstimmung mit den geltenden Vorschriften und internationalen Standards.",
-    "about_us_text_3": "Unser Team besteht aus Expertinnen und Experten mit tiefem Marktverständnis, die stets einen individuellen Ansatz bieten. Jede Anfrage wird sorgfältig bearbeitet – mit dem Ziel, nicht nur zu liefern, sondern Vertrauen und Stabilität zu schaffen.",
-    "about_us_text_4": "Kontaktieren Sie uns, um zu besprechen, wie wir Ihnen helfen können, die richtigen Medikamente zur richtigen Zeit zu erhalten.",
-    "about_us_slogan": "Verlässliche Unterstützung dort, wo sie am wichtigsten ist",
+    "about_us_text_1": "Wir helfen Patienten, medizinischem Fachpersonal und Organisationen, passende Lösungen zu finden, wenn herkömmliche Wege nicht zur Verfügung stehen.",
+    "about_us_text_2": "Durch die Zusammenarbeit mit zertifizierten Herstellern, lizenzierten Anbietern und spezialisierten Distributoren weltweit stellen wir sicher, dass die Arzneimittellieferungen stets im Einklang mit geltenden gesetzlichen Vorschriften und internationalen Standards erfolgen.",
+    "about_us_text_3": "Unser Team besteht aus Fachleuten mit fundiertem Verständnis des Pharmamarktes und ist stets bereit, individuell auf Ihre Bedürfnisse einzugehen. Jede Anfrage wird mit größter Sorgfalt behandelt – mit dem Ziel, nicht nur eine Lieferung sicherzustellen, sondern auch Vertrauen und Stabilität für alle Beteiligten.",
+    "about_us_text_4": "Kontaktieren Sie uns, um zu besprechen, wie wir Sie bei der rechtzeitigen Versorgung mit den benötigten Medikamenten unterstützen können.",
+    "about_us_slogan": "Zuverlässige Unterstützung genau dort, wo sie am wichtigsten ist",
     "countries": [
       "Österreich",
       "Vereinigte Staaten",
@@ -55,45 +55,45 @@
       "Schweiz"
     ],
     "division_austria_title": "Österreich",
-    "division_austria_text_1": "Das Unternehmen verschafft Apotheken, medizinischen Einrichtungen und Großhändlern in ganz Österreich Zugang zu hochwertigen Arzneimitteln.",
-    "division_austria_text_2": "Dank eines breiten internationalen Netzwerks vertrauenswürdiger Lieferanten liefern wir schwer zugängliche und lebenswichtige Medikamente in vollständiger Übereinstimmung mit der österreichischen Gesetzgebung und den Named‑Patient‑Regelungen.",
-    "division_austria_text_3": "Kontaktieren Sie uns, um Ihren Bedarf zu besprechen – wir finden die optimale Lösung für Ihre konkrete Anfrage.",
+    "division_austria_text_1": "Das Unternehmen bietet Apothekern, medizinischen Einrichtungen und Großhändlern in ganz Österreich Zugang zu hochwertigen Arzneimitteln.",
+    "division_austria_text_2": "Dank eines internationalen Netzwerks geprüfter Lieferanten liefern wir schwer verfügbare und lebenswichtige Medikamente – in voller Übereinstimmung mit österreichischem Recht und den Vorschriften zur individuellen medizinischen Verwendung (Named Patient Use).",
+    "division_austria_text_3": "Kontaktieren Sie uns, um Ihren Bedarf zu besprechen – wir finden die optimale Lösung für Ihre individuelle Anfrage.",
     "division_world_title": "Weltweiter Großhändler",
-    "division_world_text_1": "Axivita Pharm liefert lizenzierte und unlizensierte Arzneimittel in die ganze Welt.",
-    "division_world_text_2": "Wir arbeiten mit zertifizierten Partnern zusammen und erfüllen GDP sowie lokale Vorschriften, um eine schnelle, sichere und rechtskonforme Lieferung – überall – zu gewährleisten.",
-    "division_world_text_3": "Weltweite Reichweite. Garantierte Qualität. Persönliche Betreuung.",
+    "division_world_text_1": "Axivita Pharm liefert zugelassene und nicht zugelassene Arzneimittel weltweit.",
+    "division_world_text_2": "Wir arbeiten mit zertifizierten Partnern und erfüllen die Anforderungen der GDP sowie lokaler Vorschriften, um eine schnelle, sichere und legale Lieferung zu gewährleisten, ganz gleich, wo Sie sich befinden.",
+    "division_world_text_3": "Globale Reichweite. Garantierte Qualität. Individuelle Betreuung.",
     "our_services": "Unsere Leistungen"
   },
   "about": {
     "intro_1": "Ihr verlässlicher Partner für die Versorgung mit seltenen, verschreibungspflichtigen und schwer zugänglichen Arzneimitteln.",
-    "intro_2": "Wir sind ein international tätiges Pharmaunternehmen, das auf die Suche, Beschaffung und Lieferung unlizensierter und knapp verfügbarer Arzneimittel spezialisiert ist. Wir unterstützen Patientinnen und Patienten sowie medizinische Organisationen beim Zugang zu essenziellen Medikamenten – auch dann, wenn sie lokal nicht verfügbar sind.",
-    "slogan": "Wir glauben, dass jeder Mensch das bestmögliche Leben verdient – und wir tun alles, um das zu ermöglichen.",
+    "intro_2": "Wir sind ein internationales Pharmaunternehmen, das sich auf die Suche, Beschaffung und Lieferung von nicht zugelassenen und schwer erhältlichen Medikamenten spezialisiert hat. Wir helfen Patienten und medizinischen Einrichtungen, Zugang zu notwendigen Medikamenten zu erhalten, selbst wenn diese bei lokalen Anbietern nicht verfügbar sind.",
+    "slogan": "Wir glauben, dass jeder Mensch ein Recht auf ein erfülltes Leben hat, und wir setzen alles daran, dies möglich zu machen.",
     "about_us": "Über uns",
     "advantages_title": "Unsere Vorteile",
     "advantages": [
       {
-        "title": "Globale Reichweite",
+        "title": "Internationale Reichweite",
         "text": "Wir arbeiten mit vertrauenswürdigen Lieferanten und Logistikpartnern weltweit zusammen und können so essenzielle Medikamente schnell beschaffen und liefern – unabhängig vom Land."
       },
       {
         "title": "Qualität und Sicherheit",
-        "text": "Prüfung der Echtheit von Arzneimitteln sowie der Transport- und Lagerbedingungen."
+        "text": "Überprüfung der Echtheit der Medikamente sowie der Transport- und Lagerbedingungen."
       },
       {
         "title": "Schnelligkeit und Präzision",
-        "text": "Minimale Lieferzeiten, Nachverfolgung in jeder Phase und die strikte Einhaltung von Terminen."
+        "text": "Minimale Lieferzeiten, Sendungsverfolgung in jeder Phase und genaue Einhaltung der Fristen."
       },
       {
         "title": "Einhaltung von Standards",
-        "text": "Rechtssicherheit und Transparenz. Strikte Einhaltung internationaler und lokaler pharmazeutischer Vorschriften."
+        "text": "Rechtliche Klarheit und Transparenz. Strikte Einhaltung internationaler und lokaler Vorschriften im Pharmabereich."
       },
       {
         "title": "Individueller Ansatz",
-        "text": "Wir entwickeln optimale Beschaffungs- und Logistiklösungen auf Basis der Dringlichkeit und der Besonderheiten jeder Bestellung."
+        "text": "Wir entwickeln maßgeschneiderte Beschaffungs- und Logistikkonzepte, abhängig von der Dringlichkeit und den Besonderheiten jeder Bestellung."
       },
       {
-        "title": "Flexibilität und Support",
-        "text": "Umfassende Unterstützung der Transaktion und Problemlösung in jeder Phase."
+        "title": "Flexibilität und Betreuung",
+        "text": "Umfassende Begleitung des gesamten Prozesses und Lösung aller Fragen in jeder Phase."
       }
     ],
     "divisions_title": "Unsere Geschäftsbereiche",
@@ -102,118 +102,118 @@
     "division_world_title": "Weltweiter Großhändler",
     "division_world_text": "Axivita Pharm liefert lizenzierte und unlizensierte Arzneimittel in die ganze Welt.\nWir arbeiten mit zertifizierten Partnern zusammen und erfüllen GDP sowie lokale Vorschriften, um eine schnelle, sichere und rechtskonforme Lieferung – überall – zu gewährleisten.\n\nWeltweite Reichweite. Garantierte Qualität. Persönliche Betreuung.",
     "mission_title": "Mission",
-    "mission_text": "Das Unmögliche möglich machen – indem wir Patientinnen und Patienten in kürzester Zeit mit lebenswichtigen Arzneimitteln verbinden – durch Technologie, Fürsorge und effiziente Logistik.",
+    "mission_text": "Das Schwererreichbare zugänglich machen, indem wir Patienten in kürzester Zeit mit lebenswichtigen Medikamenten verbinden – durch Technologie, Fürsorge und effiziente Logistik.",
     "core_principles_title": "Grundprinzipien",
     "core_principles_1": "Stabilität, Qualität und Schnelligkeit.",
-    "core_principles_2": "Durch die direkte Zusammenarbeit mit verifizierten Herstellern, Zulassungsinhabern und zertifizierten Distributoren weltweit gewährleisten wir eine zuverlässige Pharmalogistik. Das Team von Axivita Pharm verfügt über tiefgehende Expertise in internationalen Regularien und bewältigt selbst komplexe Herausforderungen der Arzneimittelversorgung.",
+    "core_principles_2": "Durch die direkte Zusammenarbeit mit geprüften Herstellern, Lizenzinhabern und zertifizierten Distributoren weltweit gewährleisten wir eine zuverlässige pharmazeutische Logistik. Das Team von Axivita Pharm verfügt über umfassendes Wissen im Bereich internationaler Regularien, was uns ermöglicht, selbst außergewöhnlich komplexe Lieferaufgaben reibungslos zu lösen.",
     "values_title": "Werte",
-    "values_intro": "Unsere Werte prägen die Unternehmensphilosophie, bestimmen unseren Umgang mit Partnern, Patientinnen und Patienten sowie der Gesellschaft und geben die Richtung unserer Entwicklung vor.",
+    "values_intro": "Unsere Werte spiegeln die Philosophie des Unternehmens wider, bestimmen unseren Ansatz für Partnerschaften, den Umgang mit Patienten und der Gesellschaft und geben die Richtung für unsere Entwicklung vor.",
     "values": [
       {
         "title": "Zugänglichkeit",
-        "text": "Wir setzen uns dafür ein, Medikamente für komplexe und seltene Krankheiten jedem Menschen zugänglich zu machen – unabhängig von Wohnort oder finanzieller Situation."
+        "text": "Das Unternehmen setzt sich dafür ein, Medikamente für komplexe und seltene Krankheiten jedem Patienten zugänglich zu machen, unabhängig von dessen Standort oder finanziellen Möglichkeiten."
       },
       {
         "title": "Partnerschaft",
-        "text": "Offenheit für die Zusammenarbeit mit der medizinischen Gemeinschaft, Stiftungen und anderen Interessengruppen."
+        "text": "Offenheit für die Zusammenarbeit mit medizinischen Fachkreisen, gemeinnützigen Organisationen und anderen interessierten Parteien."
       },
       {
         "title": "Fürsorge für Menschen",
-        "text": "Wir liefern nicht nur – wir verbessern Lebensqualität durch Unterstützung, Beratung und einen individuellen Ansatz in jedem Fall."
+        "text": "Das Unternehmen liefert nicht nur Medikamente,sondern arbeitet daran, die Lebensqualität der Menschen zu verbessern – durch Unterstützung, Beratung und einen individuellen Ansatz für jeden Fall."
       },
       {
         "title": "Innovation",
-        "text": "Einsatz moderner Technologien in Logistik, Analytik und Lieferkettenmanagement für eine schnelle und effiziente Versorgung mit lebenswichtigen Arzneimitteln."
+        "text": "Das Unternehmen nutzt moderne Technologien in Logistik, Analyse und Lieferkettenmanagement, um eine schnelle und effiziente Versorgung mit lebenswichtigen Medikamenten zu gewährleisten."
       },
       {
         "title": "Verantwortung",
-        "text": "Wir wissen, dass Leben von unserer Arbeit abhängen – deshalb halten wir höchste Standards für Qualität, Sicherheit und Ethik in der Arzneimittelversorgung ein."
+        "text": "Das Unternehmen ist sich bewusst, dass Menschenleben von seiner Arbeit abhängen, und hält daher die höchsten Standards in Bezug auf Qualität, Sicherheit und Ethik bei der Lieferung medizinischer Produkte ein."
       },
       {
         "title": "Zuverlässigkeit",
-        "text": "Offene und ehrliche Kommunikation mit allen Kundinnen, Kunden und Partnern – für faire Geschäftspraktiken und verlässliche Informationen zur Lieferung."
+        "text": "Das Unternehmen kommuniziert offen und korrekt mit allen Kunden und Partnern und garantiert faire Arbeitsbedingungen sowie verlässliche Informationen zu den Lieferungen."
       }
     ]
   },
   "service": {
-    "title": "Leistungen",
-    "access_to_medicines": "Zugang zu Arzneimitteln – weltweit",
+    "title": "Dienstleistungen",
+    "access_to_medicines": "Weltweiter Zugang zu Arzneimitteln",
     "sections": [
       {
-        "title": "Versorgung mit zugelassenen und nicht zugelassenen Arzneimitteln",
-        "text": "Jeder klinische Fall ist einzigartig – der Zugang zu bestimmten Arzneimitteln kann entscheidend sein. Deshalb bieten wir flexible, individuell zugeschnittene Logistiklösungen mit klarem Fokus auf Sicherheit, Rechtskonformität und Liefereffizienz.",
+        "title": "Lieferung von zugelassenen und nicht zugelassenen Arzneimitteln",
+        "text": "Wir verstehen, dass jeder klinische Fall einzigartig ist und der Bedarf an bestimmten Medikamenten von entscheidender Bedeutung sein kann. Deshalb bieten wir flexible, individuell abgestimmte Logistiklösungen mit Fokus auf Sicherheit, Legalität und schnelle Lieferung.",
         "header": "Was wir anbieten",
         "list": [
           "Lieferung zugelassener Arzneimittel direkt von Herstellern und autorisierten Distributoren.",
-          "Beschaffung und Lieferung unlizensierter Arzneimittel auf ärztliche Anforderung (Named Patient Supply) in voller Übereinstimmung mit internationalen und lokalen Vorschriften.",
-          "Full‑Service‑Begleitung – von der Anfrage und Alternativensuche bis zu Export, Import, Dokumentation und Sendungsverfolgung.",
-          "Zusammenarbeit ausschließlich mit verlässlichen Partnern, die GDP einhalten und über gültige WDA‑Lizenzen verfügen.",
-          "Individuelles Fallmanagement: Jede Anfrage wird mit Blick auf die Bedürfnisse der jeweiligen Patientin/des jeweiligen Patienten oder Einrichtung bearbeitet."
+          "Beschaffung und Lieferung nicht zugelassener Medikamente auf ärztliche Anforderung (Named Patient Supply) gemäß internationalen und lokalen Vorschriften.",
+          "Begleitung des gesamten Zyklus – von der Anfrage und Alternativauswahl bis zum Export und Import, zur Dokumentation und Sendungsverfolgung.",
+          "Zusammenarbeit ausschließlich mit zuverlässigen Partnern, die GDP-Standards erfüllen und über gültige WDA-Lizenzen verfügen.",
+          "Individuelles Management: Jede Anfrage wird unter Berücksichtigung der Bedürfnisse des jeweiligen Patienten oder der medizinischen Einrichtung betreut."
         ]
       },
       {
-        "title": "Versorgung mit Arzneimitteln für klinische Studien",
-        "text": "Umfassende Lösungen für die Bereitstellung von Studienmedikation – von der Beschaffung von Vergleichs- und Referenzpräparaten bis zur GDP‑konformen Lieferung.",
-        "text_2": "Wir kooperieren mit CROs, Pharmaunternehmen und Lohnherstellern und gewährleisten die vollständige Compliance der jeweiligen Projekte.",
+        "title": "Lieferung von Medikamenten für klinische Studien",
+        "text": "Wir bieten umfassende Lösungen für die Versorgung klinischer Studien mit Arzneimitteln – von der Beschaffung von Vergleichspräparaten bis zur Organisation der Lieferung gemäß GDP-Standards.",
+        "text_2": "Wir arbeiten mit Auftragsforschungsinstituten, Pharmaunternehmen und Lohnherstellern zusammen, um die Anforderungen jedes Projekts exakt zu erfüllen.",
         "header": "Was wir anbieten",
         "list": [
-          "Beschaffung von Vergleichs- und Referenzpräparaten mit vollständiger Dokumentation zur Rechtmäßigkeit und Herkunftsqualität.",
-          "Möglichkeit zur Zusammenarbeit mit internationalen oder lokalen Herstellern – je nach Studienziel.",
-          "Individuelle Chargenplanung: Auswahl spezifischer Mengen, Chargen, Darreichungsformen und Laufzeiten.",
-          "Kennzeichnung, Etikettierung und Verpackung gemäß Studienprotokollen und Sponsorvorgaben.",
-          "Zuverlässige Logistik und Distribution gemäß GDP – einschließlich Temperaturführung, Tracking und Dokumentationsfluss.",
-          "Projektbegleitung durch ein erfahrenes Team unter Berücksichtigung aller Aspekte klinischer Protokolle und regulatorischer Anforderungen."
+          "Lieferung von Vergleichs- und Referenzpräparaten mit vollständiger Dokumentation zur Legalität und Qualität der Herkunft.",
+          "Möglichkeit zur Zusammenarbeit mit internationalen oder lokalen Herstellern, je nach Zielsetzung der Studie.",
+          "Personalisierte Chargenzusammenstellung: Auswahl der benötigten Mengen, Chargennummern, Darreichungsformen und Haltbarkeiten.",
+          "Zertifizierung, Etikettierung und Verpackung gemäß Studienprotokoll und Anforderungen des Auftraggebers.",
+          "Zuverlässige Logistik und Distribution gemäß GDP-Standards, inkl. Temperaturkontrolle, Sendungsverfolgung und Dokumentation.",
+          "Projektbegleitung durch ein erfahrenes Team, das alle klinischen und regulatorischen Anforderungen berücksichtigt."
         ]
       },
       {
-        "title": "Globaler Großhandel",
-        "text": "Wir verschaffen Patientinnen, Patienten und Organisationen weltweit Zugang zu Arzneimitteln. Dank flexiblem Ansatz, breitem Partnernetzwerk und fachlicher Unterstützung liefern wir hochwertige pharmazeutische Lösungen im Einklang mit den lokalen Vorschriften jedes Landes.",
+        "title": "Weltweiter Großhandel",
+        "text": "Wir ermöglichen den Zugang zu internationalen Arzneimitteln für Patienten und Organisationen weltweit. Durch unseren flexiblen Ansatz, unser breites Partnernetzwerk und unsere fachliche Unterstützung bieten wir hochwertige pharmazeutische Lösungen gemäß den lokalen Vorschriften jedes Landes.",
         "header": "Unser Team",
         "list": [
-          "Arbeitet effizient mit einem globalen Netzwerk verlässlicher Hersteller und Lieferanten;",
-          "Wählt optimale Optionen hinsichtlich Lieferzeit, Bedingungen und Preis;",
-          "Koordiniert den gesamten Prozess – von der Produktsuche bis zur finalen Auslieferung."
+          "Arbeitet effizient mit einem globalen Netzwerk geprüfter Hersteller und Lieferanten;",
+          "Wählt optimale Angebote hinsichtlich Lieferzeiten, Bedingungen und Kosten;",
+          "Koordiniert den gesamten Lieferprozess – von der Produktsuche bis zur finalen Zustellung."
         ]
       },
       {
         "title": "Logistik, Lagerung und Distribution",
-        "text": "Wir steuern den gesamten Logistikzyklus pharmazeutischer Produkte – vom Wareneingang und der Lagerung bis zur Distribution an Apotheken, Kliniken und Krankenhäuser.",
-        "text_2": "Wir gewährleisten eine verlässliche Lieferung sowohl zugelassener als auch unlizensierter Arzneimittel – in voller Übereinstimmung mit regulatorischen Anforderungen und GDP‑Standards.",
-        "header": "Unser Team",
+        "text": "Wir organisieren den gesamten Logistikzyklus pharmazeutischer Produkte – von der Annahme und Lagerung bis zur Verteilung an Apotheken, Kliniken und Krankenhäuser. Wir gewährleisten eine zuverlässige Lieferung von zugelassenen und nicht zugelassenen Arzneimitteln in voller Übereinstimmung mit regulatorischen Anforderungen und GDP-Standards.",
+        "text_2": "Unser Team überwacht jeden Schritt – von der Dokumentation bis zur Einhaltung der Lagerbedingungen und Temperaturvorgaben. Wir wissen, wie wichtig Zeit und Qualität bei der Arbeit mit Medikamenten sind – insbesondere bei Präparaten für einzelne Patienten oder limitierte Chargen.",
+        "header": "Wir gewährleisten",
         "list": [
-          "Lagerung in zertifizierten Einrichtungen mit Temperatur‑ und Feuchtigkeitskontrolle;",
-          "Erstellung aller erforderlichen Unterlagen (inkl. Einfuhrgenehmigungen, Qualitäts‑ und Herkunftsnachweise etc.);",
-          "Organisation der Logistik in Österreich und international – mit Tracking und Terminsteuerung;",
-          "Individueller Ansatz: Zusammenarbeit mit großen Lieferanten ebenso wie mit Anfragen von Einzelapotheken;",
-          "Transparenz und Verantwortlichkeit in jeder Phase – von der ersten Anfrage bis zur Übergabe an die Endempfängerin/den Endempfänger."
+          "Lagerung in zertifizierten Lagern mit Temperatur- und Feuchtigkeitskontrolle;",
+          "Erstellung aller notwendigen Dokumente (einschließlich Einfuhrgenehmigungen, Qualitäts- und Herkunftszertifikate usw.);",
+          "Organisation der Logistik innerhalb Österreichs und international mit Sendungsverfolgung und Fristenkontrolle;",
+          "Individuelle Betreuung: Wir arbeiten sowohl mit Großhändlern als auch mit Apothekenanfragen;",
+          "Transparenz und Verantwortung in jeder Phase – von der ersten Anfrage bis zur Übergabe an den Endnutzer."
         ]
       }
     ],
     "advantages_title": "Unsere Vorteile",
     "advantages": [
       {
-        "title": "Globale Reichweite",
-        "text": "Wir arbeiten mit vertrauenswürdigen Lieferanten und Logistikpartnern weltweit zusammen und können so essenzielle Medikamente schnell beschaffen und liefern – unabhängig vom Land."
+        "title": "Internationale Reichweite",
+        "text": "Wir arbeiten mit zuverlässigen Lieferanten und Logistikpartnern weltweit zusammen, was es uns ermöglicht, benötigte Medikamente schnell zu finden und zu liefern – unabhängig vom Land."
       },
       {
         "title": "Individueller Ansatz",
-        "text": "Wir entwickeln optimale Beschaffungs- und Logistiklösungen auf Basis der Dringlichkeit und der Besonderheiten jeder Bestellung."
+        "text": "Wir entwickeln maßgeschneiderte Beschaffungs- und Logistikkonzepte, abhängig von der Dringlichkeit und den Besonderheiten jeder Bestellung."
       },
       {
         "title": "Schnelligkeit und Präzision",
-        "text": "Minimale Lieferzeiten, Nachverfolgung in jeder Phase und die strikte Einhaltung von Terminen."
+        "text": "Minimale Lieferzeiten, Sendungsverfolgung in jeder Phase und genaue Einhaltung der Fristen."
       },
       {
         "title": "Einhaltung von Standards",
-        "text": "Rechtssicherheit und Transparenz. Strikte Einhaltung internationaler und lokaler pharmazeutischer Vorschriften."
+        "text": "Rechtliche Klarheit und Transparenz. Strikte Einhaltung internationaler und lokaler Vorschriften im Pharmabereich."
       },
       {
         "title": "Qualität und Sicherheit",
-        "text": "Prüfung der Echtheit von Arzneimitteln sowie der Transport- und Lagerbedingungen."
+        "text": "Überprüfung der Echtheit der Medikamente sowie der Transport- und Lagerbedingungen."
       },
       {
-        "title": "Flexibilität und Support",
-        "text": "Umfassende Unterstützung der Transaktion und Problemlösung in jeder Phase."
+        "title": "Flexibilität und Betreuung",
+        "text": "Umfassende Begleitung des gesamten Prozesses und Lösung aller Fragen in jeder Phase."
       }
     ],
     "countries": [
@@ -229,9 +229,9 @@
   },
   "quality": {
     "title": "Qualität",
-    "slogan": "Bei Axivita Pharm sind wir überzeugt, dass die Arzneimittelversorgung nicht nur Logistik ist – sie bedeutet Verantwortung für die Gesundheit und das Leben der Menschen.",
+    "slogan": "Bei Axivita Pharm sind wir überzeugt: die Lieferung von Medikamenten ist nicht nur Logistik — sie ist vor allem eine Verantwortung für Gesundheit und Leben der Menschen.",
     "slogan_text": "Deshalb halten wir uns in jeder Phase streng an internationale Qualitätsstandards: von Beschaffung und Einkauf über Lagerung und Transport bis hin zur Übergabe an die Kundschaft.",
-    "certified_quality": "Die Qualität unserer Leistungen ist durch Zertifikate bestätigt",
+    "certified_quality": "Die Qualität unserer Dienstleistungen ist durch Zertifikate bestätigt",
     "certificates": [
       "GDP",
       "WDA"
@@ -239,32 +239,32 @@
     "sections": [
       {
         "title": "Einhaltung internationaler Standards",
-        "text": "Wir arbeiten vollständig konform mit den Anforderungen der Good Distribution Practice (GDP) und verfügen über alle notwendigen Lizenzen für den pharmazeutischen Großhandel. So wird gewährleistet, dass jedes Arzneimittel ordnungsgemäß gelagert und transportiert wird, ohne die Wirksamkeit zu beeinträchtigen."
+        "text": "Wir arbeiten in voller Übereinstimmung mit den Anforderungen der GDP (Good Distribution Practice) und verfügen über alle erforderlichen Lizenzen für den pharmazeutischen Großhandel.Dies garantiert, dass jedes Arzneimittel ordnungsgemäß gelagert und geliefert wird, ohne an Wirksamkeit zu verlieren."
       },
       {
-        "title": "Transparenz und Nachverfolgbarkeit",
-        "text": "Alle Lieferungen werden mit vollständiger Dokumentation und transparenten Kontrollverfahren begleitet. Das sorgt für hohe Verantwortlichkeit und eliminiert Risiken durch Fälschungen, Fehler oder Lagerungsverstöße."
+        "title": "Transparenz und Rückverfolgbarkeit",
+        "text": "Alle Lieferungen werden mit vollständiger Dokumentation und transparenten Kontrollverfahren begleitet. So stellen wir eine hohe Nachvollziehbarkeit sicher und schließen Risiken wie Fälschungen, Fehler oder Verstöße gegen Lagerbedingungen aus."
       },
       {
         "title": "Zusammenarbeit mit verifizierten Partnern",
-        "text": "Wir kooperieren ausschließlich mit zertifizierten Herstellern, Distributoren und Logistikdienstleistern. So sichern wir gleichbleibend hohe Qualität und minimieren Risiken entlang der gesamten Lieferkette."
+        "text": "Wir arbeiten ausschließlich mit zertifizierten Herstellern, Distributoren und Logistikdienstleistern zusammen. Dies ermöglicht uns, konstant hohe Qualität zu gewährleisten und Risiken entlang der gesamten Lieferkette zu minimieren."
       },
       {
         "title": "Patientensicherheit – unsere Priorität",
-        "text": "Jede Entscheidung zielt auf maximale Sicherheit und Therapieeffektivität ab. Wir liefern nicht nur Medikamente – wir schaffen die Voraussetzungen für eine hochwertige Behandlung, auch in komplexen und sensiblen Fällen."
+        "text": "Jede Entscheidung, die wir treffen, zielt auf maximale Sicherheit und Wirksamkeit der Therapie ab.Wir liefern nicht einfach nur Medikamente – wir schaffen die Voraussetzungen für eine qualitativ hochwertige Behandlung, selbst in den komplexesten und sensibelsten Fällen."
       },
       {
-        "title": "Flexibilität und Risikosteuerung",
-        "text": "Axivita Pharm betreibt ein aktives Risikomanagement auf allen Ebenen. Wir reagieren schnell auf regulatorische Änderungen, führen interne Audits durch und verbessern unsere Standards kontinuierlich, um den strengsten Anforderungen der Branche gerecht zu werden."
+        "title": "Flexibilität und Risikomanagement",
+        "text": "AxiVita Pharm betreibt ein aktives Risikomanagement auf allen Ebenen.Wir reagieren schnell auf regulatorische Veränderungen, führen interne Audits durch und verbessern unsere Standards kontinuierlich, um den strengsten Anforderungen der Branche gerecht zu werden."
       }
     ],
-    "contact_us_button": "Kontakt"
+    "contact_us_button": "Kontaktieren Sie uns"
   },
   "contacts": {
     "title": "Kontakt",
     "slogan": "Schnell, transparent und mit Qualitätsgarantie",
-    "description": "Kontaktieren Sie uns, um zu erfahren, wie wir Ihnen bei der Suche nach und der Lieferung der benötigten Medikamente helfen können.",
-    "address": "Axivita Pharm GmbH\nLeopold Ungar Platz 2\n1190 Vienna, Austria",
+    "description": "Kontaktieren Sie uns, um zu erfahren, wie wir Sie bei der Suche und Lieferung der benötigten Medikamente unterstützen können.",
+    "address": "Axivita Pharm GmbH\nLeopold-Ungar-Platz 2\n1190 Wien, Österreich",
     "phone": "+43 664 148 06 20",
     "email": "office@axivitapharm.com",
     "form": {

@@ -156,7 +156,7 @@ section {
   color: var(--color-btn-text);
   border: none;
   border-radius: 14px;
-  padding: 16px 32px 16px 16px;
+  padding: 16px 38px 16px 16px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
@@ -165,7 +165,7 @@ section {
   display: inline-block;
   text-align: center;
   position: relative;
-  width: 210px;
+  min-width: 210px;
   height: 55px;
 }
 
@@ -225,6 +225,10 @@ section {
   line-height: 130%;
   color: var(--color-dark);
   margin: 0;
+}
+
+.hero:not(.home-hero) .hero__title {
+  text-transform: uppercase;
 }
 
 .hero__slogan {
