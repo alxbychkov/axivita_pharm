@@ -136,6 +136,7 @@
   grid-template-rows: repeat(2, auto);
   margin-top: 80px;
   margin-bottom: 40px;
+  row-gap: 30px;
 }
 
 .service:nth-child(1) {
@@ -339,7 +340,7 @@
   width: 100%;
   max-width: 30%;
   margin: auto;
-  padding-bottom: 10%;
+  padding-bottom: 8%;
 }
 
 .contact__body .section-title {

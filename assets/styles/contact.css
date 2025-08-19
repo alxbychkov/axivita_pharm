@@ -33,6 +33,10 @@
   max-width: 465px;
 }
 
+.lang-de .contact-hero__subtitle h2 {
+  max-width: 520px;
+}
+
 /* Contact Info */
 .contact-info {
   position: relative;

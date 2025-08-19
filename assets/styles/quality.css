@@ -122,6 +122,10 @@
   text-align: center;
 }
 
+.lang-de .quality-certificates .section-title {
+  max-width: 980px;
+}
+
 .quality-certificates picture {
   display: flex;
   justify-content: center;
