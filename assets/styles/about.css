@@ -163,10 +163,16 @@
   justify-content: center;
   height: 100%;
   position: relative;
+  max-width: 395px;
 }
 
+.value-block__image picture {
+  position: relative;
+  top: -13%;
+  left: -13%;
+  transform: scale(0.8);
+}
 .value-block__image img {
-  width: 100%;
   height: auto;
 }
 
