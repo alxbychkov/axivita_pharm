@@ -57,8 +57,8 @@
 
 .line-vector .section-title {
   width: max-content;
-  padding: 0 15px;
-  margin-left: -15px;
+  padding: 0 10px;
+  margin-left: -10px;
   background: var(--color-bg);
 }
 
@@ -217,9 +217,6 @@
 }
 
 /* Quality Section */
-.quality__bg {
-}
-
 .quality {
   padding: 0 0 400px;
   background: var(--color-bg);
@@ -250,6 +247,15 @@
 
 .quality .content:nth-child(1) {
   top: -115%;
+}
+
+@media (max-width: 1660px) {
+  .line-vector {
+    background: var(--color-bg) url(../images/line_vector_x2.svg);
+    background-size: contain;
+    background-position: 0 113px;
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: 1921px) {
@@ -433,7 +439,7 @@
 }
 .countries .sign__icon--197 {
   top: 50%;
-  left: -5%;
+  left: 0;
 }
 .countries .sign__icon--205:nth-child(1) {
   bottom: 0;

@@ -7,14 +7,18 @@
 }
 
 .service_border {
-  /* background-image: url(../images/services_border.webp); */
-  /* background-image: url(../images/vector_line.webp); */
   background-image: url(../images/line_vector_bold.svg);
   background-size: contain;
   background-position: 0 60px;
   background-repeat: no-repeat;
   overflow: hidden;
   padding-top: 0;
+}
+
+@media (max-width: 1660px) {
+  .service_border {
+    background-image: url(../images/line_vector_bold_x2.svg);
+  }
 }
 
 .services-main__title {
@@ -25,7 +29,6 @@
 .lang-de .services-main__title {
   max-width: 950px;
 }
-
 
 /* Service Item */
 .service-item {
