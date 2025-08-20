@@ -12,7 +12,7 @@ import path from 'path';
 export default defineConfig(({ mode }) => {
   const lang = mode === 'de' ? 'de' : 'en';
   const outDir = lang === 'de' ? 'dist/de' : 'dist';
-  const base = process.env.NODE_ENV === 'production' ? '/axivita_pharm/' : '/';
+  const base = process.env.NODE_ENV === 'production' ? '/' : '/';
   const i18nPath = resolve(process.cwd(), `locales/${lang}.json`);
   const i18n = fs.existsSync(i18nPath)
     ? JSON.parse(fs.readFileSync(i18nPath, 'utf8'))
