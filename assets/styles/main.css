@@ -88,11 +88,42 @@ section {
   z-index: 100;
 }
 
-.header__logo-text {
-  font-size: 57px;
-  font-weight: 400;
-  color: var(--color-dark);
-  line-height: 1.3;
+.header__burger {
+  display: none;
+  gap: 2px;
+  flex-direction: column;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+  z-index: 101;
+  margin-right: -20px;
+}
+
+.burger__line {
+  width: 16px;
+  height: 2px;
+  background: var(--color-dark);
+  transition: all 0.3s ease;
+  transform-origin: center;
+  border-radius: 10px;
+}
+
+.header__burger.active .burger__line:nth-child(1) {
+  transform: rotate(45deg) translate(3px, 3px);
+}
+
+.header__burger.active .burger__line:nth-child(2) {
+  opacity: 0;
+}
+
+.header__burger.active .burger__line:nth-child(3) {
+  transform: rotate(-45deg) translate(3px, -3px);
+}
+
+.header__logo a {
+  display: flex;
 }
 
 .header__nav {
@@ -221,7 +252,7 @@ section {
 .hero__title {
   font-style: normal;
   font-weight: 700;
-  font-size: calc(32px + (25 * ((100vw - 375px) / 1545)));
+  font-size: calc(28px + (29 * ((100vw - 375px) / 1545)));
   line-height: 130%;
   color: var(--color-dark);
   margin: 0;
@@ -260,7 +291,7 @@ section {
 
 /* Section Title */
 .section-title {
-  font-size: clamp(32px, 5vw, 50px);
+  font-size: clamp(18px, 5vw, 50px);
   font-weight: 600;
   color: var(--color-dark);
 }
@@ -328,20 +359,32 @@ section {
   top: 50%;
   transform: translateY(-50%);
   left: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer__address:before {
-  content: url(../images/icons/address-icon.png);
+  background-image: url(../images/icons/address-icon.png);
   top: 0;
   transform: translateY(0);
 }
 
 .footer__phone:before {
-  content: url(../images/icons/phone-icon.png);
+  background-image: url(../images/icons/phone-icon.png);
 }
 
 .footer__email:before {
-  content: url(../images/icons/mail-icon.png);
+  background-image: url(../images/icons/mail-icon.png);
+}
+
+.footer .footer__logo--mobile {
+  display: none;
+}
+
+.footer.footer__contact .footer__logo--mobile a {
+  display: block;
+  text-align: center;
 }
 
 /* Custom Language Select */
@@ -494,14 +537,16 @@ section {
 }
 
 @media (max-width: 1100px) {
-  .home-hero .hero__title,
-  .header .header__nav .nav__lang-label,
-  .header .header__nav .nav__link {
+  .header__logo a {
+    max-width: 200px;
+  }
+
+  .home-hero .hero__title {
     display: none;
   }
 
   .content {
-    padding-right: 20px;
+    padding-right: 45px;
   }
 
   .hero__slogan {
@@ -509,6 +554,29 @@ section {
   }
 }
 
+@media (max-width: 991px) {
+  .header__burger {
+    display: flex;
+  }
+  .header__nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-bg);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: right 0.3s ease;
+    z-index: 100;
+  }
+
+  .header__nav.active {
+    right: 0;
+  }
+}
 @media (max-width: 900px) {
   .footer {
     padding: 100px 0;
@@ -523,15 +591,17 @@ section {
 
 @media (max-width: 768px) {
   section:not(.hero) .content {
-    padding-left: 20px;
+    padding-left: 45px;
   }
-
+  .header__logo a {
+    max-width: 145px;
+  }
   .header {
-    padding: 20px 20px 0;
+    padding: 45px 45px 0;
   }
 
   .hero-content {
-    padding-bottom: 25px;
+    padding-left: 45px;
   }
 
   .home-hero .btn {
@@ -541,9 +611,44 @@ section {
   .footer {
     padding: 50px 0;
   }
+
+  .footer.footer__contact .footer__logo,
+  .footer.footer__contact .footer__contacts {
+    display: none;
+  }
+  .footer.footer__contact .footer__logo--mobile {
+    display: block;
+  }
+  .footer .content {
+    gap: 0;
+    max-width: 323px;
+    align-items: flex-end;
+  }
+  .footer__contacts {
+    max-width: 225px;
+  }
+  .footer__address,
+  .footer__phone,
+  .footer__email {
+    font-size: 14px;
+  }
+  .footer__address,
+  .footer__phone,
+  .footer__email {
+    padding-left: 36px;
+  }
+  .footer__address:before,
+  .footer__phone:before,
+  .footer__email:before {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 @media (max-width: 561px) {
+  .hero-content {
+    padding-bottom: 15px;
+  }
   .hero__slogan {
     font-size: 16px;
     margin-bottom: 0;

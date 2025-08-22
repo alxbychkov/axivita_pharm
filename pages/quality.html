@@ -10,7 +10,8 @@
     <div class="hero__bg">
       <div class="hero__bg">
         <picture>
-          <img src="/assets/images/hero/quality_vector_with_elements.webp" alt="Quality" width="100%">
+          <source srcset="/assets/images/hero/quality_vector_with_elements.webp" type="image/webp" media="(min-width: 768px)">
+          <img src="/assets/images/hero/quality_vector_m.webp" alt="Quality" width="100%">
         </picture>
       </div>
     </div>
@@ -34,6 +35,10 @@
   <!-- Quality Principles Section -->
   <section class="quality-principles">
     <div class="quality-principles__grid">
+      {{> sign/sign-155}}
+      {{> sign/sign-101}}
+      {{> sign/sign-101}}
+      {{> sign/sign-155}}
       <!-- Principle 1: International Standards -->
       <div class="quality-principle">
         <div class="quality-principle__icon">
@@ -58,6 +63,10 @@
         <p class="quality-principle__desc">
           {{i18n.quality.sections.1.text}}
         </p>
+      </div>
+
+      <div class="quality-principles__btn">
+        <a href="contact.html" class="btn">{{i18n.quality.contact_us_button}}</a>
       </div>
 
       <!-- Principle 3: Verified Partners -->
@@ -115,7 +124,8 @@
   <section class="quality-certificates">
     <h2 class="section-title">{{i18n.quality.certified_quality}}</h2>
     <picture>
-      <img src="/assets/images/certificates_section.webp" alt="Certificates">
+      <source srcset="/assets/images/certificates_section.webp" type="image/webp" media="(min-width: 768px)">
+      <img src="/assets/images/certificates_section_m.webp" alt="Certificates">
     </picture>
   </section>
 

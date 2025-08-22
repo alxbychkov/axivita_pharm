@@ -9,6 +9,11 @@
       {{> logo/header-logo}}
     </a>
   </div>
+  <button class="header__burger" aria-label="Open menu">
+    <span class="burger__line"></span>
+    <span class="burger__line"></span>
+    <span class="burger__line"></span>
+  </button>
   <nav class="header__nav">
     <a href="{{#if isHomepage}}#{{else}}../index.html{{/if}}" class="nav__link{{#if isHomepage}} nav__link--active{{/if}}">{{i18n.menu.homepage}}</a>
     <a href="{{#if isHomepage}}pages/about.html{{else}}about.html{{/if}}" class="nav__link{{#if isAbout}} nav__link--active{{/if}}">{{i18n.menu.about}}</a>

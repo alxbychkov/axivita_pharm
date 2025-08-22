@@ -1,5 +1,5 @@
-<!-- Footer / Contacts -->
-<footer class='footer' id='contact'>
+<!-- Footer -->
+<footer class='footer {{#if isContact}}footer__contact{{/if}}' id='contact'>
   <div class='content'>
     <div class='footer__logo'>
       {{#if (eq lang 'en')}}
@@ -9,6 +9,14 @@
       {{/if}}
         {{> logo/footer-logo}}
       </a>
+    </div>
+    <div class='footer__logo--mobile'>
+      {{#if (eq lang 'en')}}
+        <a href="/">
+      {{else}}
+        <a href="/de/">
+      {{/if}}
+        {{> logo/footer-logo-m}}
     </div>
     <div class='footer__contacts'>
       <div class='footer__phone'>

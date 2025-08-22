@@ -61,6 +61,22 @@
   bottom: 5%;
   left: -15%;
 }
+.quality-principles__grid:not(.quality-principles__grid--extra) .sign__icon:nth-child(1) {
+  right: 0;
+  top: 18%;
+}
+.quality-principles__grid:not(.quality-principles__grid--extra) .sign__icon:nth-child(2) {
+  left: -5%;
+  top: 33%;
+}
+.quality-principles__grid:not(.quality-principles__grid--extra) .sign__icon:nth-child(3) {
+  right: 0;
+  top: 41%;
+}
+.quality-principles__grid:not(.quality-principles__grid--extra) .sign__icon:nth-child(4) {
+  right: 0;
+  bottom: 20%;
+}
 
 .quality-principle {
   max-width: 600px;
@@ -72,6 +88,7 @@
   background: var(--color-bg);
   box-shadow: 0px 4px 55px rgba(99, 190, 173, 0.8);
   border-radius: 20px;
+  position: relative;
 }
 
 .quality-principle__icon {
@@ -105,6 +122,12 @@
 
 .quality-principles .btn {
   margin: 50px auto 0;
+}
+.quality-principles__grid .quality-principles__btn {
+  display: none;
+}
+.quality-principles__grid .quality-principles__btn .btn {
+  margin: 0 auto;
 }
 
 /* Quality Certificates */
@@ -144,10 +167,18 @@
   }
 }
 
+@media (min-width: 901px) {
+  .quality-principles__grid:not(.quality-principles__grid--extra) .sign__icon {
+    display: none;
+  }
+}
 @media (max-width: 900px) {
-  .quality-intro,
+  .quality-intro {
+    padding: 60px 0;
+  }
+
   .quality-principles {
-    padding: 60px 20px;
+    padding: 25px 24px 60px;
   }
 
   .quality-intro__title {
@@ -172,30 +203,48 @@
     padding: 40px;
   }
 
-  .quality-principle__icon {
-    width: 100px;
-    height: 100px;
-  }
-
   .quality-principle__title {
     font-size: 24px;
-  }
-
-  .certificate__icon {
-    width: 280px;
-    height: 240px;
   }
 
   .certificate__text {
     font-size: 32px;
   }
-
+  .quality-principles__grid:not(.quality-principles__grid--extra) .sign__icon {
+    display: flex;
+  }
   .quality-principles__grid--extra .sign__icon {
     display: none;
   }
 }
 
 @media (max-width: 768px) {
+  .quality-principles__grid .quality-principles__btn {
+    display: block;
+  }
+  .quality-principles__grid .quality-principles {
+    display: block;
+  }
+  .quality-principles__grid {
+    gap: 110px;
+    background-image: none;
+  }
+  .quality-principle {
+    max-width: unset;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    padding-right: 45px;
+    position: relative;
+  }
+  .quality-principle__icon {
+    width: 90px;
+    position: absolute;
+    top: -39px;
+    left: 18px;
+  }
+  .quality-principle__icon img {
+    width: 100%;
+  }
   .quality-principles__grid {
     grid-template-columns: 1fr;
   }
@@ -203,19 +252,21 @@
   .quality-principles__grid--extra {
     grid-template-columns: 1fr;
     padding: 20px 0;
+    margin-top: 90px;
   }
-
-  .quality-principle {
-    max-width: unset
+  .quality-certificates .section-title {
+    top: 0;
   }
 }
 
 @media (max-width: 561px) {
-  .quality-certificates {
-    padding-top: 100px;
+  .quality-intro__desc,
+  .quality-principle__title,
+  .quality-intro__title {
+    font-size: 18px;
   }
 
-  .quality-certificates .section-title {
-    top: -10px;
+  .quality-principle__desc {
+    font-size: 14px;
   }
 }

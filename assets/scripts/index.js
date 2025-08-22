@@ -1,6 +1,34 @@
-// Custom language select logic
-
 document.addEventListener('DOMContentLoaded', function () {
+  const burger = document.querySelector('.header__burger');
+  const nav = document.querySelector('.header__nav');
+  
+  if (burger && nav) {
+    burger.addEventListener('click', function() {
+      burger.classList.toggle('active');
+      nav.classList.toggle('active');
+      document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
+    });
+    
+    // Close menu when clicking on nav links
+    const navLinks = nav.querySelectorAll('.nav__link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        burger.classList.remove('active');
+        nav.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
+    
+    // Close menu on escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && nav.classList.contains('active')) {
+        burger.classList.remove('active');
+        nav.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
   const langSelect = document.querySelector('.nav__lang-select');
   if (!langSelect) return;
 
