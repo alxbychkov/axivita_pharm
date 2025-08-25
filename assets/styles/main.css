@@ -504,6 +504,9 @@ section {
 .sign__icon--179 picture img {
   max-width: 179px;
 }
+.sign__icon--70 picture img {
+  max-width: 70px;
+}
 .sign__icon:hover {
   animation: wiggle 0.8s ease-in-out;
 }
@@ -590,6 +593,18 @@ section {
 }
 
 @media (max-width: 768px) {
+  .btn {
+    background: var(--color-primary);
+    padding: 11px 38px 11px 16px;
+    font-size: 14px;
+    min-width: 151px;
+    height: 40px;
+    border-radius: 8px;
+  }
+  .btn:after {
+    top: 57%;
+    transform: translateY(-50%) scale(0.8);
+}
   section:not(.hero) .content {
     padding-left: 45px;
   }

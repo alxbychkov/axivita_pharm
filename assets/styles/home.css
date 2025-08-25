@@ -120,6 +120,13 @@
   display: flex;
 }
 
+.top__shape {
+  width: 100%;
+  display: none;
+}
+
+.top__shape picture,
+.top__shape img,
 .bottom__light__shape img,
 .bottom__light__shape picture {
   display: flex;
@@ -350,18 +357,14 @@
 }
 
 .contact__body .section-title {
-  font-size: calc(14px + (36 * ((100vw - 375px) / 1545)));
-}
-
-.contact__body .section-title {
-  font-size: calc(14px + (36 * ((100vw - 375px) / 1545)));
+  font-size: calc(22px + (28 * ((100vw - 375px) / 1545)));
 }
 
 .contact__desc {
   font-weight: 400;
   color: var(--color-dark);
   line-height: 1.6;
-  font-size: calc(12px + (21 * ((100vw - 375px) / 1545)));
+  font-size: calc(14px + (19 * ((100vw - 375px) / 1545)));
   line-height: 120%;
   text-align: center;
 }
@@ -413,7 +416,7 @@
 .division__desc {
   font-weight: 400;
   color: var(--color-dark);
-  line-height: 1.6;
+  line-height: 130%;
   font-size: 16px;
   margin: 45px 0 0;
 }
@@ -619,11 +622,47 @@
 }
 
 @media (max-width: 768px) {
-  .division__title,
-  .country {
-    font-size: 20px;
+  .divisions {
+    padding: 0;
   }
-
+  .top__shape {
+    margin-top: 25px;
+    display: flex;
+  }
+  .divisions .bottom__light__shape {
+    margin-bottom: 20px;
+  }
+  .divisions__list {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    gap: 50px;
+  }
+  .division {
+    padding: 42px;
+  }
+  .divisions .section-title {
+    font-size: 22px;
+    text-align: center;
+  }
+  .division__title {
+    font-size: 18px;
+  }
+  .division__desc {
+    font-size: 14px;
+    margin: 20px 0 0;
+  }
+  .country {
+    font-size: 14px;
+  }
+  .countries__list {
+    column-gap: 0;
+    row-gap: 5px;
+  }
+  .country:not(:last-child):after {
+    margin-left: 5px;
+    font-size: 14px;
+    margin-right: 5px;
+  }
   .line-vector {
     background-position: 0 22px;
   }
@@ -635,14 +674,22 @@
   .contact__bg:before {
     height: 100px;
   }
-
+  .contact__body {
+    justify-content: flex-start;
+    max-width: 60%;
+    padding: 0;
+    gap: 32px;
+  }
+  .contact__body .section-title  {
+    margin-top: 45%;
+  }
   .contact__bg::after {
     height: 100px;
   }
 
   .contact__btn {
     position: absolute;
-    bottom: 10px;
+    bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -656,13 +703,12 @@
   .countries .sign__icon {
     display: none;
   }
+  .contact__desc {
+
+  }
 }
 
 @media (max-width: 561px) {
-  .division {
-    padding: 50px;
-  }
-
   .services__list {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
@@ -707,16 +753,6 @@
   }
 
   .contact__body {
-    gap: 10px;
-    max-width: 100%;
-    padding: 20px 20px 0;
-  }
-
-  .contact__btn {
-    position: relative;
-    bottom: unset;
-    left: unset;
-    transform: unset;
-    margin-top: 10px;
+    max-width: 222px;
   }
 }

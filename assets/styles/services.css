@@ -21,6 +21,13 @@
   }
 }
 
+@media (max-width: 767px) {
+  .service_border {
+    background-image: url(../images/line_vector_bold_m.svg);
+    background-position: 0 36px;
+  }
+}
+
 .services-main__title {
   color: var(--color-primary);
   margin-bottom: 60px;
@@ -57,6 +64,10 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+}
+
+.service-item__icon picture {
+  display: flex;
 }
 
 .service-item__content {
@@ -164,6 +175,19 @@
   top: 25%;
   right: 35%;
 }
+.sign__icon--70 {
+  right: 30px;
+  bottom: -30px;
+  opacity: 1;
+  display: none;
+}
+.services-advantages__background {
+  display: none;
+}
+.services-advantages__background picture {
+  width: 100%;
+  display: flex;
+}
 
 /* Services Page Responsive */
 @media (min-width: 1101px) {
@@ -196,25 +220,86 @@
   }
 }
 @media (max-width: 768px) {
+  .countries {
+    padding: 0px 15px 30px;
+  }
+  .services-main:not(.service_border) {
+    padding: 25px 0 0;
+  }
+  .services-main.service_border {
+    padding: 0 0 30px;
+  }
+  .services-advantages {
+    padding: 0;
+  }
+  .service-item {
+    margin-bottom: 30px;
+  }
+  .services-main__title {
+    font-size: 22px;
+  }
   .service-item__title {
-    font-size: 26px;
+    font-size: 18px;
+    position: absolute;
+    bottom: -60px;
+  }
+  .service-item__list {
+    margin-left: 25px;
   }
   .service-item__desc {
-    font-size: 16px;
+    font-size: 14px;
+  }
+  .services-advantages {
+    background-image: none;
+  }
+  section.services-advantages .content {
+    padding-left: 25px;
+    padding-right: 25px;
+    top: 40px;
+  }
+  .services-advantages .bottom__light__shape {
+    display: none;
   }
   .services-advantages .sign__icon--165 picture img {
     width: 50%;
   }
   .services-advantages__list {
-    margin-top: 300px;
+    margin-top: 0;
+    padding: 100px 25px 35px 35px;
+  }
+  .services-advantages__list .section-title {
+    top: 30px;
+    font-size: 22px;
   }
   .service-item-wrapper {
-    gap: 20px;
+    gap: 0;
+  }
+  .service-item-wrapper:nth-child(2) {
+    padding-top: 60px;
   }
   .service-item__empty {
     width: 0;
   }
   .service-item__title::before {
     content: none;
+  }
+  .service-item__icon picture img {
+    width: 60%;
+  }
+  .services-advantages__background {
+    display: flex;
+  }
+  .services-advantages__list {
+    overflow: visible;
+  }
+  .sign__icon--70 {
+    display: flex;
+  }
+  .services-advantages .sign__icon--165:nth-child(1) {
+    top: -1%;
+    left: -10%;
+  }
+  .services-advantages .sign__icon--165:nth-child(1) picture img {
+    max-width: 165px;
   }
 }

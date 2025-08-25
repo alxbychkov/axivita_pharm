@@ -10,7 +10,8 @@
     <div class="hero__bg">
       <div class="hero__bg">
         <picture>
-          <img src="/assets/images/hero/services_vector_with_elements.webp" alt="Services"  width="100%">
+          <source srcset="/assets/images/hero/services_vector_with_elements.webp" type="image/webp" media="(min-width: 768px)">
+          <img src="/assets/images/hero/services_vector_with_elements_m.webp" alt="Services"  width="100%">
         </picture>
       </div>
     </div>
@@ -71,24 +72,24 @@
           </div>
           <h3 class="service-item__title">{{i18n.service.sections.1.title}}</h3>
         </div>
-      </div>
-      <div class="service-item-wrapper">
-        <div class="service-item__empty"></div>
-        <div class="service-item__content">
-          <p class="service-item__desc">
-            {{i18n.service.sections.1.text}}
-            <br>
-            {{i18n.service.sections.1.text_2}}
-          </p>
-          <p class="service-item__desc service-item__header">
-            {{i18n.service.sections.1.header}}:
-          </p>
-          <ul class="service-item__desc service-item__list">
-            {{#each i18n.service.sections.1.list}}
-            <li class="service-item__list-item">{{this}}</li>
-            {{/each}}
-          </ul>
-          <a href="contact.html" class="btn service-item__btn">{{i18n.homepage.contact_us_button}}</a>
+        <div class="service-item-wrapper">
+          <div class="service-item__empty"></div>
+          <div class="service-item__content">
+            <p class="service-item__desc">
+              {{i18n.service.sections.1.text}}
+              <br>
+              {{i18n.service.sections.1.text_2}}
+            </p>
+            <p class="service-item__desc service-item__header">
+              {{i18n.service.sections.1.header}}:
+            </p>
+            <ul class="service-item__desc service-item__list">
+              {{#each i18n.service.sections.1.list}}
+              <li class="service-item__list-item">{{this}}</li>
+              {{/each}}
+            </ul>
+            <a href="contact.html" class="btn service-item__btn">{{i18n.homepage.contact_us_button}}</a>
+          </div>
         </div>
       </div>
     </div>
@@ -106,22 +107,22 @@
           </div>
           <h3 class="service-item__title">{{i18n.service.sections.2.title}}</h3>
         </div>
-      </div>
-      <div class="service-item-wrapper">
-        <div class="service-item__empty"></div>
-        <div class="service-item__content">
-          <p class="service-item__desc">
-            {{i18n.service.sections.2.text}}
-          </p>
-          <p class="service-item__desc service-item__header">
-            {{i18n.service.sections.2.header}}:
-          </p>
-          <ul class="service-item__desc service-item__list">
-            {{#each i18n.service.sections.2.list}}
-            <li class="service-item__list-item">{{this}}</li>
-            {{/each}}
-          </ul>
-          <a href="contact.html" class="btn service-item__btn">{{i18n.homepage.contact_us_button}}</a>
+        <div class="service-item-wrapper">
+          <div class="service-item__empty"></div>
+          <div class="service-item__content">
+            <p class="service-item__desc">
+              {{i18n.service.sections.2.text}}
+            </p>
+            <p class="service-item__desc service-item__header">
+              {{i18n.service.sections.2.header}}:
+            </p>
+            <ul class="service-item__desc service-item__list">
+              {{#each i18n.service.sections.2.list}}
+              <li class="service-item__list-item">{{this}}</li>
+              {{/each}}
+            </ul>
+            <a href="contact.html" class="btn service-item__btn">{{i18n.homepage.contact_us_button}}</a>
+          </div>
         </div>
       </div>
     </div>
@@ -178,7 +179,13 @@
       <div class="services-advantages__list">
         <h2 class="section-title services-advantages-title">{{i18n.service.advantages_title}}</h2>
         {{> advantages}}
+        {{> sign/sign-70}}
       </div>
+    </div>
+    <div class="services-advantages__background">
+      <picture>
+        <img src="/assets/images/advantages_section_m.webp" alt="Advantages" width="100%">
+      </picture>
     </div>
   </section>
 

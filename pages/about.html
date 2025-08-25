@@ -10,6 +10,7 @@
     <div class="hero__bg">
       <div class="hero__bg">
         <picture>
+          <source media="(max-width: 768px)" srcset="/assets/images/hero/about_vector_with_elements_m.webp" type="image/webp" alt="About">
           <img src="/assets/images/hero/about_vector_with_elements.webp" alt="About" width="100%">
         </picture>
       </div>
@@ -47,7 +48,8 @@
   <section class="about-intro__box lang-{{lang}}">
     {{> sign/sign-260}}
     <picture class="about-intro__img--en">
-        <img class="about-intro__img" src="/assets/images/box_vector_en.webp" alt="intro section">
+      <source media="(max-width: 768px)" srcset="/assets/images/box_vector_m_en.webp" type="image/webp" alt="intro section">
+      <img class="about-intro__img" src="/assets/images/box_vector_en.webp" alt="intro section">
     </picture>
     <picture class="about-intro__img--de">
         <img class="about-intro__img" src="/assets/images/box_vector_de.webp" alt="intro section">
@@ -71,7 +73,15 @@
 
   <!-- Values Section -->
   <section class="about-values">
+    {{> sign/sign-101}}
+    {{> sign/sign-101}}
+    {{> sign/sign-101}}
     <div class="content">
+      <div class="about-values__bg">
+        <picture>
+          <img src="/assets/images/molecule_m.webp" alt="Molecule" width="100%">
+        </picture>
+      </div>
       <h2 class="section-title">{{i18n.about.values_title}}</h2>
       <p class="about-values__desc">
         {{i18n.about.values_intro}}
@@ -117,6 +127,7 @@
   {{> countries}}
 
   <section class='about-advantages'>
+    {{> sign/sign-123}}
     <div class='content'>
       <div class='about-advantages__list'>
         <h2 class='section-title about-advantages__title'>{{i18n.about.advantages_title}}</h2>
