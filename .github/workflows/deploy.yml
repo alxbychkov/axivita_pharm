@@ -22,6 +22,11 @@ jobs:
       - name: Build Project
         run: npm run build
 
+      - name: Test FTP Connection
+        run: |
+          curl -v ftp://${{ secrets.FTP_SERVER }} --user ${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}
+        continue-on-error: true
+
       - name: Sync Files to FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -32,3 +37,4 @@ jobs:
           server-dir: /public_html/
           protocol: ftp
           port: 21
+          dry-run: true
