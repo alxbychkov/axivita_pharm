@@ -1,111 +1,91 @@
 # Axivita Pharm - Build Instructions
 
-## 🚀 Быстрый старт
+## 🚀 Quick Start
 
-### Установка зависимостей
+### Install Dependencies
 ```bash
 npm install
 ```
 
-### Разработка
+### Development
 ```bash
 npm run dev
 ```
-- Запускает dev-сервер на http://localhost:3000
-- Автоматически открывает браузер
-- Hot Module Replacement (HMR) включен
-- Source maps для CSS
+- Starts dev server on http://localhost:3000
+- Automatically opens browser
+- Hot Module Replacement (HMR) enabled
+- Source maps for CSS
 
-### Сборка для продакшена
+### Production Build
 ```bash
 npm run build
 ```
-- Создает папку `dist/` с оптимизированными файлами
-- Минифицирует CSS и JavaScript
-- Добавляет хеши к именам файлов для кеширования
-- Оптимизирует HTML (удаляет комментарии, пробелы)
+- Creates `dist/` folder with optimized files
+- Minifies CSS and JavaScript
+- Adds hashes to filenames for caching
+- Optimizes HTML (removes comments, whitespace)
 
-### Предпросмотр сборки
+### Preview Build
 ```bash
 npm run preview
 ```
-- Запускает локальный сервер для просмотра собранного проекта
-- Доступен на http://localhost:4173
+- Starts local server to preview built project
+- Available at http://localhost:4173
 
-### Проверка кода
-```bash
-npm run lint
-```
-- Проверяет HTML и JavaScript файлы
-- Использует ESLint с правилами для HTML
-
-## 📁 Структура проекта
+## 📁 Project Structure
 
 ```
 axivita_pharm/
-├── index.html              # Главная страница
-├── pages/                  # Внутренние страницы
+├── index.html              # Main page
+├── pages/                  # Internal pages
 │   ├── about.html
 │   ├── services.html
 │   ├── quality.html
 │   └── contact.html
-├── styles/                 # CSS файлы
-│   ├── main.css           # Общие стили
-│   ├── home.css           # Стили главной страницы
-│   ├── about.css          # Стили страницы "О нас"
-│   ├── services.css       # Стили страницы "Услуги"
-│   ├── quality.css        # Стили страницы "Качество"
-│   └── contact.css        # Стили страницы "Контакты"
-├── partials/              # Шаблоны Handlebars
-│   ├── header.hbs         # Шапка сайта
-│   └── footer.hbs         # Подвал сайта
-├── assets/                # Изображения и медиа
-├── dist/                  # Собранный проект (создается автоматически)
-├── vite.config.js         # Конфигурация Vite
-├── package.json           # Зависимости и скрипты
-└── .eslintrc.cjs          # Конфигурация ESLint
+├── styles/                # CSS files
+│   ├── main.css           # Common styles
+│   ├── home.css           # Home page styles
+│   ├── about.css          # About page styles
+│   ├── services.css       # Services page styles
+│   ├── quality.css        # Quality page styles
+│   └── contact.css        # Contact page styles
+├── partials/              # Handlebars templates
+│   ├── header.hbs         # Site header
+│   └── footer.hbs         # Site footer
+├── assets/                # Images and media
+├── dist/                  # Built project (created automatically)
+├── vite.config.js         # Vite configuration
+├── package.json           # Dependencies and scripts
 ```
 
-## ⚙️ Конфигурация Vite
+## ⚙️ Vite Configuration
 
-### Основные возможности:
-- **Мультистраничная сборка**: Все HTML файлы обрабатываются отдельно
-- **Минификация**: CSS и JS автоматически минифицируются
-- **Хеширование**: Имена файлов получают хеши для кеширования
-- **Шаблонизация**: Использует Handlebars для переиспользуемых компонентов
-- **Source maps**: Для удобной отладки в dev-режиме
+### Main Features:
+- **Multi-page build**: All HTML files processed separately
+- **Minification**: CSS and JS automatically minified
+- **Hashing**: Filenames get hashes for caching
+- **Templating**: Uses Handlebars for reusable components
+- **Source maps**: For convenient debugging in dev mode
 
-### Оптимизации:
-- CSS минификация с помощью Vite
-- JavaScript минификация с помощью Terser
-- HTML минификация (удаление комментариев, пробелов)
-- Автоматическое разделение CSS и JS файлов по папкам
+### Optimizations:
+- CSS minification with Vite
+- JavaScript minification with Terser
+- HTML minification (removes comments, whitespace)
+- Automatic separation of CSS and JS files into folders
 
-## 🎨 Шаблонизация
+## 🎨 Templating
 
-Проект использует Handlebars для создания переиспользуемых компонентов:
+Project uses Handlebars for creating reusable components:
 
-### Доступные переменные:
-```javascript
-{
-  company: {
-    name: 'Axivita Pharm',
-    address: 'Leopold Ungar Platz 2, 1190 Vienna, Austria',
-    phone: '+43 664 148 06 20',
-    email: 'office@axivita-pharm.com'
-  }
-}
-```
-
-### Использование в HTML:
+### Usage in HTML:
 ```html
-<!-- Вставка переменной -->
+<!-- Insert variable -->
 <h1>{{company.name}}</h1>
 
-<!-- Вставка частичного шаблона -->
+<!-- Insert partial template -->
 {{> header}}
 
-<!-- Условная логика -->
+<!-- Conditional logic -->
 {{#if isHomepage}}
   <a href="#">Homepage</a>
 {{else}}
@@ -115,46 +95,44 @@ axivita_pharm/
 
 ## 📱 Responsive Design
 
-Все CSS файлы включают медиа-запросы для:
-- **Мобильные устройства**: до 900px
-- **Планшеты**: 900px - 1200px
-- **Десктоп**: от 1200px
+All CSS files include media queries for:
+- **Mobile devices**: up to 768px
+- **Tablets**: 900px - 1200px
+- **Desktop**: from 1200px
 
-## 🔧 Настройка для продакшена
+## 🔧 Production Setup
 
-### Для деплоя на сервер:
-1. Выполните `npm run build`
-2. Скопируйте содержимое папки `dist/` на сервер
-3. Настройте веб-сервер для обработки SPA (если нужно)
+### For server deployment:
+1. Run `npm run build`
+2. Copy contents of `dist/` folder to server
 
-### Для GitHub Pages:
-1. Выполните `npm run build`
-2. Настройте GitHub Actions для автоматического деплоя
+### For GitHub Pages:
+1. Run `npm run build:gh-pages`
+2. Configure GitHub Actions for automatic deployment
 
-## 🐛 Отладка
+## 🐛 Debugging
 
-### Dev-режим:
-- Source maps включены
-- HMR для быстрого обновления
-- ESLint предупреждения в консоли
+### Dev mode:
+- Source maps enabled
+- HMR for quick updates
 
-### Продакшен:
-- Все console.log удаляются автоматически
-- Код минифицирован
-- Оптимизированы размеры файлов
+### Production:
+- All console.log automatically removed
+- Code minified
+- File sizes optimized
 
-## 📦 Дополнительные возможности
+## 📦 Additional Features
 
-### Добавление новых страниц:
-1. Создайте HTML файл в папке `pages/`
-2. Добавьте его в `vite.config.js` в секцию `input`
-3. Создайте соответствующий CSS файл в `styles/`
+### Adding new pages:
+1. Create HTML file in `pages/` folder
+2. Add it to `vite.config.js` in the `input` section
+3. Create corresponding CSS file in `styles/`
 
-### Добавление JavaScript:
-1. Создайте `.js` файл
-2. Импортируйте его в HTML: `<script type="module" src="./script.js"></script>`
+### Adding JavaScript:
+1. Create `.js` file
+2. Import it in HTML: `<script type="module" src="./script.js"></script>`
 
-### Оптимизация изображений:
-- Используйте современные форматы (WebP, AVIF)
-- Оптимизируйте размеры перед добавлением в проект
-- Рассмотрите использование CDN для больших изображений 
+### Image optimization:
+- Use modern formats (WebP, AVIF)
+- Optimize sizes before adding to project
+- Consider using CDN for large images 

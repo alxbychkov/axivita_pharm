@@ -5,21 +5,24 @@ A multi-page website for Axivita Pharm, a pharmaceutical company based in Vienna
 ## Project Structure
 
 ```
-axivita_pharm/
+public_html/
 ├── index.html            # Homepage
 ├── pages/                # Internal pages
 │   ├── about.html        # About Us page
 │   ├── services.html     # Services page
 │   ├── quality.html      # Quality page
 │   └── contact.html      # Contact Us page
-├── styles/               # CSS files
-│   ├── main.css          # Common styles and variables
-│   ├── home.css          # Homepage specific styles
-│   ├── about.css         # About page specific styles
-│   ├── services.css      # Services page specific styles
-│   ├── quality.css       # Quality page specific styles
-│   └── contact.css       # Contact page specific styles
-└── assets/               # Images and other assets
+├── css/                  # CSS files
+│   ├── index.css         # Styles and variables
+├── js/                   # JS files
+│   ├── index.js          # Scripts
+├── favicon/              # Favicon files
+├── images/               # Images
+├── de/                   # DE 
+│   ├── index.html        # Homepage DE
+│   ├── pages/            # Pages for DE the same as in /
+└── .htaccess             # .htaccess
+└── site.webmanifest      # Webmanifest
 ```
 
 ## Features
@@ -59,10 +62,7 @@ axivita_pharm/
 ### Production Build
 1. Build the project: `npm run build`
 2. Preview the build: `npm run preview`
-3. Deploy the `dist/` folder to your server
-
-### Code Quality
-- Run linting: `npm run lint`
+3. Deploy the `dist/` folder to your server (github pages)
 
 ## Design Source
 
@@ -71,46 +71,33 @@ This website is based on Figma designs and includes:
 - Consistent color scheme and typography
 - Professional pharmaceutical industry styling
 
-## Contact Information
-
-- **Company**: Axivita Pharm GmbH
-- **Address**: Leopold Ungar Platz 2, 1190 Vienna, Austria
-- **Phone**: +43 664 148 06 20
-- **Email**: office@axivita-pharm.com
-
 ## Development
 
 The project uses a modular CSS approach with:
-- `main.css` for common styles and CSS variables
-- Page-specific CSS files for unique styling
+- `index.css` for common styles and CSS variables
 - Responsive breakpoints for mobile, tablet, and desktop
-
-## License
-
-This project is proprietary to Axivita Pharm GmbH. 
 
 # Axivita Pharm – i18n build
 
-- Переводы: `axivita_pharm/locales/en.json`, `axivita_pharm/locales/de.json`
-- Рантайм i18n: `scripts/i18n.js` — подставляет тексты по `data-i18n`.
-- Определение языка: по префиксу пути. `/de/` → немецкий, иначе — английский.
+- Translations: `locales/en.json`, `locales/de.json`
+- Language detection: by path prefix. `/de/` → German, otherwise — English.
 
-## Сборка
+## Build
 
-1. Установить зависимости:
+1. Install dependencies:
    ```bash
    npm install
    ```
-2. Собрать проект:
+2. Build the project:
    ```bash
    npm run build
    ```
 
-Артефакты:
-- `dist/` — английская версия (en)
-- `dist/de/` — немецкая версия (de)
+Artifacts:
+- `dist/` — English version (en)
+- `dist/de/` — German version (de)
 
-## Использование
+## Usage
 
-- Откройте `dist/pages/quality.html` — увидите английский текст.
-- Откройте `dist/de/pages/quality.html` — увидите немецкий текст. 
+- Open `dist/pages/quality.html` — you'll see English text.
+- Open `dist/de/pages/quality.html` — you'll see German text. 
