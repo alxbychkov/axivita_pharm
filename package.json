@@ -36,6 +36,6 @@
     "html",
     "css"
   ],
-  "author": "Axivita Pharm GmbH",
-  "license": "proprietary"
+  "author": "Aleksandr Bychkov",
+  "license": "MIT"
 }
