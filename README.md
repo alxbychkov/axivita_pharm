@@ -101,3 +101,6 @@ Artifacts:
 
 - Open `dist/pages/quality.html` — you'll see English text.
 - Open `dist/de/pages/quality.html` — you'll see German text. 
+
+## License
+[MIT](./LICENSE)
