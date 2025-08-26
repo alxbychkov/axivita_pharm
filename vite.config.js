@@ -5,14 +5,15 @@ import handlebars from 'vite-plugin-handlebars';
 import { imagetools } from 'vite-imagetools';
 import viteImagemin from 'vite-plugin-imagemin';
 import imagePresets from 'vite-plugin-image-presets';
-import { viteStaticCopy } from 'vite-plugin-static-copy';
 import fs from 'fs';
 import path from 'path';
 
 export default defineConfig(({ mode }) => {
   const lang = mode === 'de' ? 'de' : 'en';
   const outDir = lang === 'de' ? 'dist/de' : 'dist';
-  const base = process.env.NODE_ENV === 'production' ? '/' : '/';
+  const base = process.env.NODE_ENV === 'production' ? '/' : '/axivita_pharm/';
+  const isProduction = process.env.NODE_ENV === 'production';
+
   const i18nPath = resolve(process.cwd(), `locales/${lang}.json`);
   const i18n = fs.existsSync(i18nPath)
     ? JSON.parse(fs.readFileSync(i18nPath, 'utf8'))
@@ -44,7 +45,7 @@ export default defineConfig(({ mode }) => {
               return `css/[name]-[hash].${ext}`;
             }
             if (/\.(png|jpe?g|svg|gif|tiff|bmp|ico|webp)$/i.test(assetInfo.name)) {
-              return `images/[name]-[hash].${ext}`;
+              return `images/[name].${ext}`;
             }
             return `[name].${ext}`;
           },
@@ -63,7 +64,7 @@ export default defineConfig(({ mode }) => {
       // HTML plugin for multi-page support + EJS data injection
       createHtmlPlugin({
         minify: {
-          collapseWhitespace: false,
+          collapseWhitespace: true,
           removeComments: true,
           removeRedundantAttributes: true,
           removeScriptTypeAttributes: true,
@@ -73,7 +74,7 @@ export default defineConfig(({ mode }) => {
           minifyJS: true,
         },
         inject: {
-          data: { i18n, lang },
+          data: { i18n, lang, isProduction },
         },
       }),
       // Handlebars templating with i18n injection
@@ -89,6 +90,7 @@ export default defineConfig(({ mode }) => {
           return {
             i18n,
             lang,
+            isProduction,
             isHomepage: pagePath.endsWith('index.html'),
             isAbout: pagePath.endsWith('about.html'),
             isServices: pagePath.endsWith('services.html'),

@@ -243,6 +243,9 @@
     position: absolute;
     bottom: -60px;
   }
+  .lang-de .service-item__title {
+    bottom: -70px;
+  }
   .service-item__list {
     margin-left: 25px;
   }

@@ -267,7 +267,10 @@
   margin: auto;
   max-width: 380px;
 }
-
+.lang-de .about-values__bg {
+  left: 10px;
+  right: 5px;
+}
 .about-values__bg picture {
   width: 100%;
 }
@@ -477,6 +480,9 @@
   .about-principles__desc,
   .about-intro__text {
     font-size: 14px;
+  }
+  .lang-de .about-values__desc {
+    font-size: 13px;
   }
   .about-intro__item:last-child .about-intro__logo,
   .about-intro__item:last-child .about-intro__text {

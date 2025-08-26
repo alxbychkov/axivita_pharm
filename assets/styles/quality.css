@@ -257,6 +257,9 @@
   .quality-certificates .section-title {
     top: 0;
   }
+  .lang-de .quality-certificates .section-title {
+    top: -20px;
+  }
 }
 
 @media (max-width: 561px) {

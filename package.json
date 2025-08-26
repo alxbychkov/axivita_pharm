@@ -4,15 +4,16 @@
   "description": "Axivita Pharm website - multi-page pharmaceutical company website",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "cross-env NODE_ENV=production vite",
     "build:en": "vite build --mode en",
     "build:de": "vite build --mode de",
     "build": "npm run build:en && npm run build:de",
-    "build:gh-pages": "NODE_ENV=production npm run build",
+    "build:gh-pages": "cross-env NODE_ENV=development npm run build",
     "preview": "vite preview --outDir dist",
-    "deploy": "gh-pages -d dist"
+    "deploy:gh-pages": "cross-env NODE_ENV=development npm run build && gh-pages -d dist"
   },
   "devDependencies": {
+    "cross-env": "^10.0.0",
     "eslint": "^8.55.0",
     "eslint-plugin-html": "^7.1.0",
     "gh-pages": "^6.3.0",

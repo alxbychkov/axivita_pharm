@@ -207,6 +207,9 @@
     background-repeat: no-repeat;
     background-position: 0 30%;
   }
+  .lang-de .contact-info {
+    background-position: 0 35%;
+  }
   .contact-hero__description {
     position: relative;
     top: -40px;
