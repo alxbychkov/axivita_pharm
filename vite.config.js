@@ -13,6 +13,9 @@ export default defineConfig(({ mode }) => {
   const outDir = lang === 'de' ? 'dist/de' : 'dist';
   const base = process.env.NODE_ENV === 'production' ? '/' : '/axivita_pharm/';
   const isProduction = process.env.NODE_ENV === 'production';
+  
+  // Cache busting timestamp
+  const timestamp = Date.now();
 
   const i18nPath = resolve(process.cwd(), `locales/${lang}.json`);
   const i18n = fs.existsSync(i18nPath)
@@ -35,14 +38,14 @@ export default defineConfig(({ mode }) => {
           contact: resolve(__dirname, 'pages/contact.html'),
         },
         output: {
-          chunkFileNames: 'js/[name]-[hash].js',
-          entryFileNames: 'js/[name]-[hash].js',
+          chunkFileNames: 'js/[name].js',
+          entryFileNames: 'js/[name].js',
           assetFileNames: (assetInfo) => {
             const info = assetInfo.name.split('.');
             const ext = info[info.length - 1];
 
             if (/\.(css)$/.test(assetInfo.name)) {
-              return `css/[name]-[hash].${ext}`;
+              return `css/[name].${ext}`;
             }
             if (/\.(png|jpe?g|svg|gif|tiff|bmp|ico|webp)$/i.test(assetInfo.name)) {
               return `images/[name].${ext}`;
@@ -74,7 +77,7 @@ export default defineConfig(({ mode }) => {
           minifyJS: true,
         },
         inject: {
-          data: { i18n, lang, isProduction },
+          data: { i18n, lang, isProduction, timestamp },
         },
       }),
       // Handlebars templating with i18n injection
@@ -91,6 +94,7 @@ export default defineConfig(({ mode }) => {
             i18n,
             lang,
             isProduction,
+            timestamp,
             isHomepage: pagePath.endsWith('index.html'),
             isAbout: pagePath.endsWith('about.html'),
             isServices: pagePath.endsWith('services.html'),

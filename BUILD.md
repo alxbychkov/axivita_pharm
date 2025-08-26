@@ -135,4 +135,11 @@ All CSS files include media queries for:
 ### Image optimization:
 - Use modern formats (WebP, AVIF)
 - Optimize sizes before adding to project
-- Consider using CDN for large images 
+- Consider using CDN for large images
+
+## 🚀 Cache Busting Strategies
+
+### Current Implementation (Query Parameters):
+- Uses timestamp query parameters: `?v={{timestamp}}`
+- Automatically generated on each build
+- Forces browser to reload assets when content changes
