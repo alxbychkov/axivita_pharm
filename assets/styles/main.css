@@ -35,6 +35,20 @@ body {
   font-style: normal;
 }
 
+picture img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
 .content {
   width: 100%;
   max-width: var(--content-width);

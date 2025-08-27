@@ -254,7 +254,7 @@
 }
 
 .quality .content:nth-child(1) {
-  top: -115%;
+  top: -125%;
 }
 
 @media (max-width: 1660px) {
@@ -268,7 +268,7 @@
 
 @media (min-width: 1921px) {
   .quality .content:nth-child(1) {
-    top: -120%;
+    top: -150%;
   }
 }
 @media (max-width: 1920px) {

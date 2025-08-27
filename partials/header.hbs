@@ -22,20 +22,28 @@
     <a href="{{#if isHomepage}}pages/contact.html{{else}}contact.html{{/if}}" class="nav__link{{#if isContact}} nav__link--active{{/if}}">{{i18n.menu.contact_us}}</a>
     <div class="nav__lang-select" tabindex="0">
       {{#if (eq lang 'en')}}
-        <img class="nav__lang-flag" src="/assets/images/icons/en.png" alt="en">
+        <picture>
+          <img class="nav__lang-flag" src="/assets/images/icons/en.png" alt="en">
+        </picture>
         <span class="nav__lang-label">{{i18n.menu.english}}</span>
       {{else}}
-        <img class="nav__lang-flag" src="/assets/images/icons/de.png" alt="de">
+        <picture>
+          <img class="nav__lang-flag" src="/assets/images/icons/de.png" alt="de">
+        </picture>
         <span class="nav__lang-label">{{i18n.menu.deutsch}}</span>
       {{/if}}
       <span class="nav__lang-arrow">&#9662;</span>
       <div class="nav__lang-dropdown">
         <div class="nav__lang-option" data-lang="en">
-          <img src="/assets/images/icons/en.png" alt="en">
+          <picture>
+            <img src="/assets/images/icons/en.png" alt="en">
+          </picture>
           <span>{{i18n.menu.english}}</span>
         </div>
         <div class="nav__lang-option" data-lang="de">
-          <img src="/assets/images/icons/de.png" alt="de">
+          <picture>
+            <img src="/assets/images/icons/de.png" alt="de">
+          </picture>
           <span>{{i18n.menu.deutsch}}</span>
         </div>
       </div>
