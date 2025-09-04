@@ -615,7 +615,7 @@ section {
   .btn:after {
     top: 57%;
     transform: translateY(-50%) scale(0.8);
-}
+  }
   section:not(.hero) .content {
     padding-left: 45px;
   }
@@ -673,5 +673,26 @@ section {
   .lang-de .hero__slogan {
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 374px) {
+  section .hero-content,
+  section:not(.hero) .content {
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  .header__logo a {
+    max-width: 145px;
+  }
+  .header {
+    padding: 25px 20px 0 30px;
+  }
+  .hero__slogan {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  .hero-content {
+    padding-bottom: 35px;
   }
 }

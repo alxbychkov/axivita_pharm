@@ -731,7 +731,7 @@
     padding-right: 45px;
   }
   .quality .content:nth-child(1) {
-    top: calc(-160px + (-135 * ((100vw - 375px) / 393 )));
+    top: calc(-160px + (-135 * ((100vw - 375px) / 393)));
   }
   .quality .content:nth-child(2) {
     top: calc(-80px + (-80 * ((100vw - 375px) / 393)));
@@ -854,5 +854,15 @@
   }
   .quality .sign__icon {
     display: block;
+  }
+}
+@media (max-width: 374px) {
+  .contact__body .section-title {
+    margin-top: 30%;
+    white-space: normal;
+    text-align: center;
+  }
+  .contact__body {
+    gap: 12px;
   }
 }
