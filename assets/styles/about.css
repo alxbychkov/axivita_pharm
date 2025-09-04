@@ -612,3 +612,14 @@
     max-width: 100%;
   }
 }
+
+@media (max-width: 374px) {
+  .about-values__bg {
+    top: -50px;
+    left: 5px;
+    right: 0;
+  }
+  .about-values__desc {
+    margin-left: -20px;
+  }
+}
