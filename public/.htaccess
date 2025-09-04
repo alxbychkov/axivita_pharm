@@ -1,5 +1,3 @@
-deny from all
-
 # Включаем mod_rewrite
 <IfModule mod_rewrite.c>
 RewriteEngine On
